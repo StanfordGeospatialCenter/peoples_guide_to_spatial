@@ -16,7 +16,7 @@ Throughout this course, we'll be using six main technological platforms that rep
 ### Cloud Platforms
 
 - **Google Earth Engine** - Google's planetary-scale geospatial analysis platform that provides access to petabytes of satellite imagery and geospatial datasets. Enables large-scale environmental analysis, change detection, and time-series analysis that would be impossible on desktop computers.
-- **ArcGIS Online** - Esri's cloud-based mapping and analysis platform for web mapping, data sharing, and collaborative spatial analysis. Provides enterprise-grade tools for creating interactive web maps, story maps, and sharing spatial data across organizations.
+- **GitHub.com - INSERT DESC
 
 ### Cloud/API Services
 
