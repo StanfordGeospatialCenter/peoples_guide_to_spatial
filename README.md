@@ -1,7 +1,8 @@
 # The People’s Guide to Spatial Data
+
 ## *(a.k.a. Everything Is Somewhere, and That Somewhere Matters)*
 
-Hi there. I wrote this book because I believe something simple but powerful:
+Hi there. I wrote this guidebook because I believe something simple but powerful:
 
 > **Everything is somewhere, and that somewhere matters.**
 
@@ -28,6 +29,12 @@ No matter what, if your question involves the words **who, what, and when**, it 
 This isn’t a dry textbook, a user manual, or a sales pitch for expensive software. There’s no gatekeeping here. If you’ve ever stared at a shapefile and wondered what to do with it—or if you’ve never even heard the word “shapefile”—you’re in the right place.
 
 This is a DIY guide inspired by books like *The People’s Guide to Mexico* and *How to Keep Your Volkswagen Alive for the Complete Idiot*. It’s fun, practical, and focused on **getting things done with spatial data** using tools that are **free, open source, and accessible**.
+
+
+![](images/20250923_155043_the-peoples-guide-to-mexico_6178079666e88.jpeg)
+
+
+![](images/20250923_155122_71ID2W6s5WL._SL1085_.jpg)
 
 Because in the context of capacity building—whether you're part of a grassroots collective, a student with a tight budget, or just someone who wants to understand their world better—**free and open source tools aren’t just “good enough.” They’re *better*.**
 
