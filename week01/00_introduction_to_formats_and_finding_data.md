@@ -4,179 +4,40 @@
 
 Understanding spatial data formats and knowing where to find quality data are fundamental skills in GIS. This guide covers the most common file formats you'll encounter and provides a comprehensive directory of data sources for your spatial analysis projects.
 
-## Common GIS Data Formats
+## Spatial Data Formats Overview
+
+Detailed coverage of spatial data formats is provided in weekly "Spatial Data Format of the Week" (SDFotW) guides throughout the course. Each format is explained in the context of its typical use case and weekly theme:
 
 ### Vector Data Formats
 
-#### Shapefiles (.shp) - The Multi-File Format
+- [**Week 0: Shapefile (.shp)**](../week00/spatial_data_format_of_the_week.md) — The universal vector standard: multi-file structure, spatial indexing, universal compatibility
+- [**Week 1: GeoJSON (.geojson)**](../week01/spatial_data_format_of_the_week.md) — Web-native vector format: single file, lightweight, direct JavaScript integration
+- [**Week 2: GPX (.gpx)**](../week02/spatial_data_format_of_the_week.md) — GPS/fitness tracking format: waypoints, tracks, routes with timestamps
+- [**Week 4: Network Datasets for Topology**](../week04/spatial_data_format_of_the_week.md) — Vector topology for analysis: DIME format, network datasets, connectivity rules
+- [**Week 10: Esoteric Vector Formats**](../week10/spatial_data_format_of_the_week.md) — Personal Geodatabase, MapInfo TAB, E00, KML/KMZ, DXF/DWG, GML
 
-- **What it is**: The most common vector data format, developed by Esri
-- **Structure**: Actually consists of 3-15+ files working together as one dataset
-- **Required files**: `.shp` (geometry), `.shx` (index), `.dbf` (attributes)
-- **Common optional files**: `.prj` (projection), `.cpg` (encoding), `.sbn/.sbx` (spatial index)
-- **Limitations**:
-  - 2GB file size limit per component
-  - Field names ≤ 10 characters
-  - 255 field limit
-  - No mixed geometry types
-- **Advantages**:
-  - **Spatially indexed** for fast queries
-  - **Supports topology** and advanced geometry operations
-  - **Universal compatibility** across all GIS software
-  - **Proven reliability** for complex spatial analysis
-- **When to use**: Data sharing, archival storage, working with legacy systems, complex spatial analysis
+### SQL & Database Solutions for Spatial Data
 
-#### GeoJSON (.geojson) - The Web Standard
-
-- **What it is**: Web-friendly format based on JSON (JavaScript Object Notation)
-- **Structure**: Single file containing geometry and attributes, human-readable text format
-- **Advantages**:
-  - Web-friendly and lightweight
-  - No file size component limits
-  - Supports nested attributes and arrays
-  - Direct JavaScript compatibility
-- **Limitations**:
-  - **No spatial indexing** - slow for large datasets
-  - **Designed for web mapping** - not optimized for analysis
-  - **Size constraints** - becomes unwieldy over ~50MB
-  - **No projection file** - coordinate system embedded but harder to manage
-- **When to use**: Web applications, API data exchange, modern mapping workflows
-
-#### Geodatabase (.gdb) - Esri's Professional Format
-
-- **What it is**: Esri's native spatial database format
-- **Types**: File geodatabase (.gdb) and Personal geodatabase (.mdb)
-- **Best for**: Complex spatial datasets with relationships, topology, and advanced functionality
-- **Advantages**: No size limits, supports complex data types, maintains spatial relationships
-- **When to use**: Professional GIS workflows, complex spatial analysis, data with topology requirements
-
-#### Other Specialized Vector Formats
-
-**KML/KMZ (.kml/.kmz) - Google Earth's Native Format:**
-
-- **Software-specific**: Designed primarily for Google Earth visualization
-- **KML**: XML-based, human-readable text format
-- **KMZ**: Compressed KML with embedded images/resources
-- **Strengths**: Excellent for 3D visualization, placemarks, and tours
-- **Limitations**: Limited analysis capabilities, Google Earth ecosystem dependency
-- **Common uses**: Public data sharing, field site visualization, storytelling
-
-**GPX (.gpx) - The GPS Exchange Standard:**
-
-- **Activity tracking format**: Standard export from fitness and navigation apps
-- **Common sources**: Strava, Garmin Connect, AllTrails, iPhone Health, Android Fit
-- **Data types**: GPS tracks, waypoints, routes with timestamps
-- **Typical content**: Running/cycling routes, hiking trails, geocaching points
-- **Analysis potential**: Speed, elevation profiles, activity patterns
-- **Conversion needed**: Usually imported to GIS for spatial analysis
-
-**GeoPackage (.gpkg) - The Modern Multi-Purpose Format:**
-
-- **SQLite-based**: Industry standard database with spatial extensions
-- **Multi-layer container**: Single file can hold multiple vector and raster datasets
-- **No shapefile limitations**: Unlimited field names, file sizes, geometry types
-- **Advanced features**: Complex queries, relationships, spatial indexes
-- **Growing adoption**: Becoming preferred format for complex projects
-- **OGC standard**: Open Geospatial Consortium approved specification
+- [**Week 3: SQL Solutions (DB Manager, GeoPackage, PostGIS)**](../week03/spatial_data_format_of_the_week.md) — Querying spatial data: QGIS DB Manager, Virtual Layers, GeoPackage, Spatialite, PostGIS
 
 ### Raster Data Formats
 
-#### GeoTIFF (.tif/.tiff) - The Traditional Standard
+- [**Week 5: Raster Image Formats**](../week05/spatial_data_format_of_the_week.md) — GeoTIFF (universal standard), JPEG+world files, PNG+world files, ESRI ASCII Grid, ESRI GRID
+- [**Week 6: Cloud Optimized GeoTIFF (COG) & JPEG2000**](../week06/spatial_data_format_of_the_week.md) — Modern web-optimized formats: partial data streaming, high bit-depth compression
+- [**Week 7: XYZ Tiles & Web Services**](../week07/spatial_data_format_of_the_week.md) — Pre-rendered tiles, WMS (Web Map Service), WFS (Web Feature Service)
+- [**Week 8: NetCDF**](../week08/spatial_data_format_of_the_week.md) — Multi-dimensional scientific arrays for climate and oceanographic data
+- [**Week 9: HDF5**](../week09/spatial_data_format_of_the_week.md) — Hierarchical scientific format for large-scale satellite and sensor data
 
-- **What it is**: Tagged Image File Format with embedded spatial reference information
-- **Structure**: Single file with embedded spatial reference
-- **Best for**: Satellite imagery, aerial photography, digital elevation models
-- **Advantages**:
-  - Widely supported across all GIS software
-  - Maintains spatial reference information
-  - Supports lossless compression options
-  - Supports multiple bands (RGB, multispectral, etc.)
-- **When to use**: High-quality imagery, scientific analysis, archival storage
+### Key Format Selection Principles
 
-#### Cloud Optimized GeoTIFF (COG) - The Modern Evolution
+- **Vector analysis**: Use Shapefile or GeoPackage (not GeoJSON)
+- **Web mapping**: Use GeoJSON or XYZ Tiles (not Shapefile)
+- **Raster analysis**: Use GeoTIFF (not imagery with world files)
+- **Cloud/web rasters**: Use Cloud Optimized GeoTIFF (COG)
+- **Scientific data**: Use NetCDF (multi-dimensional) or HDF5 (hierarchical)
+- **Public sharing (non-GIS)**: Use GeoJSON (web) or KML (Google Earth)
 
-- **What it is**: GeoTIFF format optimized for cloud storage and streaming
-- **Built on GeoTIFF** but optimized for cloud/web access
-- **Technical features**:
-  - **Internal tiling** enables efficient partial reading
-  - **Multiple resolution overviews** for fast zooming
-  - **HTTP range request compatible** - stream data without full download
-- **Best for**: Large raster datasets accessed over the internet
-- **Advantages**: Efficient partial reading, web-optimized, maintains full GeoTIFF compatibility
-- **Status**: **Becoming the new standard** for web-based raster analysis
-- **When to use**: Cloud-based analysis, web applications, large-scale raster processing
-
-#### Other Raster Formats
-
-- **.jpg/.png**: Web-friendly formats but lose spatial reference information
-- **.nc (NetCDF)**: Scientific format for climate and oceanographic data
-- **.hdf (Hierarchical Data Format)**: Complex scientific format for satellite data
-
-#### XYZ Tiles
-
-- **What it is**: Pre-rendered map tiles organized in a pyramid structure (zoom level/x/y)
-- **Best for**: Web map backgrounds, fast display of large datasets
-- **Advantages**: Fast loading, widely supported by web mapping libraries
-- **When to use**: Web mapping applications, basemap services
-
-### Web Services
-
-#### Web Map Service (WMS)
-
-- **What it is**: Standard protocol for serving georeferenced map images over the internet
-- **Best for**: Viewing and displaying spatial data
-- **Advantages**: Real-time access, no local storage required, standardized protocol
-- **When to use**: Dynamic map display, real-time data visualization
-
-#### Web Feature Service (WFS)
-
-- **What it is**: Standard protocol for serving vector spatial data over the internet
-- **Best for**: Accessing and editing vector features remotely
-- **Advantages**: Direct access to feature geometry and attributes, supports querying
-- **When to use**: Real-time data access, collaborative editing, dynamic analysis
-
-### Spatial Databases
-
-#### GeoPackage (.gpkg) - The Swiss Army Knife
-
-- **SQLite-based** single file containing multiple layers
-- **Combines vector and raster** data in one container
-- **No size limits** like shapefiles
-- **Supports complex queries** and relationships
-- **When to use**: Multi-layer projects, complex data relationships, modern GIS workflows
-
-#### Other Database Formats
-
-- **.sqlite**: Spatial extension of SQLite database
-- **.mdb/.accdb**: Microsoft Access (legacy format, avoid if possible)
-
-### Text Formats with Hidden Spatial Data
-
-Many datasets contain geographic information but aren't explicitly spatial formats - this is "**Spatial Data That Doesn't Know It's Spatial Yet**":
-
-#### CSV/Excel (.csv, .xlsx) with Geographic Encoding
-
-**Common geographic identifiers to watch for:**
-
-- **County names**: "Santa Clara County" (can be geocoded to boundary polygons)
-- **Addresses**: "123 Main St, Palo Alto, CA" (can be geocoded to point coordinates)
-- **Lat/Long columns**: Decimal degrees waiting to become geometry
-- **ZIP codes**: Postal codes that can be mapped to area boundaries
-- **State abbreviations**: "CA" can become California polygon
-- **Administrative codes**: FIPS codes, ISO country codes
-
-#### JSON/Text (.json, .txt) with Embedded Locations
-
-- **Social media data**: Geotagged tweets with coordinate metadata
-- **Sensor data**: Weather stations with lat/long information
-- **Survey responses**: Addresses or place names in text fields
-
-#### Making Text Data Spatial
-
-- **Geocoding**: Convert addresses to coordinates
-- **Joining**: Link administrative names to boundary polygons
-- **Coordinate parsing**: Extract lat/long from text fields
-- **Spatial reference**: Assign appropriate coordinate systems
+**Full format details, workflows, and creation instructions are available in the weekly SDFotW guides linked above.**
 
 ## Finding Spatial Data: A Comprehensive Guide
 
@@ -449,12 +310,33 @@ Many datasets contain geographic information but aren't explicitly spatial forma
 - **Best for**: Historical analysis, change detection, cultural studies
 - **Highlights**: Multiple map collections, georeferenced overlays, time-series analysis
 
+#### Allmaps.org
+
+- **URL**: [allmaps.org](https://allmaps.org/)
+- **Strengths**: Crowdsourced georeferencing of historical maps with modern visualization and web integration
+- **Best for**: Historical cartography, time-series historical analysis, web mapping historical data
+- **Key Features**:
+  - **Interactive georeferencing**: Community-driven map alignment to modern coordinates
+  - **XYZ tile services**: Each georeferenced map available as web-accessible tiles
+  - **Web mapping integration**: Direct integration with Leaflet, Maplibre, and other modern web libraries
+  - **Searchable collections**: Browse by collection, institution, or time period
+  - **Stable APIs**: Access georeferenced maps programmatically
+- **Collections**: Includes maps from Stanford Digital Repository, Library of Congress, UCLA, and many other institutions
+- **When to use**: Overlaying historical maps on modern basemaps, time-series historical analysis, public web mapping projects
+- **Example workflow**: 
+  1. Search for historical maps in Allmaps (e.g., "San Francisco 1906")
+  2. View/contribute georeferencing if needed
+  3. Copy XYZ tile URL
+  4. Add as basemap layer in Leaflet/Maplibre web map
+  5. Overlay modern data on historical context
+
 #### David Rumsey Map Collection
 
 - **URL**: [DavidRumsey.com](https://www.davidrumsey.com/)
 - **Strengths**: Extensive collection of historical maps and cartographic materials
 - **Best for**: Historical cartography, cultural analysis, educational resources
 - **Highlights**: High-resolution scans, detailed metadata, cartographic history
+- **Integration**: Many historical maps indexed in Allmaps.org for modern web access
 
 ## Search Strategies
 
@@ -484,24 +366,24 @@ Many datasets contain geographic information but aren't explicitly spatial forma
 ### Data Quality Considerations
 
 - Check metadata for coordinate systems, accuracy, and currency
-- Verify data sources and collection methods
-- Consider scale appropriateness for your analysis
-- Review attribute completeness and standardization
+  - **Interactive georeferencing**: Community-driven map alignment to modern coordinates
+  - **XYZ tile services**: Each georeferenced map available as web-accessible tiles
+  - **Web mapping plugins**: Direct integration with Leaflet, Maplibre, and other modern web libraries
+  - **Searchable collections**: Browse by collection, institution, or time period
+  - **Stable APIs**: Access georeferenced maps programmatically
+- **Collections**: Includes maps from Stanford Digital Repository, Library of Congress, UCLA, and many other institutions
+- **When to use**: Overlaying historical maps on modern basemaps, time-series historical analysis, public web mapping projects
+- **Example workflow**: 
+  1. Search for historical maps in Allmaps (e.g., "San Francisco 1906")
+  2. View/contribute georeferencing if needed
+  3. Copy XYZ tile URL
+  4. Add as basemap layer in Leaflet/Maplibre web map
+  5. Overlay modern data on historical context
 
-### Legal and Licensing Considerations
+#### David Rumsey Map Collection
 
-- Always check data licensing and usage rights
-- Government data is typically public domain in the U.S.
-- Academic sources may have research-only restrictions
-- Commercial data often requires licensing agreements
-
-## Next Steps
-
-With this foundation in data formats and sources, you're ready to:
-
-1. Identify appropriate data formats for your projects
-2. Locate and evaluate potential data sources
-3. Understand the strengths and limitations of different formats
-4. Make informed decisions about data acquisition and storage
-
-Remember that the choice of data format often depends on your intended use, software requirements, and project constraints. When in doubt, start with widely-supported formats like shapefiles for vector data and GeoTIFF for raster data.
+- **URL**: [DavidRumsey.com](https://www.davidrumsey.com/)
+- **Strengths**: Extensive collection of historical maps and cartographic materials
+- **Best for**: Historical cartography, cultural analysis, educational resources
+- **Highlights**: High-resolution scans, detailed metadata, cartographic history
+- **Integration**: Many historical maps indexed in Allmaps.org for modern web access
