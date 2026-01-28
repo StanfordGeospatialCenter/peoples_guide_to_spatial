@@ -1,0 +1,1664 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>00 - Introduction to Data Formats & Finding Data · The People's Guide to Spatial Data</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.5">
+        <meta name="author" content="Stace Maples">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="01_introducing_google_earth_engine_with_coordinates_and_pixels.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../week00/">
+            
+                <a href="../week00/">
+            
+                    
+                    Week 00 - Getting Ready for the Course
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../week00/00_things_you_need_to_know_about_your_computer.html">
+            
+                <a href="../week00/00_things_you_need_to_know_about_your_computer.html">
+            
+                    
+                    00 - Things you need to know about your computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../week00/01_things_you_need_to_know_about_gis_data_on_your_computer.html">
+            
+                <a href="../week00/01_things_you_need_to_know_about_gis_data_on_your_computer.html">
+            
+                    
+                    01 - Things you need to know about GIS data on your computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../week00/02_logging_in_to_google_earth_engine.html">
+            
+                <a href="../week00/02_logging_in_to_google_earth_engine.html">
+            
+                    
+                    02 - Logging in to Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../week00/03_installing_qgis_and_plugins.html">
+            
+                <a href="../week00/03_installing_qgis_and_plugins.html">
+            
+                    
+                    03 - Installing QGIS and Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../week00/04_submitting_homework_and_getting_help.html">
+            
+                <a href="../week00/04_submitting_homework_and_getting_help.html">
+            
+                    
+                    04 - Submitting Homework and Getting Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../week00/05_help_fix_the_labs.html">
+            
+                <a href="../week00/05_help_fix_the_labs.html">
+            
+                    
+                    05 - Help Fix the Labs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../week00/06_introducing_qgis_with_basic_cartographic_design.html">
+            
+                <a href="../week00/06_introducing_qgis_with_basic_cartographic_design.html">
+            
+                    
+                    06 - Introducing QGIS with Basic Cartographic Design
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../week00/spatial_data_format_of_the_week.html">
+            
+                <a href="../week00/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Shapefile Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Week 01 - Lining it Up & Cartographic Presentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="00_introduction_to_formats_and_finding_data.html">
+            
+                <a href="00_introduction_to_formats_and_finding_data.html">
+            
+                    
+                    00 - Introduction to Data Formats & Finding Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="01_introducing_google_earth_engine_with_coordinates_and_pixels.html">
+            
+                <a href="01_introducing_google_earth_engine_with_coordinates_and_pixels.html">
+            
+                    
+                    01 - Coordinates & Pixels with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="02_projection_error_measurement_with_qgis.html">
+            
+                <a href="02_projection_error_measurement_with_qgis.html">
+            
+                    
+                    02 - Projection Error Measurement with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="03_great_circles_and_more_cartographic_tips_and_tricks_in_qgis.html">
+            
+                <a href="03_great_circles_and_more_cartographic_tips_and_tricks_in_qgis.html">
+            
+                    
+                    03 - Great Circles and More Cartographic Tips & Tricks in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Census_Data_Download_with_SimplyAnalytics.html">
+            
+                <a href="Census_Data_Download_with_SimplyAnalytics.html">
+            
+                    
+                    Census Data Download with SimplyAnalytics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="spatial_data_format_of_the_week.html">
+            
+                <a href="spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - GeoJSON Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../week02/">
+            
+                <a href="../week02/">
+            
+                    
+                    Week 02 - Making & Collecting Data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../week02/00_georeferencing_with_qgis_and_allmaps_org.html">
+            
+                <a href="../week02/00_georeferencing_with_qgis_and_allmaps_org.html">
+            
+                    
+                    00 - Georeferencing with QGIS and AllMaps.org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../week02/01_basic_data_creation_with_geojsonio_and_qgis.html">
+            
+                <a href="../week02/01_basic_data_creation_with_geojsonio_and_qgis.html">
+            
+                    
+                    01 - Basic Data Creation with GeoJSON.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../week02/02_advanced_data_creation_with_qgis.html">
+            
+                <a href="../week02/02_advanced_data_creation_with_qgis.html">
+            
+                    
+                    02 - Advanced Data Creation with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../week02/03_introducing_arcgis_fieldmaps_and_arcgis_online_for_data_collection.html">
+            
+                <a href="../week02/03_introducing_arcgis_fieldmaps_and_arcgis_online_for_data_collection.html">
+            
+                    
+                    03 - Introducing ArcGIS FieldMaps & ArcGIS Online for Data Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../week02/spatial_data_format_of_the_week.html">
+            
+                <a href="../week02/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - GPX & GPS Exchange Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../week03/">
+            
+                <a href="../week03/">
+            
+                    
+                    Week 03 - Tables & Queries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../week03/00_basic_table_structures_and_operations_in_qgis.html">
+            
+                <a href="../week03/00_basic_table_structures_and_operations_in_qgis.html">
+            
+                    
+                    00 - Basic Table Structures & Operations in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../week03/01_sql_operations_in_qgis.html">
+            
+                <a href="../week03/01_sql_operations_in_qgis.html">
+            
+                    
+                    01 - SQL Operations in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../week03/02_tablular_vector_data_in_google_earth_engine.html">
+            
+                <a href="../week03/02_tablular_vector_data_in_google_earth_engine.html">
+            
+                    
+                    02 - Tabular/Vector Data in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../week03/03_using_sql_to_subset_big_data_in_the_stanford_data_farm.html">
+            
+                <a href="../week03/03_using_sql_to_subset_big_data_in_the_stanford_data_farm.html">
+            
+                    
+                    03 - Using SQL to subset BIG DATA in the Stanford Data Farm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../week03/spatial_data_format_of_the_week.html">
+            
+                <a href="../week03/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Database Formats (GeoPackage, Spatialite, PostGIS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../week04/">
+            
+                <a href="../week04/">
+            
+                    
+                    Week 04 - Basic Vector Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../week04/00_buffering_and_overlay_analysis_in_qgis.html">
+            
+                <a href="../week04/00_buffering_and_overlay_analysis_in_qgis.html">
+            
+                    
+                    00 - Buffering & Overlay Analysis in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../week04/01_areal_interpolation_of_attributes_with_qgis.html">
+            
+                <a href="../week04/01_areal_interpolation_of_attributes_with_qgis.html">
+            
+                    
+                    01 - Areal Interpolation of Attributes with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../week04/02_network_analysis_with_qgis.html">
+            
+                <a href="../week04/02_network_analysis_with_qgis.html">
+            
+                    
+                    02 - Network Analysis with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../week04/03_introducing_simplyanalytics_com.html">
+            
+                <a href="../week04/03_introducing_simplyanalytics_com.html">
+            
+                    
+                    03 - Introducing SimplyAnalytics.com
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../week04/spatial_data_format_of_the_week.html">
+            
+                <a href="../week04/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Network Datasets & Topology (DIME Format)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../week05/">
+            
+                <a href="../week05/">
+            
+                    
+                    Week 05 - Basic Raster Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../week05/00_basic_raster_analysis_with_google_earth_engine.html">
+            
+                <a href="../week05/00_basic_raster_analysis_with_google_earth_engine.html">
+            
+                    
+                    00 - Basic Raster Analysis with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../week05/01_terrain_and_visibility_with_qgis.html">
+            
+                <a href="../week05/01_terrain_and_visibility_with_qgis.html">
+            
+                    
+                    01 - Terrain & Visibility with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../week05/02_watershed_with_qgis_and_whitebox_tools.html">
+            
+                <a href="../week05/02_watershed_with_qgis_and_whitebox_tools.html">
+            
+                    
+                    02 - Watershed with QGIS & WhiteBox Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../week05/03_introducing_storymaps_on_arcgis_online.html">
+            
+                <a href="../week05/03_introducing_storymaps_on_arcgis_online.html">
+            
+                    
+                    03 - Introducing StoryMaps on ArcGIS Online
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../week05/spatial_data_format_of_the_week.html">
+            
+                <a href="../week05/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Raster Image Formats (GeoTIFF, JPEG+World, PNG+World)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../week06/">
+            
+                <a href="../week06/">
+            
+                    
+                    Week 06 - More Raster & Remote Sensing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../week06/00_basic_remote_sensing_with_google_earth_engine.html">
+            
+                <a href="../week06/00_basic_remote_sensing_with_google_earth_engine.html">
+            
+                    
+                    00 - Basic Remote Sensing with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../week06/01_modeling_movement_with_google_earth_engine.html">
+            
+                <a href="../week06/01_modeling_movement_with_google_earth_engine.html">
+            
+                    
+                    01 - Modeling Movement with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../week06/02_sampling_and_interpolation_with_qgis.html">
+            
+                <a href="../week06/02_sampling_and_interpolation_with_qgis.html">
+            
+                    
+                    02 - Sampling & Interpolation with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../week06/03_introducing_planet_com_satellite_imagery.html">
+            
+                <a href="../week06/03_introducing_planet_com_satellite_imagery.html">
+            
+                    
+                    03 - Introducing Planet.com Satellite Imagery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../week06/spatial_data_format_of_the_week.html">
+            
+                <a href="../week06/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Cloud Optimized GeoTIFF & JPEG2000
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../week07/">
+            
+                <a href="../week07/">
+            
+                    
+                    Week 07 - Web Mapping & APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../week07/00_making_and_serving_map_tiles_with_qgis.html">
+            
+                <a href="../week07/00_making_and_serving_map_tiles_with_qgis.html">
+            
+                    
+                    00 - Making & Serving Map Tiles with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../week07/01_geocoding_addresses_with_locator_stanford_edu_and_openrefine.html">
+            
+                <a href="../week07/01_geocoding_addresses_with_locator_stanford_edu_and_openrefine.html">
+            
+                    
+                    01 - Geocoding Addresses with locator.stanford.edu & OpenRefine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../week07/02_creating_and_hosting_a_webmap_using_maplibre_and_turf_js_and_github_pages.html">
+            
+                <a href="../week07/02_creating_and_hosting_a_webmap_using_maplibre_and_turf_js_and_github_pages.html">
+            
+                    
+                    02 - Creating & Hosting a WebMap, using MapLibre & Turf.js and Github Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../week07/03_introducing_openrefine_for_data_carpentry.html">
+            
+                <a href="../week07/03_introducing_openrefine_for_data_carpentry.html">
+            
+                    
+                    03 - Introducing OpenRefine for data carpentry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../week07/spatial_data_format_of_the_week.html">
+            
+                <a href="../week07/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - XYZ Tiles, WMS/WFS Web Services & IIIF for Historic Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../week08/">
+            
+                <a href="../week08/">
+            
+                    
+                    Week 08 - Analytic Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../week08/00_wildfire_detection_and_severity_measurement_in_google_earth_engine.html">
+            
+                <a href="../week08/00_wildfire_detection_and_severity_measurement_in_google_earth_engine.html">
+            
+                    
+                    00 - Wildfire Detection & Severity Measurement in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../week08/01_suitability_modeling_in_qgis.html">
+            
+                <a href="../week08/01_suitability_modeling_in_qgis.html">
+            
+                    
+                    01 - Suitability Modeling in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../week08/02_landcover_classification_and_change_detection_in_google_earth_engine.html">
+            
+                <a href="../week08/02_landcover_classification_and_change_detection_in_google_earth_engine.html">
+            
+                    
+                    02 - Landcover Classification & Change Detection in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../week08/03_introducing_model_builder_in_qgis.html">
+            
+                <a href="../week08/03_introducing_model_builder_in_qgis.html">
+            
+                    
+                    03 - Introducing Model Builder in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../week08/spatial_data_format_of_the_week.html">
+            
+                <a href="../week08/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - NetCDF & Multi-Dimensional Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../week09/">
+            
+                <a href="../week09/">
+            
+                    
+                    Week 09 - Scaling, Code, Odds&Ends
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../week09/00_the_alphaearth_embedding_database_in_google_earth_engine.html">
+            
+                <a href="../week09/00_the_alphaearth_embedding_database_in_google_earth_engine.html">
+            
+                    
+                    00 - The AlphaEarth Embedding Database in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../week09/01_being_john_snow_in_a_python_notebook.html">
+            
+                <a href="../week09/01_being_john_snow_in_a_python_notebook.html">
+            
+                    
+                    01 - Being John Snow,... in a Python Notebook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../week09/02_photogrammetric_processing_of_drone_imagery.html">
+            
+                <a href="../week09/02_photogrammetric_processing_of_drone_imagery.html">
+            
+                    
+                    02 - Photogrammetric Processing of Drone Imagery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../week09/03_introducing_gdal_and_command_line_tools_on_stanford_farmshare.html">
+            
+                <a href="../week09/03_introducing_gdal_and_command_line_tools_on_stanford_farmshare.html">
+            
+                    
+                    03 - Introducing GDAL & Command Line Tools on Stanford Farmshare
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../week09/spatial_data_format_of_the_week.html">
+            
+                <a href="../week09/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - HDF5 & Hierarchical Scientific Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../week10/">
+            
+                <a href="../week10/">
+            
+                    
+                    Week 10 - Wrapping it all up
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../week10/00_final_project_guidelines.html">
+            
+                <a href="../week10/00_final_project_guidelines.html">
+            
+                    
+                    00 - Final Project Guidelines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../week10/01_storymaps_support_materials.html">
+            
+                <a href="../week10/01_storymaps_support_materials.html">
+            
+                    
+                    01 - StoryMaps Support Materials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../week10/02_guide_to_citation_of_spatial_data_and_software.html">
+            
+                <a href="../week10/02_guide_to_citation_of_spatial_data_and_software.html">
+            
+                    
+                    02 - Guide to Citation of Spatial Data & Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../week10/03_staces_crazy_list.html">
+            
+                <a href="../week10/03_staces_crazy_list.html">
+            
+                    
+                    03 - Stace's Crazy List of Additional GISci Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../week10/spatial_data_format_of_the_week.html">
+            
+                <a href="../week10/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Legacy & Esoteric Formats
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >00 - Introduction to Data Formats & Finding Data</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="introduction-to-gis-data-formats--finding-spatial-data">Introduction to GIS Data Formats &amp; Finding Spatial Data</h1>
+<h2 id="overview">Overview</h2>
+<p>Understanding spatial data formats and knowing where to find quality data are fundamental skills in GIS. This guide covers the most common file formats you'll encounter and provides a comprehensive directory of data sources for your spatial analysis projects.</p>
+<h2 id="spatial-data-formats-overview">Spatial Data Formats Overview</h2>
+<p>Detailed <a href="../GLOSSARY.html#coverage" class="glossary-term" title="A deprecated proprietary format from Esri that can store multiple spatial geometries, topologies, and attributes.">coverage</a> of spatial data formats is provided in weekly "Spatial Data Format of the Week" (SDFotW) guides throughout the course. Each format is explained in the context of its typical use case and weekly theme:</p>
+<h3 id="vector-data-formats">Vector Data Formats</h3>
+<ul>
+<li><a href="../week00/spatial_data_format_of_the_week.html"><strong>Week 0: Shapefile (.shp)</strong></a> — The universal <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> standard: multi-file structure, spatial indexing, universal compatibility</li>
+<li><a href="spatial_data_format_of_the_week.html"><strong>Week 1: GeoJSON (.geojson)</strong></a> — Web-native <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> format: single file, lightweight, direct JavaScript integration</li>
+<li><a href="../week02/spatial_data_format_of_the_week.html"><strong>Week 2: GPX (.gpx)</strong></a> — GPS/fitness tracking format: waypoints, tracks, routes with timestamps</li>
+<li><a href="../week04/spatial_data_format_of_the_week.html"><strong>Week 4: Network Datasets for Topology</strong></a> — <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">Vector</a> topology for analysis: DIME format, network datasets, connectivity rules</li>
+<li><a href="../week10/spatial_data_format_of_the_week.html"><strong>Week 10: Esoteric Vector Formats</strong></a> — Personal <a href="../GLOSSARY.html#geodatabase" class="glossary-term" title="A proprietary ArcGIS file or database format that can hold multiple geometry types, spatial reference, attributes, and behavior for data OR a generic term for a spatial database.">Geodatabase</a>, MapInfo TAB, E00, KML/KMZ, DXF/DWG, GML</li>
+</ul>
+<h3 id="sql--database-solutions-for-spatial-data">SQL &amp; Database Solutions for Spatial Data</h3>
+<ul>
+<li><a href="../week03/spatial_data_format_of_the_week.html"><strong>Week 3: SQL Solutions (DB Manager, GeoPackage, PostGIS)</strong></a> — Querying spatial data: QGIS DB Manager, Virtual Layers, GeoPackage, Spatialite, PostGIS</li>
+</ul>
+<h3 id="raster-data-formats">Raster Data Formats</h3>
+<ul>
+<li><a href="../week05/spatial_data_format_of_the_week.html"><strong>Week 5: Raster Image Formats</strong></a> — <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> (universal standard), JPEG+world files, PNG+world files, ESRI ASCII Grid, ESRI GRID</li>
+<li><a href="../week06/spatial_data_format_of_the_week.html"><strong>Week 6: Cloud Optimized GeoTIFF (COG) &amp; JPEG2000</strong></a> — Modern web-optimized formats: partial data streaming, high bit-depth compression</li>
+<li><a href="../week07/spatial_data_format_of_the_week.html"><strong>Week 7: XYZ Tiles &amp; Web Services</strong></a> — Pre-rendered tiles, <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a> (Web Map Service), <a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a> (Web Feature Service)</li>
+<li><a href="../week08/spatial_data_format_of_the_week.html"><strong>Week 8: NetCDF</strong></a> — Multi-dimensional scientific arrays for climate and oceanographic data</li>
+<li><a href="../week09/spatial_data_format_of_the_week.html"><strong>Week 9: HDF5</strong></a> — Hierarchical scientific format for large-scale satellite and sensor data</li>
+</ul>
+<h3 id="key-format-selection-principles">Key Format Selection Principles</h3>
+<ul>
+<li><strong><a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">Vector</a> analysis</strong>: Use <a href="../GLOSSARY.html#shapefile" class="glossary-term" title="An open source geospatial vector data format containing a small bundle of files. Note: the mostly open specification, only covers the .shp, .shx, and .dbf components (notably, .prj is not specified!) https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf">Shapefile</a> or GeoPackage (not <a href="../GLOSSARY.html#geojson" class="glossary-term" title="GeoJSON is a specific type of JSON for encoding spatial data. As an open standard, it is endorsed by preservation organizations, such as the Library of Congress. However, it can be unwieldy for large datasets, as it is a flat file format, not a database. NOTE: a common misconception is that the GeoBlacklight metadata schema uses GeoJSON. This is incorrect - it uses JSON with a few geospatial-related elements. There is also a TopoJSON that extends geoJSON to include topology. However, TopoJSON is not yet an endorsed standard. https://geojson.org/ https://github.com/topojson">GeoJSON</a>)</li>
+<li><strong>Web mapping</strong>: Use <a href="../GLOSSARY.html#geojson" class="glossary-term" title="GeoJSON is a specific type of JSON for encoding spatial data. As an open standard, it is endorsed by preservation organizations, such as the Library of Congress. However, it can be unwieldy for large datasets, as it is a flat file format, not a database. NOTE: a common misconception is that the GeoBlacklight metadata schema uses GeoJSON. This is incorrect - it uses JSON with a few geospatial-related elements. There is also a TopoJSON that extends geoJSON to include topology. However, TopoJSON is not yet an endorsed standard. https://geojson.org/ https://github.com/topojson">GeoJSON</a> or XYZ Tiles (not <a href="../GLOSSARY.html#shapefile" class="glossary-term" title="An open source geospatial vector data format containing a small bundle of files. Note: the mostly open specification, only covers the .shp, .shx, and .dbf components (notably, .prj is not specified!) https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf">Shapefile</a>)</li>
+<li><strong><a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">Raster</a> analysis</strong>: Use <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> (not imagery with world files)</li>
+<li><strong>Cloud/web rasters</strong>: Use Cloud Optimized <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> (COG)</li>
+<li><strong>Scientific data</strong>: Use NetCDF (multi-dimensional) or HDF5 (hierarchical)</li>
+<li><strong>Public sharing (non-GIS)</strong>: Use <a href="../GLOSSARY.html#geojson" class="glossary-term" title="GeoJSON is a specific type of JSON for encoding spatial data. As an open standard, it is endorsed by preservation organizations, such as the Library of Congress. However, it can be unwieldy for large datasets, as it is a flat file format, not a database. NOTE: a common misconception is that the GeoBlacklight metadata schema uses GeoJSON. This is incorrect - it uses JSON with a few geospatial-related elements. There is also a TopoJSON that extends geoJSON to include topology. However, TopoJSON is not yet an endorsed standard. https://geojson.org/ https://github.com/topojson">GeoJSON</a> (web) or KML (Google Earth)</li>
+</ul>
+<p><strong>Full format details, workflows, and creation instructions are available in the weekly SDFotW guides linked above.</strong></p>
+<h2 id="finding-spatial-data-a-comprehensive-guide">Finding Spatial Data: A Comprehensive Guide</h2>
+<h3 id="academic-and-research-sources">Academic and Research Sources</h3>
+<h4 id="stanford-earthworks">Stanford EarthWorks</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://earthworks.stanford.edu/" target="_blank">earthworks.stanford.edu</a></li>
+<li><strong>Strengths</strong>: High-quality academic datasets, historical maps, global <a href="../GLOSSARY.html#coverage" class="glossary-term" title="A deprecated proprietary format from Esri that can store multiple spatial geometries, topologies, and attributes.">coverage</a></li>
+<li><strong>Best for</strong>: Research projects, historical analysis, academic work</li>
+<li><strong>Highlights</strong>: Curated collections, metadata standards, direct download access</li>
+</ul>
+<h4 id="google-earth-engine-data-catalog">Google Earth Engine Data Catalog</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://developers.google.com/earth-engine/datasets" target="_blank">developers.google.com/earth-engine/datasets</a></li>
+<li><strong>Strengths</strong>: Massive archive of <strong>analysis-ready</strong> satellite imagery and environmental datasets</li>
+<li><strong>Best for</strong>: Time-series analysis, environmental monitoring, global-scale research, cloud computing</li>
+<li><strong>Key Collections</strong>:<ul>
+<li><strong>Landsat Collection 2</strong> (1972-present) - Complete archive, surface reflectance</li>
+<li><strong>Sentinel-2</strong> (2015-present) - 10m resolution, 5-day revisit</li>
+<li><strong>MODIS</strong> (2000-present) - Daily global <a href="../GLOSSARY.html#coverage" class="glossary-term" title="A deprecated proprietary format from Esri that can store multiple spatial geometries, topologies, and attributes.">coverage</a>, 16+ years time-series</li>
+<li><strong>Climate data</strong> - ERA5, CHIRPS precipitation, temperature records</li>
+<li><strong>Land cover</strong> - Dynamic World, NLCD, ESA WorldCover</li>
+</ul>
+</li>
+<li><strong>Advantages</strong>: <strong>Pre-processed for analysis</strong>, cloud masking, atmospheric correction</li>
+<li><strong>Access</strong>: Free for research and education, requires Google account</li>
+</ul>
+<h3 id="government-data-sources">Government Data Sources</h3>
+<h4 id="datagov">Data.gov</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.data.gov/" target="_blank">data.gov</a></li>
+<li><strong>Strengths</strong>: Comprehensive U.S. government data portal</li>
+<li><strong>Best for</strong>: Federal datasets, demographic data, policy analysis</li>
+<li><strong>Highlights</strong>: Open data initiative, standardized metadata, <a href="../GLOSSARY.html#api" class="glossary-term" title="Application Programming Interface. Broadly defined, an API is how different software applications can talk to each other and share information. In library practice, this usually takes the format of a JSON file URL that can be accessed by a script for harvesting data, metadata, or schema information.">API</a> access</li>
+</ul>
+<h4 id="us-national-map">U.S. National Map</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://viewer.nationalmap.gov/basic/" target="_blank">viewer.nationalmap.gov/basic/</a></li>
+<li><strong>Strengths</strong>: Authoritative U.S. topographic and geographic data</li>
+<li><strong>Best for</strong>: Base mapping, elevation data, infrastructure analysis</li>
+<li><strong>Highlights</strong>: USGS topographic maps, elevation data, hydrography</li>
+</ul>
+<h4 id="usgs-earthexplorer">USGS EarthExplorer</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://earthexplorer.usgs.gov/" target="_blank">earthexplorer.usgs.gov</a></li>
+<li><strong>Strengths</strong>: Satellite imagery, aerial photography, elevation data</li>
+<li><strong>Best for</strong>: Remote sensing projects, change detection, terrain analysis</li>
+<li><strong>Highlights</strong>: Landsat archive, NAIP imagery, digital elevation models</li>
+<li><strong>🌍 Google Earth Engine</strong>: <strong>Analysis-ready</strong> - Landsat archive available in GEE<ul>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/landsat" target="_blank">Landsat Collection 2 in GEE</a></li>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/USGS_3DEP_10m" target="_blank">USGS 3DEP in GEE</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="usgs-topoviewer">USGS TopoViewer</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://ngmdb.usgs.gov/topoview/viewer/#4/40.01/-100.06" target="_blank">ngmdb.usgs.gov/topoview/viewer</a></li>
+<li><strong>Strengths</strong>: Historical topographic maps of the United States</li>
+<li><strong>Best for</strong>: Historical analysis, change detection, reference mapping</li>
+<li><strong>Highlights</strong>: Complete USGS topo map archive, georeferenced historical maps</li>
+</ul>
+<h3 id="specialized-environmental-datasets">Specialized Environmental Datasets</h3>
+<h4 id="national-aerial-imagery-program-naip">National Aerial Imagery Program (NAIP)</h4>
+<ul>
+<li><strong>Access</strong>: Through EarthExplorer or state portals</li>
+<li><strong>Strengths</strong>: High-resolution aerial imagery of the United States</li>
+<li><strong>Best for</strong>: Land use analysis, agricultural monitoring, urban planning</li>
+<li><strong>Highlights</strong>: 1-meter resolution, annual <a href="../GLOSSARY.html#coverage" class="glossary-term" title="A deprecated proprietary format from Esri that can store multiple spatial geometries, topologies, and attributes.">coverage</a>, true color and infrared</li>
+<li><strong>🌍 Google Earth Engine</strong>: <strong>Analysis-ready</strong> in GEE with cloud masking<ul>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/USDA_NAIP_DOQQ" target="_blank">NAIP in GEE</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="national-land-cover-database-nlcd">National Land Cover Database (NLCD)</h4>
+<ul>
+<li><strong>Access</strong>: Through EarthExplorer or USGS websites</li>
+<li><strong>Strengths</strong>: Standardized land cover classification for the U.S.</li>
+<li><strong>Best for</strong>: Land use change analysis, environmental assessment</li>
+<li><strong>Highlights</strong>: Consistent methodology, regular updates, multiple time periods</li>
+<li><strong>🌍 Google Earth Engine</strong>: <strong>Analysis-ready</strong> with time-series support<ul>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES" target="_blank">NLCD in GEE</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="nass-crop-data-layer-cdl">NASS Crop Data Layer (CDL)</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://nassgeodata.gmu.edu/CropScape/" target="_blank">nassgeodata.gmu.edu/CropScape/</a></li>
+<li><strong>Strengths</strong>: Detailed agricultural land use data</li>
+<li><strong>Best for</strong>: Agricultural analysis, crop monitoring, rural land use studies</li>
+<li><strong>Highlights</strong>: Annual updates, detailed crop classifications, county-level statistics</li>
+<li><strong>🌍 Google Earth Engine</strong>: <strong>Analysis-ready</strong> with annual time-series<ul>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/USDA_NASS_CDL" target="_blank">NASS CDL in GEE</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="national-wetlands-inventory">National Wetlands Inventory</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.fws.gov/wetlands/data/Mapper.html" target="_blank">fws.gov/wetlands/data/Mapper.html</a></li>
+<li><strong>Strengths</strong>: Comprehensive wetlands mapping and classification</li>
+<li><strong>Best for</strong>: Environmental assessment, habitat analysis, regulatory compliance</li>
+<li><strong>Highlights</strong>: Standardized wetland classification, regular updates, regulatory applications</li>
+</ul>
+<h4 id="digital-elevation-models">Digital Elevation Models</h4>
+<ul>
+<li><strong>SRTM</strong>: <a href="http://srtm.csi.cgiar.org/srtmdata/" target="_blank">srtm.csi.cgiar.org/srtmdata/</a></li>
+<li><strong>Strengths</strong>: Global elevation data at 30-meter resolution</li>
+<li><strong>Best for</strong>: Terrain analysis, watershed delineation, global studies</li>
+<li><strong>Highlights</strong>: Global <a href="../GLOSSARY.html#coverage" class="glossary-term" title="A deprecated proprietary format from Esri that can store multiple spatial geometries, topologies, and attributes.">coverage</a>, consistent resolution, free access</li>
+<li><strong>🌍 Google Earth Engine</strong>: <strong>Analysis-ready</strong> with multiple DEM products<ul>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/USGS_SRTMGL1_003" target="_blank">SRTM 30m in GEE</a></li>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/CGIAR_SRTM90_V4" target="_blank">SRTM 90m in GEE</a></li>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/ASTER_GED_AG100_003" target="_blank">ASTER DEM in GEE</a></li>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/NASA_NASADEM_HGT_001" target="_blank">NASA DEM in GEE</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="national-hydrography-dataset">National Hydrography Dataset</h4>
+<ul>
+<li><strong>Access</strong>: Through USGS National Map or EarthExplorer</li>
+<li><strong>Strengths</strong>: Comprehensive surface water features for the U.S.</li>
+<li><strong>Best for</strong>: Watershed analysis, flood modeling, water resource studies</li>
+<li><strong>Highlights</strong>: Standardized attribution, network topology, regular updates</li>
+</ul>
+<h4 id="wwf-hydrosheds">WWF HydroSHEDS</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.hydrosheds.org/" target="_blank">hydrosheds.org</a></li>
+<li><strong>Strengths</strong>: Global hydrographic data based on SRTM elevation</li>
+<li><strong>Best for</strong>: Global watershed analysis, international water studies</li>
+<li><strong>Highlights</strong>: Global <a href="../GLOSSARY.html#coverage" class="glossary-term" title="A deprecated proprietary format from Esri that can store multiple spatial geometries, topologies, and attributes.">coverage</a>, multiple resolutions, consistent methodology</li>
+<li><strong>🌍 Google Earth Engine</strong>: <strong>Analysis-ready</strong> with complete global <a href="../GLOSSARY.html#coverage" class="glossary-term" title="A deprecated proprietary format from Esri that can store multiple spatial geometries, topologies, and attributes.">coverage</a><ul>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroSHEDS_03VFDEM" target="_blank">HydroSHEDS in GEE</a></li>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroSHEDS_15DIR" target="_blank">Flow Direction in GEE</a></li>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/WWF_HydroSHEDS_15ACC" target="_blank">Flow Accumulation in GEE</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="usda-soils-data">USDA Soils Data</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://websoilsurvey.sc.egov.usda.gov/App/WebSoilSurvey.aspx" target="_blank">websoilsurvey.sc.egov.usda.gov</a></li>
+<li><strong>Strengths</strong>: Comprehensive soil surveys and properties</li>
+<li><strong>Best for</strong>: Agricultural planning, environmental assessment, engineering applications</li>
+<li><strong>Highlights</strong>: Detailed soil properties, interpretive maps, query capabilities</li>
+<li><strong>🌍 Google Earth Engine</strong>: <strong>Analysis-ready</strong> soil property grids available<ul>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/ISRIC_SoilGrids250m_v2_0" target="_blank">SoilGrids in GEE</a> - Global soil properties</li>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/USDA_NRCS_STATSGO2" target="_blank">STATSGO/SSURGO in GEE</a> - US soil surveys</li>
+</ul>
+</li>
+</ul>
+<h4 id="digital-floodplain-data">Digital Floodplain Data</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://msc.fema.gov/portal/advanceSearch" target="_blank">msc.fema.gov/portal/advanceSearch</a></li>
+<li><strong>Strengths</strong>: Official flood hazard mapping for the United States</li>
+<li><strong>Best for</strong>: Risk assessment, insurance applications, regulatory compliance</li>
+<li><strong>Highlights</strong>: Regulatory authority, detailed flood studies, insurance rate maps</li>
+</ul>
+<h4 id="geological-data">Geological Data</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://mrdata.usgs.gov/general/map-us.html" target="_blank">mrdata.usgs.gov/general/map-us.html</a></li>
+<li><strong>Strengths</strong>: Comprehensive geological mapping and mineral resource data</li>
+<li><strong>Best for</strong>: Geological studies, mineral exploration, hazard assessment</li>
+<li><strong>Highlights</strong>: Authoritative geological maps, mineral resource databases, hazard information</li>
+</ul>
+<h3 id="satellite-imagery-collections-primarily-google-earth-engine">Satellite Imagery Collections (Primarily Google Earth Engine)</h3>
+<h4 id="sentinel-satellites-copernicus-program">Sentinel Satellites (Copernicus Program)</h4>
+<ul>
+<li><strong>Strengths</strong>: Free, open European satellite constellation with frequent revisit</li>
+<li><strong>Best for</strong>: Environmental monitoring, agriculture, land change detection</li>
+<li><strong>🌍 Google Earth Engine</strong>: <strong>Primary access method</strong> - analysis-ready with cloud masking<ul>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR" target="_blank">Sentinel-2 MSI in GEE</a> - 10m optical imagery</li>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S1_GRD" target="_blank">Sentinel-1 SAR in GEE</a> - Radar imagery, weather-independent</li>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S3_OLCI" target="_blank">Sentinel-3 in GEE</a> - Ocean and land monitoring</li>
+</ul>
+</li>
+</ul>
+<h4 id="modis-nasa-terraaqua-satellites">MODIS (NASA Terra/Aqua Satellites)</h4>
+<ul>
+<li><strong>Strengths</strong>: Long time-series (2000-present), global daily <a href="../GLOSSARY.html#coverage" class="glossary-term" title="A deprecated proprietary format from Esri that can store multiple spatial geometries, topologies, and attributes.">coverage</a>, multiple spectral bands</li>
+<li><strong>Best for</strong>: Climate research, phenology, large-scale environmental monitoring</li>
+<li><strong>🌍 Google Earth Engine</strong>: <strong>Analysis-ready</strong> with extensive processing options<ul>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD09A1" target="_blank">MODIS Surface Reflectance in GEE</a></li>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD13A1" target="_blank">MODIS NDVI in GEE</a></li>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD11A1" target="_blank">MODIS Land Surface Temperature in GEE</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="planet-labs-commercial-high-resolution">Planet Labs (Commercial High-Resolution)</h4>
+<ul>
+<li><strong>Strengths</strong>: Daily global <a href="../GLOSSARY.html#coverage" class="glossary-term" title="A deprecated proprietary format from Esri that can store multiple spatial geometries, topologies, and attributes.">coverage</a>, very high resolution (3-5m), rapid revisit</li>
+<li><strong>Best for</strong>: Change detection, precision agriculture, disaster response</li>
+<li><strong>🌍 Google Earth Engine</strong>: <strong>Available through Planet-GEE partnership</strong><ul>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/planet" target="_blank">Planet in GEE</a> - Requires Planet account</li>
+<li>Daily imagery for detailed monitoring applications</li>
+</ul>
+</li>
+</ul>
+<h4 id="climate-and-weather-data">Climate and Weather Data</h4>
+<ul>
+<li><strong>🌍 Google Earth Engine</strong>: <strong>Extensive climate datasets</strong> analysis-ready<ul>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_DAILY" target="_blank">ERA5 Climate Reanalysis in GEE</a></li>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY" target="_blank">CHIRPS Precipitation in GEE</a></li>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_GRIDMET" target="_blank">GRIDMET Weather in GEE</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="demographic-and-social-data">Demographic and Social Data</h3>
+<h4 id="ipums-nhgis">IPUMS NHGIS</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.nhgis.org/" target="_blank">nhgis.org</a></li>
+<li><strong>Strengths</strong>: Historical and contemporary demographic data with geographic boundaries</li>
+<li><strong>Best for</strong>: Demographic analysis, historical studies, social research</li>
+<li><strong>Highlights</strong>: Time-series demographic data, consistent geographic boundaries, research-quality datasets</li>
+</ul>
+<h4 id="simplyanalytics">SimplyAnalytics</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://simplyanalytics.com" target="_blank">simplyanalytics.com</a></li>
+<li><strong>Strengths</strong>: Business and demographic data with mapping capabilities</li>
+<li><strong>Best for</strong>: Market analysis, business planning, demographic research</li>
+<li><strong>Highlights</strong>: Current demographic estimates, business data, custom mapping tools</li>
+</ul>
+<h4 id="us-census-bureau">U.S. Census Bureau</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/kml-cartographic-boundary-files.html" target="_blank">census.gov/geographies/mapping-files</a></li>
+<li><strong>Strengths</strong>: Official demographic data and administrative boundaries</li>
+<li><strong>Best for</strong>: Official statistics, policy analysis, administrative research</li>
+<li><strong>Highlights</strong>: Decennial census, American Community Survey, official boundaries</li>
+</ul>
+<h3 id="global-and-international-sources">Global and International Sources</h3>
+<h4 id="natural-earth">Natural Earth</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.naturalearthdata.com/" target="_blank">naturalearthdata.com</a></li>
+<li><strong>Strengths</strong>: High-quality global <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> and <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> map data</li>
+<li><strong>Best for</strong>: Global mapping projects, reference cartography, educational materials</li>
+<li><strong>Highlights</strong>: Multiple scales, cartographically designed, public domain</li>
+</ul>
+<h4 id="openstreetmap">OpenStreetMap</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.openstreetmap.org/#map=3/10.17/20.40" target="_blank">openstreetmap.org</a></li>
+<li><strong>Strengths</strong>: Crowd-sourced global mapping data</li>
+<li><strong>Best for</strong>: Urban mapping, routing applications, community-driven projects</li>
+<li><strong>Highlights</strong>: Global <a href="../GLOSSARY.html#coverage" class="glossary-term" title="A deprecated proprietary format from Esri that can store multiple spatial geometries, topologies, and attributes.">coverage</a>, regular updates, open license, detailed urban data</li>
+</ul>
+<h4 id="overpass-turbo">Overpass Turbo</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://overpass-turbo.eu/" target="_blank">overpass-turbo.eu</a></li>
+<li><strong>Strengths</strong>: Query interface for OpenStreetMap data</li>
+<li><strong>Best for</strong>: Custom data extraction from OpenStreetMap</li>
+<li><strong>Highlights</strong>: Powerful query language, real-time data access, export capabilities</li>
+</ul>
+<h4 id="humanitarian-openstreetmap">Humanitarian OpenStreetMap</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://tasks.hotosm.org/explore" target="_blank">tasks.hotosm.org/explore</a></li>
+<li><strong>Strengths</strong>: Crisis mapping and humanitarian data projects</li>
+<li><strong>Best for</strong>: Disaster response, humanitarian projects, community mapping</li>
+<li><strong>Highlights</strong>: Crisis-focused mapping, volunteer coordination, rapid response</li>
+</ul>
+<h4 id="humanitarian-data-exchange">Humanitarian Data Exchange</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://data.humdata.org/" target="_blank">data.humdata.org</a></li>
+<li><strong>Strengths</strong>: Humanitarian and crisis-related datasets</li>
+<li><strong>Best for</strong>: Emergency response, humanitarian analysis, crisis mapping</li>
+<li><strong>Highlights</strong>: Crisis-specific data, standardized formats, rapid deployment</li>
+</ul>
+<h3 id="commercial-and-specialized-sources">Commercial and Specialized Sources</h3>
+<h4 id="planetcom">Planet.com</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.planet.com/" target="_blank">planet.com</a></li>
+<li><strong>Strengths</strong>: High-resolution, frequently updated satellite imagery</li>
+<li><strong>Best for</strong>: Change detection, precision agriculture, monitoring applications</li>
+<li><strong>Highlights</strong>: Daily global imaging, very high resolution, analytics-ready data</li>
+<li><strong>🌍 Google Earth Engine</strong>: <strong>Available through partnership</strong> (requires Planet account)<ul>
+<li><a href="https://developers.google.com/earth-engine/datasets/catalog/planet" target="_blank">Planet in GEE</a> - 3-5m daily imagery</li>
+<li>Educational access available through Planet's education program</li>
+</ul>
+</li>
+</ul>
+<h4 id="arcgis-hub">ArcGIS Hub</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://hub.arcgis.com/" target="_blank">hub.arcgis.com</a></li>
+<li><strong>Strengths</strong>: Government and organization data sharing platform</li>
+<li><strong>Best for</strong>: Local government data, organizational datasets, community resources</li>
+<li><strong>Highlights</strong>: Local government focus, data sharing tools, community engagement</li>
+</ul>
+<h3 id="historical-and-cultural-sources">Historical and Cultural Sources</h3>
+<h4 id="old-maps-online">Old Maps Online</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.oldmapsonline.org/" target="_blank">oldmapsonline.org</a></li>
+<li><strong>Strengths</strong>: Georeferenced historical maps from multiple collections</li>
+<li><strong>Best for</strong>: Historical analysis, change detection, cultural studies</li>
+<li><strong>Highlights</strong>: Multiple map collections, georeferenced overlays, time-series analysis</li>
+</ul>
+<h4 id="allmapsorg">Allmaps.org</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://allmaps.org/" target="_blank">allmaps.org</a></li>
+<li><strong>Strengths</strong>: Crowdsourced georeferencing of historical maps with modern visualization and web integration</li>
+<li><strong>Best for</strong>: Historical cartography, time-series historical analysis, web mapping historical data</li>
+<li><strong>Key Features</strong>:<ul>
+<li><strong>Interactive georeferencing</strong>: Community-driven map alignment to modern coordinates</li>
+<li><strong>XYZ tile services</strong>: Each georeferenced map available as web-accessible tiles</li>
+<li><strong>Web mapping integration</strong>: Direct integration with <a href="../GLOSSARY.html#leaflet" class="glossary-term" title="Leaflet is an open-source JavaScript library that helps developers build webmaps on mobile as well as desktop platforms. https://leafletjs.com/">Leaflet</a>, Maplibre, and other modern web libraries</li>
+<li><strong>Searchable collections</strong>: Browse by collection, institution, or time period</li>
+<li><strong>Stable APIs</strong>: Access georeferenced maps programmatically</li>
+</ul>
+</li>
+<li><strong>Collections</strong>: Includes maps from Stanford Digital Repository, Library of Congress, UCLA, and many other institutions</li>
+<li><strong>When to use</strong>: Overlaying historical maps on modern basemaps, time-series historical analysis, public web mapping projects</li>
+<li><strong>Example workflow</strong>: <ol>
+<li>Search for historical maps in Allmaps (e.g., "San Francisco 1906")</li>
+<li>View/contribute georeferencing if needed</li>
+<li>Copy XYZ tile URL</li>
+<li>Add as basemap layer in <a href="../GLOSSARY.html#leaflet" class="glossary-term" title="Leaflet is an open-source JavaScript library that helps developers build webmaps on mobile as well as desktop platforms. https://leafletjs.com/">Leaflet</a>/Maplibre web map</li>
+<li>Overlay modern data on historical context</li>
+</ol>
+</li>
+</ul>
+<h4 id="david-rumsey-map-collection">David Rumsey Map Collection</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.davidrumsey.com/" target="_blank">DavidRumsey.com</a></li>
+<li><strong>Strengths</strong>: Extensive collection of historical maps and cartographic materials</li>
+<li><strong>Best for</strong>: Historical cartography, cultural analysis, educational resources</li>
+<li><strong>Highlights</strong>: High-resolution scans, detailed metadata, cartographic history</li>
+<li><strong>Integration</strong>: Many historical maps indexed in Allmaps.org for modern web access</li>
+</ul>
+<h2 id="search-strategies">Search Strategies</h2>
+<h3 id="google-earth-engine-for-raster-data-analysis">Google Earth Engine for Raster Data Analysis</h3>
+<p><strong>Why use Google Earth Engine for <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> data?</strong></p>
+<ul>
+<li><strong>Analysis-ready data</strong>: Pre-processed with atmospheric correction, cloud masking</li>
+<li><strong>Massive compute power</strong>: Handle continental-scale analysis in the cloud</li>
+<li><strong>Time-series ready</strong>: Decades of satellite data organized for temporal analysis</li>
+<li><strong>No download required</strong>: Process petabytes of data without local storage</li>
+<li><strong>Reproducible research</strong>: Code-based analysis with version control</li>
+</ul>
+<p><strong>Key advantages marked with 🌍 throughout this guide:</strong></p>
+<ul>
+<li>Look for the 🌍 symbol next to datasets available in Google Earth Engine</li>
+<li>These datasets are optimized for analysis and ready to use in GEE</li>
+<li>Direct links provided to specific Earth Engine data catalog pages</li>
+</ul>
+<h3 id="general-search-tips">General Search Tips</h3>
+<ul>
+<li>Use specific file format terms in your searches: "<a href="../GLOSSARY.html#shapefile" class="glossary-term" title="An open source geospatial vector data format containing a small bundle of files. Note: the mostly open specification, only covers the .shp, .shx, and .dbf components (notably, .prj is not specified!) https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf">shapefile</a>", "<a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">geotiff</a>", "<a href="../GLOSSARY.html#geojson" class="glossary-term" title="GeoJSON is a specific type of JSON for encoding spatial data. As an open standard, it is endorsed by preservation organizations, such as the Library of Congress. However, it can be unwieldy for large datasets, as it is a flat file format, not a database. NOTE: a common misconception is that the GeoBlacklight metadata schema uses GeoJSON. This is incorrect - it uses JSON with a few geospatial-related elements. There is also a TopoJSON that extends geoJSON to include topology. However, TopoJSON is not yet an endorsed standard. https://geojson.org/ https://github.com/topojson">geojson</a>", "<a href="../GLOSSARY.html#geodatabase" class="glossary-term" title="A proprietary ArcGIS file or database format that can hold multiple geometry types, spatial reference, attributes, and behavior for data OR a generic term for a spatial database.">geodatabase</a>"</li>
+<li>Include geographic terms: city names, administrative boundaries, geographic features</li>
+<li>Combine data type with location: "California counties <a href="../GLOSSARY.html#shapefile" class="glossary-term" title="An open source geospatial vector data format containing a small bundle of files. Note: the mostly open specification, only covers the .shp, .shx, and .dbf components (notably, .prj is not specified!) https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf">shapefile</a>", "elevation data Colorado <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">geotiff</a>"</li>
+<li><strong>For <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> analysis</strong>: Consider Google Earth Engine first for satellite imagery and environmental data</li>
+</ul>
+<h3 id="data-quality-considerations">Data Quality Considerations</h3>
+<ul>
+<li>Check metadata for coordinate systems, accuracy, and currency<ul>
+<li><strong>Interactive georeferencing</strong>: Community-driven map alignment to modern coordinates</li>
+<li><strong>XYZ tile services</strong>: Each georeferenced map available as web-accessible tiles</li>
+<li><strong>Web mapping plugins</strong>: Direct integration with <a href="../GLOSSARY.html#leaflet" class="glossary-term" title="Leaflet is an open-source JavaScript library that helps developers build webmaps on mobile as well as desktop platforms. https://leafletjs.com/">Leaflet</a>, Maplibre, and other modern web libraries</li>
+<li><strong>Searchable collections</strong>: Browse by collection, institution, or time period</li>
+<li><strong>Stable APIs</strong>: Access georeferenced maps programmatically</li>
+</ul>
+</li>
+<li><strong>Collections</strong>: Includes maps from Stanford Digital Repository, Library of Congress, UCLA, and many other institutions</li>
+<li><strong>When to use</strong>: Overlaying historical maps on modern basemaps, time-series historical analysis, public web mapping projects</li>
+<li><strong>Example workflow</strong>: <ol>
+<li>Search for historical maps in Allmaps (e.g., "San Francisco 1906")</li>
+<li>View/contribute georeferencing if needed</li>
+<li>Copy XYZ tile URL</li>
+<li>Add as basemap layer in <a href="../GLOSSARY.html#leaflet" class="glossary-term" title="Leaflet is an open-source JavaScript library that helps developers build webmaps on mobile as well as desktop platforms. https://leafletjs.com/">Leaflet</a>/Maplibre web map</li>
+<li>Overlay modern data on historical context</li>
+</ol>
+</li>
+</ul>
+<h4 id="david-rumsey-map-collection">David Rumsey Map Collection</h4>
+<ul>
+<li><strong>URL</strong>: <a href="https://www.davidrumsey.com/" target="_blank">DavidRumsey.com</a></li>
+<li><strong>Strengths</strong>: Extensive collection of historical maps and cartographic materials</li>
+<li><strong>Best for</strong>: Historical cartography, cultural analysis, educational resources</li>
+<li><strong>Highlights</strong>: High-resolution scans, detailed metadata, cartographic history</li>
+<li><strong>Integration</strong>: Many historical maps indexed in Allmaps.org for modern web access</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Week 01 - Lining it Up & Cartographic Presentation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="01_introducing_google_earth_engine_with_coordinates_and_pixels.html" class="navigation navigation-next " aria-label="Next page: 01 - Coordinates & Pixels with Google Earth Engine">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"00 - Introduction to Data Formats & Finding Data","level":"1.3.1","depth":2,"next":{"title":"01 - Coordinates & Pixels with Google Earth Engine","level":"1.3.2","depth":2,"path":"week01/01_introducing_google_earth_engine_with_coordinates_and_pixels.md","ref":"week01/01_introducing_google_earth_engine_with_coordinates_and_pixels.md","articles":[]},"previous":{"title":"Week 01 - Lining it Up & Cartographic Presentation","level":"1.3","depth":1,"path":"week01/README.md","ref":"week01/README.md","articles":[{"title":"00 - Introduction to Data Formats & Finding Data","level":"1.3.1","depth":2,"path":"week01/00_introduction_to_formats_and_finding_data.md","ref":"week01/00_introduction_to_formats_and_finding_data.md","articles":[]},{"title":"01 - Coordinates & Pixels with Google Earth Engine","level":"1.3.2","depth":2,"path":"week01/01_introducing_google_earth_engine_with_coordinates_and_pixels.md","ref":"week01/01_introducing_google_earth_engine_with_coordinates_and_pixels.md","articles":[]},{"title":"02 - Projection Error Measurement with QGIS","level":"1.3.3","depth":2,"path":"week01/02_projection_error_measurement_with_qgis.md","ref":"week01/02_projection_error_measurement_with_qgis.md","articles":[]},{"title":"03 - Great Circles and More Cartographic Tips & Tricks in QGIS","level":"1.3.4","depth":2,"path":"week01/03_great_circles_and_more_cartographic_tips_and_tricks_in_qgis.md","ref":"week01/03_great_circles_and_more_cartographic_tips_and_tricks_in_qgis.md","articles":[]},{"title":"Census Data Download with SimplyAnalytics","level":"1.3.5","depth":2,"path":"week01/Census_Data_Download_with_SimplyAnalytics.md","ref":"week01/Census_Data_Download_with_SimplyAnalytics.md","articles":[]},{"title":"SDFotW - GeoJSON Format","level":"1.3.6","depth":2,"path":"week01/spatial_data_format_of_the_week.md","ref":"week01/spatial_data_format_of_the_week.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pubdate":"2025","author":"Stace Maples","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The People's Guide to Spatial Data","gitbook":"*"},"file":{"path":"week01/00_introduction_to_formats_and_finding_data.md","mtime":"2026-01-28T17:32:51.630Z","type":"markdown"},"gitbook":{"version":"6.1.5","time":"2026-01-28T17:32:59.999Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

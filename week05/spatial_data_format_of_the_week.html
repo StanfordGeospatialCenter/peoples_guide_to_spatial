@@ -1,0 +1,1797 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>SDFotW - Raster Image Formats (GeoTIFF, JPEG+World, PNG+World) · The People's Guide to Spatial Data</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.5">
+        <meta name="author" content="Stace Maples">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../week06/" />
+    
+    
+    <link rel="prev" href="03_introducing_storymaps_on_arcgis_online.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../week00/">
+            
+                <a href="../week00/">
+            
+                    
+                    Week 00 - Getting Ready for the Course
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../week00/00_things_you_need_to_know_about_your_computer.html">
+            
+                <a href="../week00/00_things_you_need_to_know_about_your_computer.html">
+            
+                    
+                    00 - Things you need to know about your computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../week00/01_things_you_need_to_know_about_gis_data_on_your_computer.html">
+            
+                <a href="../week00/01_things_you_need_to_know_about_gis_data_on_your_computer.html">
+            
+                    
+                    01 - Things you need to know about GIS data on your computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../week00/02_logging_in_to_google_earth_engine.html">
+            
+                <a href="../week00/02_logging_in_to_google_earth_engine.html">
+            
+                    
+                    02 - Logging in to Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../week00/03_installing_qgis_and_plugins.html">
+            
+                <a href="../week00/03_installing_qgis_and_plugins.html">
+            
+                    
+                    03 - Installing QGIS and Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../week00/04_submitting_homework_and_getting_help.html">
+            
+                <a href="../week00/04_submitting_homework_and_getting_help.html">
+            
+                    
+                    04 - Submitting Homework and Getting Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../week00/05_help_fix_the_labs.html">
+            
+                <a href="../week00/05_help_fix_the_labs.html">
+            
+                    
+                    05 - Help Fix the Labs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../week00/06_introducing_qgis_with_basic_cartographic_design.html">
+            
+                <a href="../week00/06_introducing_qgis_with_basic_cartographic_design.html">
+            
+                    
+                    06 - Introducing QGIS with Basic Cartographic Design
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../week00/spatial_data_format_of_the_week.html">
+            
+                <a href="../week00/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Shapefile Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../week01/">
+            
+                <a href="../week01/">
+            
+                    
+                    Week 01 - Lining it Up & Cartographic Presentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../week01/00_introduction_to_formats_and_finding_data.html">
+            
+                <a href="../week01/00_introduction_to_formats_and_finding_data.html">
+            
+                    
+                    00 - Introduction to Data Formats & Finding Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../week01/01_introducing_google_earth_engine_with_coordinates_and_pixels.html">
+            
+                <a href="../week01/01_introducing_google_earth_engine_with_coordinates_and_pixels.html">
+            
+                    
+                    01 - Coordinates & Pixels with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../week01/02_projection_error_measurement_with_qgis.html">
+            
+                <a href="../week01/02_projection_error_measurement_with_qgis.html">
+            
+                    
+                    02 - Projection Error Measurement with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../week01/03_great_circles_and_more_cartographic_tips_and_tricks_in_qgis.html">
+            
+                <a href="../week01/03_great_circles_and_more_cartographic_tips_and_tricks_in_qgis.html">
+            
+                    
+                    03 - Great Circles and More Cartographic Tips & Tricks in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../week01/Census_Data_Download_with_SimplyAnalytics.html">
+            
+                <a href="../week01/Census_Data_Download_with_SimplyAnalytics.html">
+            
+                    
+                    Census Data Download with SimplyAnalytics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../week01/spatial_data_format_of_the_week.html">
+            
+                <a href="../week01/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - GeoJSON Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../week02/">
+            
+                <a href="../week02/">
+            
+                    
+                    Week 02 - Making & Collecting Data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../week02/00_georeferencing_with_qgis_and_allmaps_org.html">
+            
+                <a href="../week02/00_georeferencing_with_qgis_and_allmaps_org.html">
+            
+                    
+                    00 - Georeferencing with QGIS and AllMaps.org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../week02/01_basic_data_creation_with_geojsonio_and_qgis.html">
+            
+                <a href="../week02/01_basic_data_creation_with_geojsonio_and_qgis.html">
+            
+                    
+                    01 - Basic Data Creation with GeoJSON.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../week02/02_advanced_data_creation_with_qgis.html">
+            
+                <a href="../week02/02_advanced_data_creation_with_qgis.html">
+            
+                    
+                    02 - Advanced Data Creation with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../week02/03_introducing_arcgis_fieldmaps_and_arcgis_online_for_data_collection.html">
+            
+                <a href="../week02/03_introducing_arcgis_fieldmaps_and_arcgis_online_for_data_collection.html">
+            
+                    
+                    03 - Introducing ArcGIS FieldMaps & ArcGIS Online for Data Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../week02/spatial_data_format_of_the_week.html">
+            
+                <a href="../week02/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - GPX & GPS Exchange Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../week03/">
+            
+                <a href="../week03/">
+            
+                    
+                    Week 03 - Tables & Queries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../week03/00_basic_table_structures_and_operations_in_qgis.html">
+            
+                <a href="../week03/00_basic_table_structures_and_operations_in_qgis.html">
+            
+                    
+                    00 - Basic Table Structures & Operations in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../week03/01_sql_operations_in_qgis.html">
+            
+                <a href="../week03/01_sql_operations_in_qgis.html">
+            
+                    
+                    01 - SQL Operations in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../week03/02_tablular_vector_data_in_google_earth_engine.html">
+            
+                <a href="../week03/02_tablular_vector_data_in_google_earth_engine.html">
+            
+                    
+                    02 - Tabular/Vector Data in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../week03/03_using_sql_to_subset_big_data_in_the_stanford_data_farm.html">
+            
+                <a href="../week03/03_using_sql_to_subset_big_data_in_the_stanford_data_farm.html">
+            
+                    
+                    03 - Using SQL to subset BIG DATA in the Stanford Data Farm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../week03/spatial_data_format_of_the_week.html">
+            
+                <a href="../week03/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Database Formats (GeoPackage, Spatialite, PostGIS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../week04/">
+            
+                <a href="../week04/">
+            
+                    
+                    Week 04 - Basic Vector Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../week04/00_buffering_and_overlay_analysis_in_qgis.html">
+            
+                <a href="../week04/00_buffering_and_overlay_analysis_in_qgis.html">
+            
+                    
+                    00 - Buffering & Overlay Analysis in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../week04/01_areal_interpolation_of_attributes_with_qgis.html">
+            
+                <a href="../week04/01_areal_interpolation_of_attributes_with_qgis.html">
+            
+                    
+                    01 - Areal Interpolation of Attributes with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../week04/02_network_analysis_with_qgis.html">
+            
+                <a href="../week04/02_network_analysis_with_qgis.html">
+            
+                    
+                    02 - Network Analysis with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../week04/03_introducing_simplyanalytics_com.html">
+            
+                <a href="../week04/03_introducing_simplyanalytics_com.html">
+            
+                    
+                    03 - Introducing SimplyAnalytics.com
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../week04/spatial_data_format_of_the_week.html">
+            
+                <a href="../week04/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Network Datasets & Topology (DIME Format)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Week 05 - Basic Raster Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="00_basic_raster_analysis_with_google_earth_engine.html">
+            
+                <a href="00_basic_raster_analysis_with_google_earth_engine.html">
+            
+                    
+                    00 - Basic Raster Analysis with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="01_terrain_and_visibility_with_qgis.html">
+            
+                <a href="01_terrain_and_visibility_with_qgis.html">
+            
+                    
+                    01 - Terrain & Visibility with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="02_watershed_with_qgis_and_whitebox_tools.html">
+            
+                <a href="02_watershed_with_qgis_and_whitebox_tools.html">
+            
+                    
+                    02 - Watershed with QGIS & WhiteBox Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="03_introducing_storymaps_on_arcgis_online.html">
+            
+                <a href="03_introducing_storymaps_on_arcgis_online.html">
+            
+                    
+                    03 - Introducing StoryMaps on ArcGIS Online
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.5" data-path="spatial_data_format_of_the_week.html">
+            
+                <a href="spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Raster Image Formats (GeoTIFF, JPEG+World, PNG+World)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../week06/">
+            
+                <a href="../week06/">
+            
+                    
+                    Week 06 - More Raster & Remote Sensing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../week06/00_basic_remote_sensing_with_google_earth_engine.html">
+            
+                <a href="../week06/00_basic_remote_sensing_with_google_earth_engine.html">
+            
+                    
+                    00 - Basic Remote Sensing with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../week06/01_modeling_movement_with_google_earth_engine.html">
+            
+                <a href="../week06/01_modeling_movement_with_google_earth_engine.html">
+            
+                    
+                    01 - Modeling Movement with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../week06/02_sampling_and_interpolation_with_qgis.html">
+            
+                <a href="../week06/02_sampling_and_interpolation_with_qgis.html">
+            
+                    
+                    02 - Sampling & Interpolation with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../week06/03_introducing_planet_com_satellite_imagery.html">
+            
+                <a href="../week06/03_introducing_planet_com_satellite_imagery.html">
+            
+                    
+                    03 - Introducing Planet.com Satellite Imagery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../week06/spatial_data_format_of_the_week.html">
+            
+                <a href="../week06/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Cloud Optimized GeoTIFF & JPEG2000
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../week07/">
+            
+                <a href="../week07/">
+            
+                    
+                    Week 07 - Web Mapping & APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../week07/00_making_and_serving_map_tiles_with_qgis.html">
+            
+                <a href="../week07/00_making_and_serving_map_tiles_with_qgis.html">
+            
+                    
+                    00 - Making & Serving Map Tiles with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../week07/01_geocoding_addresses_with_locator_stanford_edu_and_openrefine.html">
+            
+                <a href="../week07/01_geocoding_addresses_with_locator_stanford_edu_and_openrefine.html">
+            
+                    
+                    01 - Geocoding Addresses with locator.stanford.edu & OpenRefine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../week07/02_creating_and_hosting_a_webmap_using_maplibre_and_turf_js_and_github_pages.html">
+            
+                <a href="../week07/02_creating_and_hosting_a_webmap_using_maplibre_and_turf_js_and_github_pages.html">
+            
+                    
+                    02 - Creating & Hosting a WebMap, using MapLibre & Turf.js and Github Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../week07/03_introducing_openrefine_for_data_carpentry.html">
+            
+                <a href="../week07/03_introducing_openrefine_for_data_carpentry.html">
+            
+                    
+                    03 - Introducing OpenRefine for data carpentry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../week07/spatial_data_format_of_the_week.html">
+            
+                <a href="../week07/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - XYZ Tiles, WMS/WFS Web Services & IIIF for Historic Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../week08/">
+            
+                <a href="../week08/">
+            
+                    
+                    Week 08 - Analytic Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../week08/00_wildfire_detection_and_severity_measurement_in_google_earth_engine.html">
+            
+                <a href="../week08/00_wildfire_detection_and_severity_measurement_in_google_earth_engine.html">
+            
+                    
+                    00 - Wildfire Detection & Severity Measurement in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../week08/01_suitability_modeling_in_qgis.html">
+            
+                <a href="../week08/01_suitability_modeling_in_qgis.html">
+            
+                    
+                    01 - Suitability Modeling in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../week08/02_landcover_classification_and_change_detection_in_google_earth_engine.html">
+            
+                <a href="../week08/02_landcover_classification_and_change_detection_in_google_earth_engine.html">
+            
+                    
+                    02 - Landcover Classification & Change Detection in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../week08/03_introducing_model_builder_in_qgis.html">
+            
+                <a href="../week08/03_introducing_model_builder_in_qgis.html">
+            
+                    
+                    03 - Introducing Model Builder in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../week08/spatial_data_format_of_the_week.html">
+            
+                <a href="../week08/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - NetCDF & Multi-Dimensional Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../week09/">
+            
+                <a href="../week09/">
+            
+                    
+                    Week 09 - Scaling, Code, Odds&Ends
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../week09/00_the_alphaearth_embedding_database_in_google_earth_engine.html">
+            
+                <a href="../week09/00_the_alphaearth_embedding_database_in_google_earth_engine.html">
+            
+                    
+                    00 - The AlphaEarth Embedding Database in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../week09/01_being_john_snow_in_a_python_notebook.html">
+            
+                <a href="../week09/01_being_john_snow_in_a_python_notebook.html">
+            
+                    
+                    01 - Being John Snow,... in a Python Notebook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../week09/02_photogrammetric_processing_of_drone_imagery.html">
+            
+                <a href="../week09/02_photogrammetric_processing_of_drone_imagery.html">
+            
+                    
+                    02 - Photogrammetric Processing of Drone Imagery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../week09/03_introducing_gdal_and_command_line_tools_on_stanford_farmshare.html">
+            
+                <a href="../week09/03_introducing_gdal_and_command_line_tools_on_stanford_farmshare.html">
+            
+                    
+                    03 - Introducing GDAL & Command Line Tools on Stanford Farmshare
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../week09/spatial_data_format_of_the_week.html">
+            
+                <a href="../week09/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - HDF5 & Hierarchical Scientific Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../week10/">
+            
+                <a href="../week10/">
+            
+                    
+                    Week 10 - Wrapping it all up
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../week10/00_final_project_guidelines.html">
+            
+                <a href="../week10/00_final_project_guidelines.html">
+            
+                    
+                    00 - Final Project Guidelines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../week10/01_storymaps_support_materials.html">
+            
+                <a href="../week10/01_storymaps_support_materials.html">
+            
+                    
+                    01 - StoryMaps Support Materials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../week10/02_guide_to_citation_of_spatial_data_and_software.html">
+            
+                <a href="../week10/02_guide_to_citation_of_spatial_data_and_software.html">
+            
+                    
+                    02 - Guide to Citation of Spatial Data & Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../week10/03_staces_crazy_list.html">
+            
+                <a href="../week10/03_staces_crazy_list.html">
+            
+                    
+                    03 - Stace's Crazy List of Additional GISci Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../week10/spatial_data_format_of_the_week.html">
+            
+                <a href="../week10/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Legacy & Esoteric Formats
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >SDFotW - Raster Image Formats (GeoTIFF, JPEG+World, PNG+World)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="spatial-data-format-of-the-week-raster-image-formats-for-spatial-analysis">Spatial Data Format of the Week: Raster Image Formats for Spatial Analysis</h1>
+<h2 id="understanding-images-as-spatial-data">Understanding "Images" as Spatial Data</h2>
+<p>In GIS, an <strong>image isn't just a picture</strong>—it's a <strong>georeferenced grid of measurements</strong>. This week covers the core <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> image formats you'll encounter in spatial analysis, from the universal <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> to legacy formats still hiding in old data archives.</p>
+<p><strong>Core concept</strong>: Every pixel in a spatial <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> has a <strong>location</strong> (coordinates) and a <strong>value</strong> (measurement). The format determines how that information is stored and accessed.</p>
+<hr></hr>
+<h2 id="1-geotiff-tif-tiff-—-the-universal-raster-standard">1. GeoTIFF (.tif, .tiff) — The Universal Raster Standard</h2>
+<p><strong>What it is</strong>: Tagged Image File Format (TIFF) with embedded spatial reference information. The most common format for <strong>all</strong> <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> spatial data.</p>
+<h3 id="why-geotiff-dominates">Why GeoTIFF Dominates</h3>
+<p>A regular TIFF is just an image. A <strong><a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a></strong> adds:</p>
+<ul>
+<li><strong>Coordinate Reference System (CRS)</strong>: What projection? What datum?</li>
+<li><strong>Geotransform</strong>: Where in the world is this image? (pixel size, rotation, origin)</li>
+<li><strong>Bounding coordinates</strong>: Geographic extent</li>
+<li><strong>NoData values</strong>: Which pixels mean "no data here"?</li>
+</ul>
+<p><strong>Result</strong>: Self-contained spatial dataset—no separate metadata files needed.</p>
+<h3 id="multi-band-structure">Multi-Band Structure</h3>
+<p>GeoTIFFs store <strong>multiple bands</strong> (layers) in one file:</p>
+<p><strong>True color imagery (RGB):</strong></p>
+<ul>
+<li>Band 1: Red channel (0.63-0.69 µm)</li>
+<li>Band 2: Green channel (0.52-0.60 µm)</li>
+<li>Band 3: Blue channel (0.45-0.52 µm)</li>
+</ul>
+<p><strong>Landsat 8 (multispectral):</strong></p>
+<ul>
+<li>Band 1: Coastal/Aerosol</li>
+<li>Band 2: Blue</li>
+<li>Band 3: Green</li>
+<li>Band 4: Red</li>
+<li>Band 5: NIR (near-infrared)</li>
+<li>Band 6-7: SWIR (shortwave infrared)</li>
+<li>Band 10-11: Thermal</li>
+</ul>
+<p><strong>Digital Elevation Model (DEM):</strong></p>
+<ul>
+<li>Band 1: Elevation values (meters or feet)</li>
+</ul>
+<h3 id="common-sources">Common Sources</h3>
+<p><strong>Satellite imagery:</strong></p>
+<ul>
+<li>Landsat (30m): USGS EarthExplorer, Google Earth Engine</li>
+<li>Sentinel-2 (10m): Copernicus Hub, Google Earth Engine</li>
+<li>NAIP (1m): USGS, state GIS portals, Google Earth Engine</li>
+</ul>
+<p><strong>Elevation data:</strong></p>
+<ul>
+<li>SRTM (30m global): USGS, CGIAR-CSI, Google Earth Engine</li>
+<li>USGS 3DEP (10m U.S.): National Map, Google Earth Engine</li>
+<li>LiDAR-derived DEMs: State/local portals</li>
+</ul>
+<p><strong>Derived products:</strong></p>
+<ul>
+<li>Land cover classifications (NLCD, ESA WorldCover)</li>
+<li>Climate grids (PRISM, WorldClim)</li>
+<li>Vegetation indices (NDVI, EVI)</li>
+</ul>
+<h3 id="working-with-geotiff-in-qgis">Working with GeoTIFF in QGIS</h3>
+<p><strong>Load:</strong></p>
+<ol>
+<li><strong>Drag and drop</strong> <code>.tif</code> file into QGIS</li>
+<li>Or: <strong>Layer → Add Layer → Add <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">Raster</a> Layer</strong></li>
+</ol>
+<p><strong>Inspect properties:</strong></p>
+<ul>
+<li>Right-click layer → <strong>Properties</strong></li>
+<li><strong>Information tab</strong>: CRS, extent, pixel size, band count, data type</li>
+<li><strong>Symbology tab</strong>: Rendering (singleband gray, multiband color, paletted)</li>
+<li><strong>Histogram tab</strong>: Data distribution</li>
+</ul>
+<p><strong>Common operations:</strong></p>
+<pre><code># Calculate NDVI (Raster Calculator)
+("NIR@1" - "Red@1") / ("NIR@1" + "Red@1")
+
+# Clip to study area
+Raster → Extraction → Clip Raster by Extent
+
+# Reproject
+Raster → Projections → Warp (Reproject)
+
+# Extract values at points
+Processing → Raster analysis → Sample raster values
+</code></pre><h3 id="compression-options">Compression Options</h3>
+<p><strong>DEFLATE (lossless):</strong></p>
+<pre><code class="lang-bash">gdal_translate -co COMPRESS=DEFLATE -co PREDICTOR=2 input.tif output.tif
+</code></pre>
+<ul>
+<li>Best for: Elevation data, scientific measurements</li>
+<li>PREDICTOR=2: Better compression for continuous data</li>
+</ul>
+<p><strong>LZW (lossless):</strong></p>
+<pre><code class="lang-bash">gdal_translate -co COMPRESS=LZW input.tif output.tif
+</code></pre>
+<ul>
+<li>Best for: Classified data (land cover, categorical rasters)</li>
+</ul>
+<p><strong>JPEG (lossy):</strong></p>
+<pre><code class="lang-bash">gdal_translate -co COMPRESS=JPEG -co JPEG_QUALITY=85 input.tif output.tif
+</code></pre>
+<ul>
+<li>Best for: Imagery where visual quality matters more than exact values</li>
+<li>Quality 85-95 balances size and fidelity</li>
+</ul>
+<h3 id="geotiff-advantages">GeoTIFF Advantages</h3>
+<p>✅ <strong>Universal support</strong> — Every GIS software reads <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a><br></br>✅ <strong>Self-contained</strong> — Embedded CRS, no separate <code>.prj</code> file<br></br>✅ <strong>Multi-band</strong> — Store all spectral bands in one file<br></br>✅ <strong>Flexible compression</strong> — Choose lossless or lossy<br></br>✅ <strong>BigTIFF support</strong> — No 4GB limit  </p>
+<h3 id="geotiff-limitations">GeoTIFF Limitations</h3>
+<p>❌ <strong>Large file sizes</strong> — High-resolution imagery = multi-GB files<br></br>❌ <strong>Not web-optimized</strong> — Full download required (see COG next week)<br></br>❌ <strong>Single CRS</strong> — One projection per file  </p>
+<h3 id="when-to-use">When to Use</h3>
+<p><strong>Use <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> for:</strong></p>
+<ul>
+<li>Desktop GIS analysis</li>
+<li>Satellite imagery processing</li>
+<li>Elevation models (DEMs)</li>
+<li>Archival storage</li>
+<li>Multi-band scientific data</li>
+</ul>
+<hr></hr>
+<h2 id="2-jpeg-with-world-file-jpg--jgw-—-the-georeferenced-photo">2. JPEG with World File (.jpg + .jgw) — The Georeferenced Photo</h2>
+<p><strong>What it is</strong>: Standard JPEG image + separate world file that provides spatial reference.</p>
+<h3 id="the-world-file-system">The World File System</h3>
+<p>A <strong>world file</strong> is a tiny text file with 6 lines defining the geotransform:</p>
+<p><strong>Example: <code>aerial_photo.jgw</code></strong></p>
+<pre><code>0.5                  ← pixel width in map units (0.5 meters)
+0.0                  ← rotation term (usually 0)
+0.0                  ← rotation term (usually 0)
+-0.5                 ← pixel height (negative = north-up)
+123456.789           ← X coordinate of upper-left pixel center
+987654.321           ← Y coordinate of upper-left pixel center
+</code></pre><p><strong>File naming</strong>:</p>
+<ul>
+<li><code>image.jpg</code> → <code>image.jgw</code> (common)</li>
+<li><code>image.jpg</code> → <code>image.jpgw</code> (alternative)</li>
+</ul>
+<h3 id="why-jpeg--world-file">Why JPEG + World File?</h3>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li><strong>Small file sizes</strong> — JPEG compression excellent for photos</li>
+<li><strong>Universal viewing</strong> — Any image viewer opens JPEGs (non-GIS users)</li>
+<li><strong>Legacy standard</strong> — Old aerial photos often distributed this way</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li><strong>Lossy compression</strong> — Not suitable for analysis requiring exact values</li>
+<li><strong>No CRS embedded</strong> — Requires separate <code>.prj</code> file for projection</li>
+<li><strong>No band metadata</strong> — Typically 3-band RGB only</li>
+</ul>
+<h3 id="common-sources">Common Sources</h3>
+<ul>
+<li><strong>Historical aerial photography</strong> (pre-digital era scans)</li>
+<li><strong>Orthophotos</strong> (georectified aerial photos)</li>
+<li><strong>Field photos</strong> with GPS cameras</li>
+<li><strong>Exported web map images</strong></li>
+</ul>
+<h3 id="using-jpegworld-in-qgis">Using JPEG+World in QGIS</h3>
+<p><strong>Load:</strong></p>
+<ol>
+<li>Ensure <strong>three files</strong> present:<ul>
+<li><code>photo.jpg</code> (image)</li>
+<li><code>photo.jgw</code> (world file)</li>
+<li><code>photo.prj</code> (projection, optional but recommended)</li>
+</ul>
+</li>
+<li><strong>Drag <code>photo.jpg</code></strong> into QGIS</li>
+<li>QGIS automatically reads <code>.jgw</code> and <code>.prj</code></li>
+</ol>
+<p><strong>If CRS missing:</strong></p>
+<ul>
+<li>Right-click layer → <strong>Set CRS</strong></li>
+<li>Choose appropriate coordinate system</li>
+</ul>
+<p><strong>Export with world file:</strong></p>
+<ol>
+<li><strong>Project → Import/Export → Export Map to Image</strong></li>
+<li>Check <strong>"Save world file"</strong></li>
+<li>QGIS creates <code>.jpgw</code> automatically</li>
+</ol>
+<h3 id="when-to-use">When to Use</h3>
+<p><strong>Use JPEG+World for:</strong></p>
+<ul>
+<li>Sharing georeferenced photos with non-GIS users</li>
+<li>Reducing file sizes for visual display (not analysis)</li>
+<li>Historical aerial photos (legacy format)</li>
+<li>Quick web map exports</li>
+</ul>
+<p><strong>Avoid for:</strong></p>
+<ul>
+<li>Quantitative analysis (lossy compression)</li>
+<li>Multispectral imagery (limited to RGB)</li>
+<li>Scientific measurements</li>
+</ul>
+<hr></hr>
+<h2 id="3-png-with-world-file-png--pgw-—-the-lossless-web-image">3. PNG with World File (.png + .pgw) — The Lossless Web Image</h2>
+<p><strong>What it is</strong>: Portable Network Graphics image + world file. Like JPEG+World, but <strong>lossless compression</strong>.</p>
+<h3 id="png-vs-jpeg">PNG vs. JPEG</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Aspect</strong></th>
+<th><strong>JPEG</strong></th>
+<th><strong>PNG</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Compression</strong></td>
+<td>Lossy (visual quality)</td>
+<td>Lossless (exact pixels)</td>
+</tr>
+<tr>
+<td><strong>File size</strong></td>
+<td>Smaller</td>
+<td>Larger</td>
+</tr>
+<tr>
+<td><strong>Best for</strong></td>
+<td>Photos, natural imagery</td>
+<td>Graphics, screenshots, text</td>
+</tr>
+<tr>
+<td><strong>Transparency</strong></td>
+<td>No</td>
+<td>Yes (alpha channel)</td>
+</tr>
+<tr>
+<td><strong>Color depth</strong></td>
+<td>24-bit (16.7M colors)</td>
+<td>Up to 48-bit</td>
+</tr>
+</tbody>
+</table>
+<h3 id="world-file-format">World File Format</h3>
+<p>Same as JPEG world files:</p>
+<p><strong>Example: <code>screenshot.pgw</code></strong></p>
+<pre><code>1.0                  ← 1 meter per pixel
+0.0
+0.0
+-1.0                 ← negative = north-up
+500000.0             ← X coordinate (easting)
+4000000.0            ← Y coordinate (northing)
+</code></pre><p><strong>File naming</strong>:</p>
+<ul>
+<li><code>image.png</code> → <code>image.pgw</code> (common)</li>
+<li><code>image.png</code> → <code>image.pngw</code> (alternative)</li>
+</ul>
+<h3 id="common-uses">Common Uses</h3>
+<p><strong>Web map exports:</strong></p>
+<ul>
+<li>Export styled QGIS map as PNG</li>
+<li>Maintain georeferencing with <code>.pgw</code></li>
+<li>Lossless for text labels, sharp boundaries</li>
+</ul>
+<p><strong>Screenshots of GIS software:</strong></p>
+<ul>
+<li>Capture analysis results</li>
+<li>Document workflows</li>
+<li>Share exact visual representation</li>
+</ul>
+<p><strong>Graphics with spatial reference:</strong></p>
+<ul>
+<li>Logos on maps</li>
+<li>Legends with coordinates</li>
+<li>Transparent overlays</li>
+</ul>
+<h3 id="using-pngworld-in-qgis">Using PNG+World in QGIS</h3>
+<p><strong>Load:</strong></p>
+<ol>
+<li>Ensure files present: <code>map.png</code>, <code>map.pgw</code>, <code>map.prj</code></li>
+<li>Drag <code>map.png</code> into QGIS</li>
+<li>QGIS reads world file automatically</li>
+</ol>
+<p><strong>Export with world file:</strong></p>
+<ol>
+<li><strong>Project → Import/Export → Export Map to Image</strong></li>
+<li>Choose <strong>PNG</strong> format</li>
+<li>Check <strong>"Save world file"</strong></li>
+<li>Result: <code>output.png</code> + <code>output.pgw</code> + <code>output.prj</code></li>
+</ol>
+<h3 id="transparency-support">Transparency Support</h3>
+<p>PNG supports <strong>alpha channel</strong> (transparency):</p>
+<ul>
+<li>Useful for overlay graphics</li>
+<li>Logos on web maps</li>
+<li>Transparent NoData areas</li>
+</ul>
+<p><strong>Create transparent NoData in QGIS:</strong></p>
+<ol>
+<li>Layer Properties → <strong>Transparency</strong></li>
+<li>Set <strong>NoData value</strong> or <strong>transparent color</strong></li>
+<li>Export as PNG</li>
+</ol>
+<h3 id="when-to-use">When to Use</h3>
+<p><strong>Use PNG+World for:</strong></p>
+<ul>
+<li>Lossless map exports</li>
+<li>Graphics with text/labels</li>
+<li>Transparent overlays</li>
+<li>Screenshots with georeferencing</li>
+<li>Web map images</li>
+</ul>
+<p><strong>Avoid for:</strong></p>
+<ul>
+<li>Large imagery datasets (use <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a>)</li>
+<li>Multispectral analysis (limited bands)</li>
+<li>High-color-depth scientific data</li>
+</ul>
+<hr></hr>
+<h2 id="4-esri-ascii-grid-asc-txt-—-the-human-readable-raster">4. ESRI ASCII Grid (.asc, .txt) — The Human-Readable Raster</h2>
+<p><strong>What it is</strong>: Plain text <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> format where <strong>every pixel value is written as text</strong>. Simple, readable, inefficient.</p>
+<h3 id="file-structure">File Structure</h3>
+<p><strong>Example: Small 5×5 elevation grid</strong></p>
+<pre><code>ncols         5
+nrows         5
+xllcorner     123456.0
+yllcorner     987654.0
+cellsize      10.0
+NODATA_value  -9999
+45.2 46.1 44.8 47.3 48.9
+43.7 45.3 46.0 46.8 47.2
+42.1 43.9 44.5 45.1 46.3
+40.8 42.2 43.0 43.8 45.0
+39.5 40.7 41.4 42.1 43.5
+</code></pre><p><strong>Header metadata:</strong></p>
+<ul>
+<li><code>ncols</code> / <code>nrows</code>: Grid dimensions</li>
+<li><code>xllcorner</code> / <code>yllcorner</code>: Lower-left corner coordinates</li>
+<li><code>cellsize</code>: Pixel size (same in X and Y)</li>
+<li><code>NODATA_value</code>: Code for missing data</li>
+</ul>
+<h3 id="why-ascii-grid-exists">Why ASCII Grid Exists</h3>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li><strong>Human-readable</strong> — Open in text editor, inspect values</li>
+<li><strong>Universal</strong> — Any software can parse text</li>
+<li><strong>Simple</strong> — No binary format complexity</li>
+<li><strong>Debugging</strong> — Easy to verify data correctness</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li><strong>Massive file sizes</strong> — 10-100× larger than binary formats</li>
+<li><strong>Slow I/O</strong> — Text parsing much slower than binary reads</li>
+<li><strong>Limited metadata</strong> — No CRS embedded (requires <code>.prj</code> file)</li>
+<li><strong>No compression</strong> — Every digit written explicitly</li>
+</ul>
+<h3 id="common-sources">Common Sources</h3>
+<p><strong>Modeling outputs:</strong></p>
+<ul>
+<li>Hydrological models (flow direction, accumulation)</li>
+<li>Terrain analysis (slope, aspect)</li>
+<li>Species distribution models</li>
+<li>Academic research software (legacy exports)</li>
+</ul>
+<p><strong>Data interchange:</strong></p>
+<ul>
+<li>Sharing data between incompatible software</li>
+<li>Educational datasets (easy to inspect)</li>
+<li>Manual data creation (small grids)</li>
+</ul>
+<h3 id="using-ascii-grid-in-qgis">Using ASCII Grid in QGIS</h3>
+<p><strong>Load:</strong></p>
+<ol>
+<li><strong>Drag <code>.asc</code> file</strong> into QGIS</li>
+<li>Or: <strong>Layer → Add Layer → Add <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">Raster</a> Layer</strong></li>
+<li>QGIS converts to internal format for display</li>
+</ol>
+<p><strong>Assign CRS (if missing):</strong></p>
+<ol>
+<li>Right-click layer → <strong>Set Layer CRS</strong></li>
+<li>Choose projection matching coordinate values</li>
+</ol>
+<p><strong>Export to ASCII:</strong></p>
+<ol>
+<li>Right-click layer → <strong>Export → Save As</strong></li>
+<li>Format: <strong>Arc/Info ASCII Grid</strong></li>
+<li>QGIS writes header + values</li>
+</ol>
+<h3 id="when-to-use">When to Use</h3>
+<p><strong>Use ASCII Grid for:</strong></p>
+<ul>
+<li>Quick inspection of <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> values</li>
+<li>Data interchange between incompatible tools</li>
+<li>Educational examples (show actual values)</li>
+<li>Manual small-grid creation</li>
+<li>Debugging spatial analysis</li>
+</ul>
+<p><strong>Avoid for:</strong></p>
+<ul>
+<li>Large datasets (file size explosion)</li>
+<li>Production workflows (too slow)</li>
+<li>Web delivery (inefficient)</li>
+<li>Archival storage (<a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> better)</li>
+</ul>
+<hr></hr>
+<h2 id="5-esri-grid-—-the-legacy-directory-format">5. ESRI GRID — The Legacy Directory Format</h2>
+<p><strong>What it is</strong>: Binary <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> format from ESRI Arc/INFO (1980s-1990s). <strong>Directory-based</strong>, not a single file.</p>
+<h3 id="structure">Structure</h3>
+<p><strong>Directory with multiple files:</strong></p>
+<pre><code>elevation/
+├── dblbnd.adf       ← Bounding coordinates
+├── hdr.adf          ← Header (dimensions, cell size)
+├── sta.adf          ← Statistics
+├── vat.adf          ← Value Attribute Table (for integer grids)
+├── w001001.adf      ← Data tiles
+├── w001001x.adf     ← Index files
+└── info/            ← Subdirectory with metadata
+    ├── arc.dir
+    └── arc0000.dat
+</code></pre><h3 id="why-esri-grid-exists">Why ESRI GRID Exists</h3>
+<p><strong>Historical context:</strong></p>
+<ul>
+<li><strong>Pre-<a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> era</strong> (1980s-1990s)</li>
+<li>ESRI's native <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> format for Arc/INFO</li>
+<li>Designed for computational efficiency (tiled storage)</li>
+<li>Legacy format still encountered in old datasets</li>
+</ul>
+<h3 id="limitations">Limitations</h3>
+<p><strong>Problems:</strong></p>
+<ul>
+<li><strong>Complex structure</strong> — Dozens of files in directory</li>
+<li><strong>Platform-specific</strong> — Naming restrictions (8.3 DOS filenames)</li>
+<li><strong>No compression</strong> — Wastes disk space</li>
+<li><strong>Proprietary</strong> — ESRI format, limited non-ESRI support</li>
+<li><strong>Deprecated</strong> — ESRI recommends <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> now</li>
+</ul>
+<h3 id="when-youll-encounter-it">When You'll Encounter It</h3>
+<ul>
+<li><strong>Old projects</strong> (pre-2000 vintage)</li>
+<li><strong>Legacy archives</strong> (university/government data)</li>
+<li><strong>ArcGIS outputs</strong> (older workflows still use it)</li>
+<li><strong>Historical datasets</strong> (elevation, land cover from 1990s)</li>
+</ul>
+<h3 id="working-with-esri-grid-in-qgis">Working with ESRI GRID in QGIS</h3>
+<p><strong>Load:</strong></p>
+<ol>
+<li><strong>Add <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">Raster</a> Layer</strong> → Navigate to GRID directory</li>
+<li>Select directory (not individual files)</li>
+<li>QGIS uses GDAL driver to read</li>
+</ol>
+<p><strong>Convert to <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a>:</strong></p>
+<ol>
+<li>Right-click layer → <strong>Export → Save As</strong></li>
+<li>Format: <strong><a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a></strong></li>
+<li>Choose compression (DEFLATE recommended)</li>
+</ol>
+<p><strong>Command-line conversion:</strong></p>
+<pre><code class="lang-bash">gdal_translate -of GTiff -co COMPRESS=DEFLATE elevation/ elevation.tif
+</code></pre>
+<h3 id="recommendation">Recommendation</h3>
+<p><strong>Always convert to <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a></strong> when encountering ESRI GRID:</p>
+<ul>
+<li>Single file (easier management)</li>
+<li>Compression (smaller size)</li>
+<li>Better cross-platform support</li>
+<li>Modern standard</li>
+</ul>
+<hr></hr>
+<h2 id="format-comparison-table">Format Comparison Table</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Format</strong></th>
+<th><strong>Compression</strong></th>
+<th><strong>Multi-Band</strong></th>
+<th><strong>Embedded CRS</strong></th>
+<th><strong>File Type</strong></th>
+<th><strong>Best For</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a></strong></td>
+<td>✅ Yes (various)</td>
+<td>✅ Yes</td>
+<td>✅ Yes</td>
+<td>Single file</td>
+<td>Desktop analysis, archival</td>
+</tr>
+<tr>
+<td><strong>JPEG + World</strong></td>
+<td>✅ Lossy</td>
+<td>❌ RGB only</td>
+<td>⚠️ Separate .prj</td>
+<td>Two files</td>
+<td>Visual sharing, historical photos</td>
+</tr>
+<tr>
+<td><strong>PNG + World</strong></td>
+<td>✅ Lossless</td>
+<td>❌ Limited</td>
+<td>⚠️ Separate .prj</td>
+<td>Two files</td>
+<td>Web exports, graphics</td>
+</tr>
+<tr>
+<td><strong>ASCII Grid</strong></td>
+<td>❌ None</td>
+<td>❌ Single band</td>
+<td>⚠️ Separate .prj</td>
+<td>Single text file</td>
+<td>Debugging, data interchange</td>
+</tr>
+<tr>
+<td><strong>ESRI GRID</strong></td>
+<td>❌ None</td>
+<td>❌ Single band</td>
+<td>✅ Yes</td>
+<td>Directory</td>
+<td>Legacy only (convert to <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a>)</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<h2 id="the-bottom-line">The Bottom Line</h2>
+<p><strong><a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> is the standard</strong> for <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> spatial analysis:</p>
+<ul>
+<li>Self-contained (embedded CRS, no separate files)</li>
+<li>Flexible compression</li>
+<li>Multi-band support</li>
+<li>Universal compatibility</li>
+</ul>
+<p><strong>World files (JPEG, PNG)</strong> are useful for:</p>
+<ul>
+<li>Sharing visual maps (non-GIS users)</li>
+<li>Web graphics</li>
+<li>Historical aerial photos</li>
+</ul>
+<p><strong>ASCII Grid</strong> is for:</p>
+<ul>
+<li>Quick inspection</li>
+<li>Debugging</li>
+<li>Data interchange (when nothing else works)</li>
+</ul>
+<p><strong>ESRI GRID</strong> is legacy—convert to <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> immediately.</p>
+<hr></hr>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li>Week 6: Cloud Optimized <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> (COG) &amp; JPEG2000 — Modern web-optimized rasters</li>
+<li>Week 8: NetCDF — Multi-dimensional scientific arrays</li>
+<li>Week 9: HDF5 — Hierarchical scientific data</li>
+<li><a href="https://gdal.org/drivers/raster/index.html" target="_blank">GDAL Raster Formats</a> — Comprehensive format documentation</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03_introducing_storymaps_on_arcgis_online.html" class="navigation navigation-prev " aria-label="Previous page: 03 - Introducing StoryMaps on ArcGIS Online">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../week06/" class="navigation navigation-next " aria-label="Next page: Week 06 - More Raster & Remote Sensing">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SDFotW - Raster Image Formats (GeoTIFF, JPEG+World, PNG+World)","level":"1.7.5","depth":2,"next":{"title":"Week 06 - More Raster & Remote Sensing","level":"1.8","depth":1,"path":"week06/README.md","ref":"week06/README.md","articles":[{"title":"00 - Basic Remote Sensing with Google Earth Engine","level":"1.8.1","depth":2,"path":"week06/00_basic_remote_sensing_with_google_earth_engine.md","ref":"week06/00_basic_remote_sensing_with_google_earth_engine.md","articles":[]},{"title":"01 - Modeling Movement with Google Earth Engine","level":"1.8.2","depth":2,"path":"week06/01_modeling_movement_with_google_earth_engine.md","ref":"week06/01_modeling_movement_with_google_earth_engine.md","articles":[]},{"title":"02 - Sampling & Interpolation with QGIS","level":"1.8.3","depth":2,"path":"week06/02_sampling_and_interpolation_with_qgis.md","ref":"week06/02_sampling_and_interpolation_with_qgis.md","articles":[]},{"title":"03 - Introducing Planet.com Satellite Imagery","level":"1.8.4","depth":2,"path":"week06/03_introducing_planet_com_satellite_imagery.md","ref":"week06/03_introducing_planet_com_satellite_imagery.md","articles":[]},{"title":"SDFotW - Cloud Optimized GeoTIFF & JPEG2000","level":"1.8.5","depth":2,"path":"week06/spatial_data_format_of_the_week.md","ref":"week06/spatial_data_format_of_the_week.md","articles":[]}]},"previous":{"title":"03 - Introducing StoryMaps on ArcGIS Online","level":"1.7.4","depth":2,"path":"week05/03_introducing_storymaps_on_arcgis_online.md","ref":"week05/03_introducing_storymaps_on_arcgis_online.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pubdate":"2025","author":"Stace Maples","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The People's Guide to Spatial Data","gitbook":"*"},"file":{"path":"week05/spatial_data_format_of_the_week.md","mtime":"2026-01-28T17:32:51.704Z","type":"markdown"},"gitbook":{"version":"6.1.5","time":"2026-01-28T17:32:59.999Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

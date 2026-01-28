@@ -1,0 +1,1554 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>SDFotW - NetCDF & Multi-Dimensional Arrays · The People's Guide to Spatial Data</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.5">
+        <meta name="author" content="Stace Maples">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../week09/" />
+    
+    
+    <link rel="prev" href="03_introducing_model_builder_in_qgis.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../week00/">
+            
+                <a href="../week00/">
+            
+                    
+                    Week 00 - Getting Ready for the Course
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../week00/00_things_you_need_to_know_about_your_computer.html">
+            
+                <a href="../week00/00_things_you_need_to_know_about_your_computer.html">
+            
+                    
+                    00 - Things you need to know about your computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../week00/01_things_you_need_to_know_about_gis_data_on_your_computer.html">
+            
+                <a href="../week00/01_things_you_need_to_know_about_gis_data_on_your_computer.html">
+            
+                    
+                    01 - Things you need to know about GIS data on your computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../week00/02_logging_in_to_google_earth_engine.html">
+            
+                <a href="../week00/02_logging_in_to_google_earth_engine.html">
+            
+                    
+                    02 - Logging in to Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../week00/03_installing_qgis_and_plugins.html">
+            
+                <a href="../week00/03_installing_qgis_and_plugins.html">
+            
+                    
+                    03 - Installing QGIS and Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../week00/04_submitting_homework_and_getting_help.html">
+            
+                <a href="../week00/04_submitting_homework_and_getting_help.html">
+            
+                    
+                    04 - Submitting Homework and Getting Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../week00/05_help_fix_the_labs.html">
+            
+                <a href="../week00/05_help_fix_the_labs.html">
+            
+                    
+                    05 - Help Fix the Labs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../week00/06_introducing_qgis_with_basic_cartographic_design.html">
+            
+                <a href="../week00/06_introducing_qgis_with_basic_cartographic_design.html">
+            
+                    
+                    06 - Introducing QGIS with Basic Cartographic Design
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../week00/spatial_data_format_of_the_week.html">
+            
+                <a href="../week00/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Shapefile Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../week01/">
+            
+                <a href="../week01/">
+            
+                    
+                    Week 01 - Lining it Up & Cartographic Presentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../week01/00_introduction_to_formats_and_finding_data.html">
+            
+                <a href="../week01/00_introduction_to_formats_and_finding_data.html">
+            
+                    
+                    00 - Introduction to Data Formats & Finding Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../week01/01_introducing_google_earth_engine_with_coordinates_and_pixels.html">
+            
+                <a href="../week01/01_introducing_google_earth_engine_with_coordinates_and_pixels.html">
+            
+                    
+                    01 - Coordinates & Pixels with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../week01/02_projection_error_measurement_with_qgis.html">
+            
+                <a href="../week01/02_projection_error_measurement_with_qgis.html">
+            
+                    
+                    02 - Projection Error Measurement with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../week01/03_great_circles_and_more_cartographic_tips_and_tricks_in_qgis.html">
+            
+                <a href="../week01/03_great_circles_and_more_cartographic_tips_and_tricks_in_qgis.html">
+            
+                    
+                    03 - Great Circles and More Cartographic Tips & Tricks in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../week01/Census_Data_Download_with_SimplyAnalytics.html">
+            
+                <a href="../week01/Census_Data_Download_with_SimplyAnalytics.html">
+            
+                    
+                    Census Data Download with SimplyAnalytics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../week01/spatial_data_format_of_the_week.html">
+            
+                <a href="../week01/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - GeoJSON Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../week02/">
+            
+                <a href="../week02/">
+            
+                    
+                    Week 02 - Making & Collecting Data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../week02/00_georeferencing_with_qgis_and_allmaps_org.html">
+            
+                <a href="../week02/00_georeferencing_with_qgis_and_allmaps_org.html">
+            
+                    
+                    00 - Georeferencing with QGIS and AllMaps.org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../week02/01_basic_data_creation_with_geojsonio_and_qgis.html">
+            
+                <a href="../week02/01_basic_data_creation_with_geojsonio_and_qgis.html">
+            
+                    
+                    01 - Basic Data Creation with GeoJSON.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../week02/02_advanced_data_creation_with_qgis.html">
+            
+                <a href="../week02/02_advanced_data_creation_with_qgis.html">
+            
+                    
+                    02 - Advanced Data Creation with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../week02/03_introducing_arcgis_fieldmaps_and_arcgis_online_for_data_collection.html">
+            
+                <a href="../week02/03_introducing_arcgis_fieldmaps_and_arcgis_online_for_data_collection.html">
+            
+                    
+                    03 - Introducing ArcGIS FieldMaps & ArcGIS Online for Data Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../week02/spatial_data_format_of_the_week.html">
+            
+                <a href="../week02/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - GPX & GPS Exchange Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../week03/">
+            
+                <a href="../week03/">
+            
+                    
+                    Week 03 - Tables & Queries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../week03/00_basic_table_structures_and_operations_in_qgis.html">
+            
+                <a href="../week03/00_basic_table_structures_and_operations_in_qgis.html">
+            
+                    
+                    00 - Basic Table Structures & Operations in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../week03/01_sql_operations_in_qgis.html">
+            
+                <a href="../week03/01_sql_operations_in_qgis.html">
+            
+                    
+                    01 - SQL Operations in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../week03/02_tablular_vector_data_in_google_earth_engine.html">
+            
+                <a href="../week03/02_tablular_vector_data_in_google_earth_engine.html">
+            
+                    
+                    02 - Tabular/Vector Data in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../week03/03_using_sql_to_subset_big_data_in_the_stanford_data_farm.html">
+            
+                <a href="../week03/03_using_sql_to_subset_big_data_in_the_stanford_data_farm.html">
+            
+                    
+                    03 - Using SQL to subset BIG DATA in the Stanford Data Farm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../week03/spatial_data_format_of_the_week.html">
+            
+                <a href="../week03/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Database Formats (GeoPackage, Spatialite, PostGIS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../week04/">
+            
+                <a href="../week04/">
+            
+                    
+                    Week 04 - Basic Vector Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../week04/00_buffering_and_overlay_analysis_in_qgis.html">
+            
+                <a href="../week04/00_buffering_and_overlay_analysis_in_qgis.html">
+            
+                    
+                    00 - Buffering & Overlay Analysis in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../week04/01_areal_interpolation_of_attributes_with_qgis.html">
+            
+                <a href="../week04/01_areal_interpolation_of_attributes_with_qgis.html">
+            
+                    
+                    01 - Areal Interpolation of Attributes with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../week04/02_network_analysis_with_qgis.html">
+            
+                <a href="../week04/02_network_analysis_with_qgis.html">
+            
+                    
+                    02 - Network Analysis with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../week04/03_introducing_simplyanalytics_com.html">
+            
+                <a href="../week04/03_introducing_simplyanalytics_com.html">
+            
+                    
+                    03 - Introducing SimplyAnalytics.com
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../week04/spatial_data_format_of_the_week.html">
+            
+                <a href="../week04/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Network Datasets & Topology (DIME Format)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../week05/">
+            
+                <a href="../week05/">
+            
+                    
+                    Week 05 - Basic Raster Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../week05/00_basic_raster_analysis_with_google_earth_engine.html">
+            
+                <a href="../week05/00_basic_raster_analysis_with_google_earth_engine.html">
+            
+                    
+                    00 - Basic Raster Analysis with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../week05/01_terrain_and_visibility_with_qgis.html">
+            
+                <a href="../week05/01_terrain_and_visibility_with_qgis.html">
+            
+                    
+                    01 - Terrain & Visibility with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../week05/02_watershed_with_qgis_and_whitebox_tools.html">
+            
+                <a href="../week05/02_watershed_with_qgis_and_whitebox_tools.html">
+            
+                    
+                    02 - Watershed with QGIS & WhiteBox Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../week05/03_introducing_storymaps_on_arcgis_online.html">
+            
+                <a href="../week05/03_introducing_storymaps_on_arcgis_online.html">
+            
+                    
+                    03 - Introducing StoryMaps on ArcGIS Online
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../week05/spatial_data_format_of_the_week.html">
+            
+                <a href="../week05/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Raster Image Formats (GeoTIFF, JPEG+World, PNG+World)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../week06/">
+            
+                <a href="../week06/">
+            
+                    
+                    Week 06 - More Raster & Remote Sensing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../week06/00_basic_remote_sensing_with_google_earth_engine.html">
+            
+                <a href="../week06/00_basic_remote_sensing_with_google_earth_engine.html">
+            
+                    
+                    00 - Basic Remote Sensing with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../week06/01_modeling_movement_with_google_earth_engine.html">
+            
+                <a href="../week06/01_modeling_movement_with_google_earth_engine.html">
+            
+                    
+                    01 - Modeling Movement with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../week06/02_sampling_and_interpolation_with_qgis.html">
+            
+                <a href="../week06/02_sampling_and_interpolation_with_qgis.html">
+            
+                    
+                    02 - Sampling & Interpolation with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../week06/03_introducing_planet_com_satellite_imagery.html">
+            
+                <a href="../week06/03_introducing_planet_com_satellite_imagery.html">
+            
+                    
+                    03 - Introducing Planet.com Satellite Imagery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../week06/spatial_data_format_of_the_week.html">
+            
+                <a href="../week06/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Cloud Optimized GeoTIFF & JPEG2000
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../week07/">
+            
+                <a href="../week07/">
+            
+                    
+                    Week 07 - Web Mapping & APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../week07/00_making_and_serving_map_tiles_with_qgis.html">
+            
+                <a href="../week07/00_making_and_serving_map_tiles_with_qgis.html">
+            
+                    
+                    00 - Making & Serving Map Tiles with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../week07/01_geocoding_addresses_with_locator_stanford_edu_and_openrefine.html">
+            
+                <a href="../week07/01_geocoding_addresses_with_locator_stanford_edu_and_openrefine.html">
+            
+                    
+                    01 - Geocoding Addresses with locator.stanford.edu & OpenRefine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../week07/02_creating_and_hosting_a_webmap_using_maplibre_and_turf_js_and_github_pages.html">
+            
+                <a href="../week07/02_creating_and_hosting_a_webmap_using_maplibre_and_turf_js_and_github_pages.html">
+            
+                    
+                    02 - Creating & Hosting a WebMap, using MapLibre & Turf.js and Github Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../week07/03_introducing_openrefine_for_data_carpentry.html">
+            
+                <a href="../week07/03_introducing_openrefine_for_data_carpentry.html">
+            
+                    
+                    03 - Introducing OpenRefine for data carpentry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../week07/spatial_data_format_of_the_week.html">
+            
+                <a href="../week07/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - XYZ Tiles, WMS/WFS Web Services & IIIF for Historic Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Week 08 - Analytic Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="00_wildfire_detection_and_severity_measurement_in_google_earth_engine.html">
+            
+                <a href="00_wildfire_detection_and_severity_measurement_in_google_earth_engine.html">
+            
+                    
+                    00 - Wildfire Detection & Severity Measurement in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="01_suitability_modeling_in_qgis.html">
+            
+                <a href="01_suitability_modeling_in_qgis.html">
+            
+                    
+                    01 - Suitability Modeling in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="02_landcover_classification_and_change_detection_in_google_earth_engine.html">
+            
+                <a href="02_landcover_classification_and_change_detection_in_google_earth_engine.html">
+            
+                    
+                    02 - Landcover Classification & Change Detection in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="03_introducing_model_builder_in_qgis.html">
+            
+                <a href="03_introducing_model_builder_in_qgis.html">
+            
+                    
+                    03 - Introducing Model Builder in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.5" data-path="spatial_data_format_of_the_week.html">
+            
+                <a href="spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - NetCDF & Multi-Dimensional Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../week09/">
+            
+                <a href="../week09/">
+            
+                    
+                    Week 09 - Scaling, Code, Odds&Ends
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../week09/00_the_alphaearth_embedding_database_in_google_earth_engine.html">
+            
+                <a href="../week09/00_the_alphaearth_embedding_database_in_google_earth_engine.html">
+            
+                    
+                    00 - The AlphaEarth Embedding Database in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../week09/01_being_john_snow_in_a_python_notebook.html">
+            
+                <a href="../week09/01_being_john_snow_in_a_python_notebook.html">
+            
+                    
+                    01 - Being John Snow,... in a Python Notebook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../week09/02_photogrammetric_processing_of_drone_imagery.html">
+            
+                <a href="../week09/02_photogrammetric_processing_of_drone_imagery.html">
+            
+                    
+                    02 - Photogrammetric Processing of Drone Imagery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../week09/03_introducing_gdal_and_command_line_tools_on_stanford_farmshare.html">
+            
+                <a href="../week09/03_introducing_gdal_and_command_line_tools_on_stanford_farmshare.html">
+            
+                    
+                    03 - Introducing GDAL & Command Line Tools on Stanford Farmshare
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../week09/spatial_data_format_of_the_week.html">
+            
+                <a href="../week09/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - HDF5 & Hierarchical Scientific Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../week10/">
+            
+                <a href="../week10/">
+            
+                    
+                    Week 10 - Wrapping it all up
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../week10/00_final_project_guidelines.html">
+            
+                <a href="../week10/00_final_project_guidelines.html">
+            
+                    
+                    00 - Final Project Guidelines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../week10/01_storymaps_support_materials.html">
+            
+                <a href="../week10/01_storymaps_support_materials.html">
+            
+                    
+                    01 - StoryMaps Support Materials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../week10/02_guide_to_citation_of_spatial_data_and_software.html">
+            
+                <a href="../week10/02_guide_to_citation_of_spatial_data_and_software.html">
+            
+                    
+                    02 - Guide to Citation of Spatial Data & Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../week10/03_staces_crazy_list.html">
+            
+                <a href="../week10/03_staces_crazy_list.html">
+            
+                    
+                    03 - Stace's Crazy List of Additional GISci Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../week10/spatial_data_format_of_the_week.html">
+            
+                <a href="../week10/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Legacy & Esoteric Formats
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >SDFotW - NetCDF & Multi-Dimensional Arrays</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="spatial-data-format-of-the-week-netcdf-network-common-data-form">Spatial Data Format of the Week: NetCDF (Network Common Data Form)</h1>
+<h2 id="the-scientific-multi-dimensional-array-format">The Scientific Multi-Dimensional Array Format</h2>
+<p><strong>File extension</strong>: <code>.nc</code> or <code>.nc4</code></p>
+<p><strong>What it is</strong>: A self-describing, machine-independent format for storing <strong>array-oriented scientific data</strong>—particularly climate, oceanographic, atmospheric, and Earth system model outputs. If you work with time-series gridded data (temperature over time, sea surface height, precipitation), you work with NetCDF.</p>
+<h2 id="why-netcdf-exists">Why NetCDF Exists</h2>
+<h3 id="the-multi-dimensional-problem">The Multi-Dimensional Problem</h3>
+<p>Scientific data often has <strong>3+ dimensions</strong>:</p>
+<p><strong>Climate model output:</strong></p>
+<ul>
+<li><strong>Longitude</strong> (x): 1440 points</li>
+<li><strong>Latitude</strong> (y): 720 points</li>
+<li><strong>Time</strong>: 365 days × 30 years = 10,950 time steps</li>
+<li><strong>Variables</strong>: Temperature, precipitation, humidity, wind</li>
+</ul>
+<p><strong>Total size</strong>: 1440 × 720 × 10,950 × 4 variables = ~45 billion data points</p>
+<p><strong><a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> can't handle this</strong> (designed for 2D grids + bands).<br></br><strong>NetCDF can</strong>: Designed for <strong>n-dimensional arrays with metadata</strong>.</p>
+<h3 id="example-data-structure">Example Data Structure</h3>
+<pre><code>dimensions:
+    lon = 1440 (0.25° resolution)
+    lat = 720  (0.25° resolution)
+    time = 10950 (daily, 1990-2020)
+
+variables:
+    float temperature(time, lat, lon)
+        units: "degrees_celsius"
+        long_name: "2-meter air temperature"
+        _FillValue: -9999.0
+
+    float precipitation(time, lat, lon)
+        units: "mm/day"
+        long_name: "daily precipitation"
+        _FillValue: -9999.0
+</code></pre><h2 id="netcdf-structure">NetCDF Structure</h2>
+<h3 id="1-dimensions">1. Dimensions</h3>
+<p>Define array axes (lon, lat, time, depth, etc.)</p>
+<h3 id="2-variables">2. Variables</h3>
+<p>Multi-dimensional arrays with metadata:</p>
+<ul>
+<li><strong>Coordinate variables</strong>: lon, lat, time (dimension metadata)</li>
+<li><strong>Data variables</strong>: temperature, precipitation, wind_speed</li>
+</ul>
+<h3 id="3-attributes">3. Attributes</h3>
+<p>Metadata about variables and the dataset:</p>
+<ul>
+<li><strong>Global attributes</strong>: Dataset title, institution, creation date</li>
+<li><strong>Variable attributes</strong>: Units, missing value codes, scale factors</li>
+</ul>
+<h3 id="4-self-describing">4. Self-Describing</h3>
+<p><strong>Everything needed to understand the data is embedded</strong>:</p>
+<ul>
+<li>Coordinate system (lat/lon, projected, vertical)</li>
+<li>Units (Celsius, mm, m/s)</li>
+<li>Time encoding (days since 1900-01-01)</li>
+<li>Variable descriptions</li>
+</ul>
+<h2 id="common-netcdf-sources">Common NetCDF Sources</h2>
+<h3 id="climate-and-weather-data">Climate and Weather Data</h3>
+<p><strong>ERA5 Climate Reanalysis</strong> (ECMWF)</p>
+<ul>
+<li>Global climate data (1940-present)</li>
+<li>Hourly resolution</li>
+<li>Temperature, precipitation, wind, humidity</li>
+<li><strong>Google Earth Engine</strong>: Analysis-ready</li>
+</ul>
+<p><strong>PRISM Climate Data</strong> (Oregon State)</p>
+<ul>
+<li>High-resolution U.S. climate grids</li>
+<li>Monthly temperature and precipitation</li>
+<li>4km resolution</li>
+</ul>
+<p><strong>CMIP6 Climate Models</strong> (World Climate Research)</p>
+<ul>
+<li>Future climate <a href="../GLOSSARY.html#projections" class="glossary-term" title="In order to make a map, one has to represent the three-dimensional surface of the earth on a two-dimensional plane. There are different ways in which one might flatten the earth to represent it on a two-dimensional map, and these different flattening algorithms (all of which involve distortions of one kind or another) are referred to as map projections. Most maps published on the web are in the Web Mercator projection. Related terms: CRS (coordinate reference system) or the older term SRS (spatial reference system) https://www.gislounge.com/map-projection/">projections</a></li>
+<li>Multiple models and scenarios</li>
+<li>Hundreds of variables</li>
+</ul>
+<h3 id="oceanographic-data">Oceanographic Data</h3>
+<p><strong>Global Ocean Data Assimilation System (GODAS)</strong></p>
+<ul>
+<li>Sea surface temperature, salinity, currents</li>
+<li>Ocean heat content</li>
+<li>3D ocean state (lon, lat, depth, time)</li>
+</ul>
+<p><strong>Copernicus Marine Service</strong></p>
+<ul>
+<li>Global ocean monitoring</li>
+<li>Satellite + in-situ observations</li>
+</ul>
+<h3 id="satellite-products">Satellite Products</h3>
+<p><strong>MODIS/VIIRS</strong> (NASA)</p>
+<ul>
+<li>Global vegetation indices</li>
+<li>Sea surface temperature</li>
+<li>Aerosol optical depth</li>
+</ul>
+<p><strong>GPM (Global Precipitation Measurement)</strong></p>
+<ul>
+<li>Satellite precipitation estimates</li>
+<li>30-minute to monthly accumulations</li>
+</ul>
+<h2 id="working-with-netcdf-in-qgis">Working with NetCDF in QGIS</h2>
+<h3 id="loading-netcdf">Loading NetCDF</h3>
+<p><strong>Drag and drop</strong> <code>.nc</code> file into QGIS, or:</p>
+<ol>
+<li><strong>Layer → Add Layer → Add <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">Raster</a> Layer</strong></li>
+<li>Select <code>.nc</code> file</li>
+<li><strong>Choose variable</strong> from list</li>
+<li><strong>Choose time step</strong> (if temporal)</li>
+</ol>
+<p><strong>QGIS extracts one 2D slice</strong> (lon × lat) at a time.</p>
+<h3 id="temporal-netcdf-time-series">Temporal NetCDF (Time-Series)</h3>
+<p><strong>NetCDF with time dimension</strong> opens as <strong>multi-band <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a></strong>:</p>
+<ul>
+<li>Band 1 = Time step 1 (e.g., Jan 2020)</li>
+<li>Band 2 = Time step 2 (e.g., Feb 2020)</li>
+<li>Band 365 = Time step 365 (e.g., Dec 2020)</li>
+</ul>
+<p><strong>View time-series animation:</strong></p>
+<ol>
+<li><strong>Layer Properties → Temporal</strong></li>
+<li>Enable <strong>Dynamic Temporal Control</strong></li>
+<li>Use <strong>Temporal Controller</strong> panel to animate</li>
+</ol>
+<h3 id="netcdf-browser-plugin">NetCDF Browser Plugin</h3>
+<p><strong>Better NetCDF handling:</strong></p>
+<ol>
+<li><strong>Plugins → Manage and Install Plugins</strong></li>
+<li>Search: <strong>NetCDF Browser</strong></li>
+<li>Provides variable explorer and metadata viewer</li>
+</ol>
+<h2 id="working-with-netcdf-in-python">Working with NetCDF in Python</h2>
+<h3 id="xarray-the-netcdf-swiss-army-knife">xarray: The NetCDF Swiss Army Knife</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> xarray <span class="hljs-keyword">as</span> xr
+
+<span class="hljs-comment"># Open NetCDF file</span>
+ds = xr.open_dataset(<span class="hljs-string">'temperature_2020.nc'</span>)
+
+<span class="hljs-comment"># View structure</span>
+<span class="hljs-built_in">print</span>(ds)
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>&lt;xarray.Dataset&gt;
+Dimensions:  (lon: 1440, lat: 720, time: 365)
+Coordinates:
+  * lon      (lon) float32 -180.0 -179.75 ... 179.75
+  * lat      (lat) float32 -90.0 -89.75 ... 89.75
+  * time     (time) datetime64[ns] 2020-01-01 ... 2020-12-31
+Data variables:
+    temp     (time, lat, lon) float32 ...
+</code></pre><h3 id="extract-specific-location">Extract Specific Location</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># San Francisco time-series</span>
+sf = ds.sel(lon=-<span class="hljs-number">122.4</span>, lat=<span class="hljs-number">37.8</span>, method=<span class="hljs-string">'nearest'</span>)
+sf_temp = sf[<span class="hljs-string">'temp'</span>].values
+</code></pre>
+<h3 id="temporal-operations">Temporal Operations</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># Calculate annual mean</span>
+annual_mean = ds[<span class="hljs-string">'temp'</span>].mean(dim=<span class="hljs-string">'time'</span>)
+
+<span class="hljs-comment"># Seasonal means</span>
+winter = ds.sel(time=ds[<span class="hljs-string">'time.season'</span>] == <span class="hljs-string">'DJF'</span>)
+winter_mean = winter[<span class="hljs-string">'temp'</span>].mean(dim=<span class="hljs-string">'time'</span>)
+</code></pre>
+<h3 id="spatial-subsetting">Spatial Subsetting</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># Extract California</span>
+california = ds.sel(lon=<span class="hljs-built_in">slice</span>(-<span class="hljs-number">125</span>, -<span class="hljs-number">114</span>), lat=<span class="hljs-built_in">slice</span>(<span class="hljs-number">32</span>, <span class="hljs-number">42</span>))
+</code></pre>
+<h3 id="export-to-geotiff">Export to GeoTIFF</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> rioxarray
+
+<span class="hljs-comment"># Open with spatial reference</span>
+ds = xr.open_dataset(<span class="hljs-string">'temp.nc'</span>)
+ds = ds.rio.write_crs(<span class="hljs-string">"EPSG:4326"</span>)
+
+<span class="hljs-comment"># Export time step to GeoTIFF</span>
+ds[<span class="hljs-string">'temp'</span>].isel(time=<span class="hljs-number">0</span>).rio.to_raster(<span class="hljs-string">'temp_jan2020.tif'</span>)
+</code></pre>
+<h2 id="netcdf-variants">NetCDF Variants</h2>
+<h3 id="netcdf-3-classic">NetCDF-3 (Classic)</h3>
+<ul>
+<li>Original format</li>
+<li>2GB file size limit</li>
+<li>Limited data types</li>
+</ul>
+<h3 id="netcdf-4-hdf5-based">NetCDF-4 (HDF5-based)</h3>
+<ul>
+<li><strong>Modern standard</strong> (use this)</li>
+<li>No file size limits</li>
+<li>Compression support</li>
+<li>Better performance</li>
+</ul>
+<h3 id="netcdf-4-classic-model">NetCDF-4 Classic Model</h3>
+<ul>
+<li>NetCDF-4 features, NetCDF-3 structure</li>
+<li>Backward compatibility</li>
+</ul>
+<h2 id="netcdf-advantages">NetCDF Advantages</h2>
+<h3 id="1-multi-dimensional-native">1. Multi-Dimensional Native</h3>
+<ul>
+<li>Time-series, 3D, 4D+ data</li>
+<li>Not "hacked" like multi-band <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a></li>
+</ul>
+<h3 id="2-self-describing">2. Self-Describing</h3>
+<ul>
+<li><strong>CF Conventions</strong> (Climate and Forecast)</li>
+<li>Embedded metadata</li>
+<li>No separate documentation needed</li>
+</ul>
+<h3 id="3-efficient-storage">3. Efficient Storage</h3>
+<ul>
+<li><strong>Chunking</strong>: Optimize read patterns</li>
+<li><strong>Compression</strong>: LZW, DEFLATE (NetCDF-4)</li>
+<li><strong>Packed data</strong>: Store as int16, scale to float64</li>
+</ul>
+<h3 id="4-scientific-ecosystem">4. Scientific Ecosystem</h3>
+<ul>
+<li><strong>Standard in climate science</strong></li>
+<li>Extensive software support (Python, R, MATLAB, IDL)</li>
+<li>Analysis-ready formats</li>
+</ul>
+<h3 id="5-parallel-io-netcdf-4">5. Parallel I/O (NetCDF-4)</h3>
+<ul>
+<li>HDF5 parallel access</li>
+<li>High-performance computing workflows</li>
+</ul>
+<h2 id="netcdf-limitations-for-gis">NetCDF Limitations for GIS</h2>
+<h3 id="1-not-gis-native">1. Not GIS-Native</h3>
+<p><strong>Issue</strong>: NetCDF predates GIS conventions</p>
+<ul>
+<li>No embedded CRS (like <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> <code>.prj</code>)</li>
+<li>Coordinate system in CF conventions metadata (not always clear)</li>
+<li>QGIS struggles with complex NetCDF structures</li>
+</ul>
+<h3 id="2-projection-ambiguity">2. Projection Ambiguity</h3>
+<p><strong>Common issue</strong>: Lat/lon assumed <a href="../GLOSSARY.html#wgs-84" class="glossary-term" title="WGS 84 is shorthand for World Geodetic System 1984, the common latitude/longitude coordinate system use by GPS devices and many datasets">WGS 84</a>, but:</p>
+<ul>
+<li>Some use different datums</li>
+<li>Projected data (polar stereographic, Lambert) requires careful handling</li>
+<li>No <code>.prj</code> file to reference</li>
+</ul>
+<h3 id="3-raster-only-mostly">3. Raster-Only (Mostly)</h3>
+<p>NetCDF is <strong>grid-based</strong>:</p>
+<ul>
+<li>No native <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> support</li>
+<li>Point clouds, trajectories possible but uncommon</li>
+<li>Use shapefiles/<a href="../GLOSSARY.html#geojson" class="glossary-term" title="GeoJSON is a specific type of JSON for encoding spatial data. As an open standard, it is endorsed by preservation organizations, such as the Library of Congress. However, it can be unwieldy for large datasets, as it is a flat file format, not a database. NOTE: a common misconception is that the GeoBlacklight metadata schema uses GeoJSON. This is incorrect - it uses JSON with a few geospatial-related elements. There is also a TopoJSON that extends geoJSON to include topology. However, TopoJSON is not yet an endorsed standard. https://geojson.org/ https://github.com/topojson">GeoJSON</a> for <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> data</li>
+</ul>
+<h3 id="4-learning-curve">4. Learning Curve</h3>
+<ul>
+<li><strong>Complex structure</strong> for GIS users</li>
+<li><strong>xarray/nco tools</strong> required for advanced use</li>
+<li>Not as simple as "drag into QGIS"</li>
+</ul>
+<h2 id="when-to-use-netcdf">When to Use NetCDF</h2>
+<p><strong>Best for:</strong></p>
+<ul>
+<li><strong>Time-series gridded data</strong> (climate, weather, oceanography)</li>
+<li><strong>Multi-dimensional arrays</strong> (3D, 4D+)</li>
+<li><strong>Scientific analysis</strong> (climate models, forecasts, reanalysis)</li>
+<li><strong>Large datasets</strong> with compression</li>
+<li><strong>CF Convention-compliant</strong> data exchange</li>
+</ul>
+<p><strong>Avoid when:</strong></p>
+<ul>
+<li><strong>2D static data</strong> (use <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a>)</li>
+<li><strong>Simple web mapping</strong> (use COG or tiles)</li>
+<li><strong><a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">Vector</a> data</strong> (use <a href="../GLOSSARY.html#shapefile" class="glossary-term" title="An open source geospatial vector data format containing a small bundle of files. Note: the mostly open specification, only covers the .shp, .shx, and .dbf components (notably, .prj is not specified!) https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf">shapefile</a>/<a href="../GLOSSARY.html#geojson" class="glossary-term" title="GeoJSON is a specific type of JSON for encoding spatial data. As an open standard, it is endorsed by preservation organizations, such as the Library of Congress. However, it can be unwieldy for large datasets, as it is a flat file format, not a database. NOTE: a common misconception is that the GeoBlacklight metadata schema uses GeoJSON. This is incorrect - it uses JSON with a few geospatial-related elements. There is also a TopoJSON that extends geoJSON to include topology. However, TopoJSON is not yet an endorsed standard. https://geojson.org/ https://github.com/topojson">GeoJSON</a>)</li>
+<li><strong>Non-temporal rasters</strong> (<a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> is simpler)</li>
+</ul>
+<h2 id="netcdf-tools">NetCDF Tools</h2>
+<h3 id="command-line-nco---netcdf-operators">Command-Line (NCO - NetCDF Operators)</h3>
+<p><strong>Concatenate files:</strong></p>
+<pre><code class="lang-bash">ncrcat file1.nc file2.nc output.nc
+</code></pre>
+<p><strong>Calculate mean:</strong></p>
+<pre><code class="lang-bash">ncwa -a <span class="hljs-keyword">time</span> input.nc output_mean.nc
+</code></pre>
+<p><strong>Extract variable:</strong></p>
+<pre><code class="lang-bash">ncks -v temperature input.nc output_temp.nc
+</code></pre>
+<h3 id="python-libraries">Python Libraries</h3>
+<p><strong>xarray</strong>: Multi-dimensional arrays (NumPy for NetCDF)<br></br><strong>netCDF4</strong>: Low-level NetCDF access<br></br><strong>rioxarray</strong>: Spatial extensions (CRS, <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> export)<br></br><strong>dask</strong>: Parallel, out-of-core computation</p>
+<h3 id="gui-tools">GUI Tools</h3>
+<p><strong>Panoply</strong> (NASA): NetCDF viewer and plotter<br></br><strong>ncview</strong>: Quick visualization<br></br><strong>ToolsUI</strong> (Unidata): NetCDF structure browser</p>
+<h2 id="the-bottom-line">The Bottom Line</h2>
+<p>NetCDF is the <strong>standard format for scientific gridded data</strong>—especially climate, weather, and ocean models. If your data has a <strong>time dimension</strong>, use NetCDF. If it's a single snapshot, <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> is simpler.</p>
+<p>GIS tools handle NetCDF, but it's <strong>optimized for scientific workflows</strong>, not cartography. <strong>Best practice</strong>: Use NetCDF for storage/analysis, export time slices to <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> for mapping.</p>
+<p><strong>Key takeaway</strong>: NetCDF is <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a>'s scientific cousin—same family (gridded data), different priorities (multi-dimensional science vs. 2D maps).</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li>Week 05: <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> (2D <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> standard)</li>
+<li>Week 06: COG (cloud-optimized <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a>)</li>
+<li>Week 09: HDF5 (scientific array storage)</li>
+<li>Week 09: Python/xarray (NetCDF processing)</li>
+<li><a href="https://www.unidata.ucar.edu/software/netcdf/" target="_blank">Unidata NetCDF</a> — Official documentation</li>
+<li><a href="http://cfconventions.org/" target="_blank">CF Conventions</a> — Climate and Forecast <a href="../GLOSSARY.html#metadata-standard" class="glossary-term" title="To become a metadata standard, a schema needs to be adopted and officially endorsed by a standards-body. https://library.ucsd.edu/lpw-staging/research-and-collections/data-curation/sharing-discovery/describe-your-data/metadata-schemas.html">metadata standard</a></li>
+<li><a href="https://xarray.pydata.org/" target="_blank">xarray Documentation</a> — Python NetCDF toolkit</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03_introducing_model_builder_in_qgis.html" class="navigation navigation-prev " aria-label="Previous page: 03 - Introducing Model Builder in QGIS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../week09/" class="navigation navigation-next " aria-label="Next page: Week 09 - Scaling, Code, Odds&Ends">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SDFotW - NetCDF & Multi-Dimensional Arrays","level":"1.10.5","depth":2,"next":{"title":"Week 09 - Scaling, Code, Odds&Ends","level":"1.11","depth":1,"path":"week09/README.md","ref":"week09/README.md","articles":[{"title":"00 - The AlphaEarth Embedding Database in Google Earth Engine","level":"1.11.1","depth":2,"path":"week09/00_the_alphaearth_embedding_database_in_google_earth_engine.md","ref":"week09/00_the_alphaearth_embedding_database_in_google_earth_engine.md","articles":[]},{"title":"01 - Being John Snow,... in a Python Notebook","level":"1.11.2","depth":2,"path":"week09/01_being_john_snow_in_a_python_notebook.md","ref":"week09/01_being_john_snow_in_a_python_notebook.md","articles":[]},{"title":"02 - Photogrammetric Processing of Drone Imagery","level":"1.11.3","depth":2,"path":"week09/02_photogrammetric_processing_of_drone_imagery.md","ref":"week09/02_photogrammetric_processing_of_drone_imagery.md","articles":[]},{"title":"03 - Introducing GDAL & Command Line Tools on Stanford Farmshare","level":"1.11.4","depth":2,"path":"week09/03_introducing_gdal_and_command_line_tools_on_stanford_farmshare.md","ref":"week09/03_introducing_gdal_and_command_line_tools_on_stanford_farmshare.md","articles":[]},{"title":"SDFotW - HDF5 & Hierarchical Scientific Data","level":"1.11.5","depth":2,"path":"week09/spatial_data_format_of_the_week.md","ref":"week09/spatial_data_format_of_the_week.md","articles":[]}]},"previous":{"title":"03 - Introducing Model Builder in QGIS","level":"1.10.4","depth":2,"path":"week08/03_introducing_model_builder_in_qgis.md","ref":"week08/03_introducing_model_builder_in_qgis.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pubdate":"2025","author":"Stace Maples","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The People's Guide to Spatial Data","gitbook":"*"},"file":{"path":"week08/spatial_data_format_of_the_week.md","mtime":"2026-01-28T17:32:51.705Z","type":"markdown"},"gitbook":{"version":"6.1.5","time":"2026-01-28T17:32:59.999Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
