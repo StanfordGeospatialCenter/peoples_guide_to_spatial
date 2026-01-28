@@ -186,7 +186,7 @@ An index map is a geospatial data discovery tool that allows users to organize, 
 
 Ingest is similar to accessioning, but is more specifically referring to the process of adding data or metadata into a database or application.
 
-## Islandora
+## Islandora 
 
 Islandora is a community that focuses on digital repository systems using stacks of existing technologies. Basic stack: Fedora (repository) + Solr (search index)+ Drupal (discovery interface) https://islandora.ca/
 
