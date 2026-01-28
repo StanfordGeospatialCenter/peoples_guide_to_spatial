@@ -1,0 +1,1775 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>SDFotW - XYZ Tiles, WMS/WFS Web Services & IIIF for Historic Maps · The People's Guide to Spatial Data</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.5">
+        <meta name="author" content="Stace Maples">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../week08/" />
+    
+    
+    <link rel="prev" href="03_introducing_openrefine_for_data_carpentry.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../week00/">
+            
+                <a href="../week00/">
+            
+                    
+                    Week 00 - Getting Ready for the Course
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../week00/00_things_you_need_to_know_about_your_computer.html">
+            
+                <a href="../week00/00_things_you_need_to_know_about_your_computer.html">
+            
+                    
+                    00 - Things you need to know about your computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../week00/01_things_you_need_to_know_about_gis_data_on_your_computer.html">
+            
+                <a href="../week00/01_things_you_need_to_know_about_gis_data_on_your_computer.html">
+            
+                    
+                    01 - Things you need to know about GIS data on your computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../week00/02_logging_in_to_google_earth_engine.html">
+            
+                <a href="../week00/02_logging_in_to_google_earth_engine.html">
+            
+                    
+                    02 - Logging in to Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../week00/03_installing_qgis_and_plugins.html">
+            
+                <a href="../week00/03_installing_qgis_and_plugins.html">
+            
+                    
+                    03 - Installing QGIS and Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../week00/04_submitting_homework_and_getting_help.html">
+            
+                <a href="../week00/04_submitting_homework_and_getting_help.html">
+            
+                    
+                    04 - Submitting Homework and Getting Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../week00/05_help_fix_the_labs.html">
+            
+                <a href="../week00/05_help_fix_the_labs.html">
+            
+                    
+                    05 - Help Fix the Labs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../week00/06_introducing_qgis_with_basic_cartographic_design.html">
+            
+                <a href="../week00/06_introducing_qgis_with_basic_cartographic_design.html">
+            
+                    
+                    06 - Introducing QGIS with Basic Cartographic Design
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../week00/spatial_data_format_of_the_week.html">
+            
+                <a href="../week00/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Shapefile Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../week01/">
+            
+                <a href="../week01/">
+            
+                    
+                    Week 01 - Lining it Up & Cartographic Presentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../week01/00_introduction_to_formats_and_finding_data.html">
+            
+                <a href="../week01/00_introduction_to_formats_and_finding_data.html">
+            
+                    
+                    00 - Introduction to Data Formats & Finding Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../week01/01_introducing_google_earth_engine_with_coordinates_and_pixels.html">
+            
+                <a href="../week01/01_introducing_google_earth_engine_with_coordinates_and_pixels.html">
+            
+                    
+                    01 - Coordinates & Pixels with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../week01/02_projection_error_measurement_with_qgis.html">
+            
+                <a href="../week01/02_projection_error_measurement_with_qgis.html">
+            
+                    
+                    02 - Projection Error Measurement with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../week01/03_great_circles_and_more_cartographic_tips_and_tricks_in_qgis.html">
+            
+                <a href="../week01/03_great_circles_and_more_cartographic_tips_and_tricks_in_qgis.html">
+            
+                    
+                    03 - Great Circles and More Cartographic Tips & Tricks in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../week01/Census_Data_Download_with_SimplyAnalytics.html">
+            
+                <a href="../week01/Census_Data_Download_with_SimplyAnalytics.html">
+            
+                    
+                    Census Data Download with SimplyAnalytics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../week01/spatial_data_format_of_the_week.html">
+            
+                <a href="../week01/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - GeoJSON Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../week02/">
+            
+                <a href="../week02/">
+            
+                    
+                    Week 02 - Making & Collecting Data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../week02/00_georeferencing_with_qgis_and_allmaps_org.html">
+            
+                <a href="../week02/00_georeferencing_with_qgis_and_allmaps_org.html">
+            
+                    
+                    00 - Georeferencing with QGIS and AllMaps.org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../week02/01_basic_data_creation_with_geojsonio_and_qgis.html">
+            
+                <a href="../week02/01_basic_data_creation_with_geojsonio_and_qgis.html">
+            
+                    
+                    01 - Basic Data Creation with GeoJSON.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../week02/02_advanced_data_creation_with_qgis.html">
+            
+                <a href="../week02/02_advanced_data_creation_with_qgis.html">
+            
+                    
+                    02 - Advanced Data Creation with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../week02/03_introducing_arcgis_fieldmaps_and_arcgis_online_for_data_collection.html">
+            
+                <a href="../week02/03_introducing_arcgis_fieldmaps_and_arcgis_online_for_data_collection.html">
+            
+                    
+                    03 - Introducing ArcGIS FieldMaps & ArcGIS Online for Data Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../week02/spatial_data_format_of_the_week.html">
+            
+                <a href="../week02/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - GPX & GPS Exchange Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../week03/">
+            
+                <a href="../week03/">
+            
+                    
+                    Week 03 - Tables & Queries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../week03/00_basic_table_structures_and_operations_in_qgis.html">
+            
+                <a href="../week03/00_basic_table_structures_and_operations_in_qgis.html">
+            
+                    
+                    00 - Basic Table Structures & Operations in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../week03/01_sql_operations_in_qgis.html">
+            
+                <a href="../week03/01_sql_operations_in_qgis.html">
+            
+                    
+                    01 - SQL Operations in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../week03/02_tablular_vector_data_in_google_earth_engine.html">
+            
+                <a href="../week03/02_tablular_vector_data_in_google_earth_engine.html">
+            
+                    
+                    02 - Tabular/Vector Data in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../week03/03_using_sql_to_subset_big_data_in_the_stanford_data_farm.html">
+            
+                <a href="../week03/03_using_sql_to_subset_big_data_in_the_stanford_data_farm.html">
+            
+                    
+                    03 - Using SQL to subset BIG DATA in the Stanford Data Farm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../week03/spatial_data_format_of_the_week.html">
+            
+                <a href="../week03/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Database Formats (GeoPackage, Spatialite, PostGIS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../week04/">
+            
+                <a href="../week04/">
+            
+                    
+                    Week 04 - Basic Vector Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../week04/00_buffering_and_overlay_analysis_in_qgis.html">
+            
+                <a href="../week04/00_buffering_and_overlay_analysis_in_qgis.html">
+            
+                    
+                    00 - Buffering & Overlay Analysis in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../week04/01_areal_interpolation_of_attributes_with_qgis.html">
+            
+                <a href="../week04/01_areal_interpolation_of_attributes_with_qgis.html">
+            
+                    
+                    01 - Areal Interpolation of Attributes with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../week04/02_network_analysis_with_qgis.html">
+            
+                <a href="../week04/02_network_analysis_with_qgis.html">
+            
+                    
+                    02 - Network Analysis with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../week04/03_introducing_simplyanalytics_com.html">
+            
+                <a href="../week04/03_introducing_simplyanalytics_com.html">
+            
+                    
+                    03 - Introducing SimplyAnalytics.com
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../week04/spatial_data_format_of_the_week.html">
+            
+                <a href="../week04/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Network Datasets & Topology (DIME Format)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../week05/">
+            
+                <a href="../week05/">
+            
+                    
+                    Week 05 - Basic Raster Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../week05/00_basic_raster_analysis_with_google_earth_engine.html">
+            
+                <a href="../week05/00_basic_raster_analysis_with_google_earth_engine.html">
+            
+                    
+                    00 - Basic Raster Analysis with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../week05/01_terrain_and_visibility_with_qgis.html">
+            
+                <a href="../week05/01_terrain_and_visibility_with_qgis.html">
+            
+                    
+                    01 - Terrain & Visibility with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../week05/02_watershed_with_qgis_and_whitebox_tools.html">
+            
+                <a href="../week05/02_watershed_with_qgis_and_whitebox_tools.html">
+            
+                    
+                    02 - Watershed with QGIS & WhiteBox Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../week05/03_introducing_storymaps_on_arcgis_online.html">
+            
+                <a href="../week05/03_introducing_storymaps_on_arcgis_online.html">
+            
+                    
+                    03 - Introducing StoryMaps on ArcGIS Online
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../week05/spatial_data_format_of_the_week.html">
+            
+                <a href="../week05/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Raster Image Formats (GeoTIFF, JPEG+World, PNG+World)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../week06/">
+            
+                <a href="../week06/">
+            
+                    
+                    Week 06 - More Raster & Remote Sensing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../week06/00_basic_remote_sensing_with_google_earth_engine.html">
+            
+                <a href="../week06/00_basic_remote_sensing_with_google_earth_engine.html">
+            
+                    
+                    00 - Basic Remote Sensing with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../week06/01_modeling_movement_with_google_earth_engine.html">
+            
+                <a href="../week06/01_modeling_movement_with_google_earth_engine.html">
+            
+                    
+                    01 - Modeling Movement with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../week06/02_sampling_and_interpolation_with_qgis.html">
+            
+                <a href="../week06/02_sampling_and_interpolation_with_qgis.html">
+            
+                    
+                    02 - Sampling & Interpolation with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../week06/03_introducing_planet_com_satellite_imagery.html">
+            
+                <a href="../week06/03_introducing_planet_com_satellite_imagery.html">
+            
+                    
+                    03 - Introducing Planet.com Satellite Imagery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../week06/spatial_data_format_of_the_week.html">
+            
+                <a href="../week06/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Cloud Optimized GeoTIFF & JPEG2000
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Week 07 - Web Mapping & APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="00_making_and_serving_map_tiles_with_qgis.html">
+            
+                <a href="00_making_and_serving_map_tiles_with_qgis.html">
+            
+                    
+                    00 - Making & Serving Map Tiles with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="01_geocoding_addresses_with_locator_stanford_edu_and_openrefine.html">
+            
+                <a href="01_geocoding_addresses_with_locator_stanford_edu_and_openrefine.html">
+            
+                    
+                    01 - Geocoding Addresses with locator.stanford.edu & OpenRefine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="02_creating_and_hosting_a_webmap_using_maplibre_and_turf_js_and_github_pages.html">
+            
+                <a href="02_creating_and_hosting_a_webmap_using_maplibre_and_turf_js_and_github_pages.html">
+            
+                    
+                    02 - Creating & Hosting a WebMap, using MapLibre & Turf.js and Github Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="03_introducing_openrefine_for_data_carpentry.html">
+            
+                <a href="03_introducing_openrefine_for_data_carpentry.html">
+            
+                    
+                    03 - Introducing OpenRefine for data carpentry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.5" data-path="spatial_data_format_of_the_week.html">
+            
+                <a href="spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - XYZ Tiles, WMS/WFS Web Services & IIIF for Historic Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../week08/">
+            
+                <a href="../week08/">
+            
+                    
+                    Week 08 - Analytic Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../week08/00_wildfire_detection_and_severity_measurement_in_google_earth_engine.html">
+            
+                <a href="../week08/00_wildfire_detection_and_severity_measurement_in_google_earth_engine.html">
+            
+                    
+                    00 - Wildfire Detection & Severity Measurement in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../week08/01_suitability_modeling_in_qgis.html">
+            
+                <a href="../week08/01_suitability_modeling_in_qgis.html">
+            
+                    
+                    01 - Suitability Modeling in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../week08/02_landcover_classification_and_change_detection_in_google_earth_engine.html">
+            
+                <a href="../week08/02_landcover_classification_and_change_detection_in_google_earth_engine.html">
+            
+                    
+                    02 - Landcover Classification & Change Detection in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../week08/03_introducing_model_builder_in_qgis.html">
+            
+                <a href="../week08/03_introducing_model_builder_in_qgis.html">
+            
+                    
+                    03 - Introducing Model Builder in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../week08/spatial_data_format_of_the_week.html">
+            
+                <a href="../week08/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - NetCDF & Multi-Dimensional Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../week09/">
+            
+                <a href="../week09/">
+            
+                    
+                    Week 09 - Scaling, Code, Odds&Ends
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../week09/00_the_alphaearth_embedding_database_in_google_earth_engine.html">
+            
+                <a href="../week09/00_the_alphaearth_embedding_database_in_google_earth_engine.html">
+            
+                    
+                    00 - The AlphaEarth Embedding Database in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../week09/01_being_john_snow_in_a_python_notebook.html">
+            
+                <a href="../week09/01_being_john_snow_in_a_python_notebook.html">
+            
+                    
+                    01 - Being John Snow,... in a Python Notebook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../week09/02_photogrammetric_processing_of_drone_imagery.html">
+            
+                <a href="../week09/02_photogrammetric_processing_of_drone_imagery.html">
+            
+                    
+                    02 - Photogrammetric Processing of Drone Imagery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../week09/03_introducing_gdal_and_command_line_tools_on_stanford_farmshare.html">
+            
+                <a href="../week09/03_introducing_gdal_and_command_line_tools_on_stanford_farmshare.html">
+            
+                    
+                    03 - Introducing GDAL & Command Line Tools on Stanford Farmshare
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../week09/spatial_data_format_of_the_week.html">
+            
+                <a href="../week09/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - HDF5 & Hierarchical Scientific Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../week10/">
+            
+                <a href="../week10/">
+            
+                    
+                    Week 10 - Wrapping it all up
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../week10/00_final_project_guidelines.html">
+            
+                <a href="../week10/00_final_project_guidelines.html">
+            
+                    
+                    00 - Final Project Guidelines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../week10/01_storymaps_support_materials.html">
+            
+                <a href="../week10/01_storymaps_support_materials.html">
+            
+                    
+                    01 - StoryMaps Support Materials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../week10/02_guide_to_citation_of_spatial_data_and_software.html">
+            
+                <a href="../week10/02_guide_to_citation_of_spatial_data_and_software.html">
+            
+                    
+                    02 - Guide to Citation of Spatial Data & Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../week10/03_staces_crazy_list.html">
+            
+                <a href="../week10/03_staces_crazy_list.html">
+            
+                    
+                    03 - Stace's Crazy List of Additional GISci Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../week10/spatial_data_format_of_the_week.html">
+            
+                <a href="../week10/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Legacy & Esoteric Formats
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >SDFotW - XYZ Tiles, WMS/WFS Web Services & IIIF for Historic Maps</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="spatial-data-format-of-the-week-xyz-tiles--web-services-wmswfsiiif">Spatial Data Format of the Week: XYZ Tiles &amp; Web Services (WMS/WFS/IIIF)</h1>
+<h2 id="web-mapping-formats">Web Mapping Formats</h2>
+<p>This week covers <strong>four interconnected web mapping formats</strong>:</p>
+<ol>
+<li><strong>XYZ Tiles</strong> — Pre-rendered map images in pyramid structure</li>
+<li><strong><a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a> (Web Map Service)</strong> — On-demand map image rendering</li>
+<li><strong><a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a> (Web Feature Service)</strong> — <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">Vector</a> feature streaming</li>
+<li><strong><a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> (International Image Interoperability Framework)</strong> — Georeferenced historic cartography</li>
+</ol>
+<p>All four enable <strong>web mapping without downloading entire datasets</strong>.</p>
+<hr></hr>
+<h2 id="part-1-xyz-tiles-slippy-map-tiles">Part 1: XYZ Tiles (Slippy Map Tiles)</h2>
+<p><strong>What it is</strong>: Pre-rendered map images organized in a pyramid folder structure based on zoom level, row, and column.</p>
+<h3 id="the-tile-pyramid-concept">The Tile Pyramid Concept</h3>
+<p><strong>Zoom level 0</strong>: Entire world = 1 tile (256×256 pixels)</p>
+<pre><code>Zoom 0:   [world.png]
+</code></pre><p><strong>Zoom 1</strong>: World = 2×2 = 4 tiles</p>
+<pre><code>Zoom 1:   [0,0] [1,0]
+          [0,1] [1,1]
+</code></pre><p><strong>Zoom 2</strong>: World = 4×4 = 16 tiles</p>
+<p><strong>Each zoom level quadruples</strong>:</p>
+<ul>
+<li>Zoom 3: 64 tiles (8×8)</li>
+<li>Zoom 10: 1,048,576 tiles (1,024×1,024)</li>
+<li>Zoom 18: 68 billion tiles</li>
+</ul>
+<h3 id="url-structure">URL Structure</h3>
+<p><strong>Standard XYZ tile URL:</strong></p>
+<pre><code>https://tile.openstreetmap.org/{z}/{x}/{y}.png
+</code></pre><p><strong>Example</strong>: San Francisco at zoom 12</p>
+<pre><code>https://tile.openstreetmap.org/12/654/1582.png
+</code></pre><p><strong>Where</strong>:</p>
+<ul>
+<li><code>{z}</code> = Zoom level (0-18 typically)</li>
+<li><code>{x}</code> = Column (west to east)</li>
+<li><code>{y}</code> = Row (north to south)</li>
+</ul>
+<h3 id="common-tile-sources">Common Tile Sources</h3>
+<p><strong>OpenStreetMap:</strong></p>
+<pre><code>https://tile.openstreetmap.org/{z}/{x}/{y}.png
+</code></pre><p><strong>CartoDB Dark:</strong></p>
+<pre><code>https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png
+</code></pre><p><em><code>{s}</code> = subdomain (a, b, c, d) for load balancing</em></p>
+<p><strong>Stamen Terrain:</strong></p>
+<pre><code>https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png
+</code></pre><p><strong>Satellite (ESRI):</strong></p>
+<pre><code>https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}
+</code></pre><h3 id="using-xyz-tiles-in-qgis">Using XYZ Tiles in QGIS</h3>
+<p><strong>Add Tile Layer:</strong></p>
+<ol>
+<li><strong>Browser Panel</strong> → XYZ Tiles → (right-click) <strong>New Connection</strong></li>
+<li><strong>Name</strong>: Give it a descriptive name</li>
+<li><strong>URL</strong>: Paste tile URL template</li>
+<li>Click <strong>OK</strong></li>
+<li><strong>Double-click</strong> to add to map</li>
+</ol>
+<p><strong>Example Configuration:</strong></p>
+<ul>
+<li><strong>Name</strong>: OpenStreetMap</li>
+<li><strong>URL</strong>: <code>https://tile.openstreetmap.org/{z}/{x}/{y}.png</code></li>
+</ul>
+<h3 id="xyz-tile-advantages">XYZ Tile Advantages</h3>
+<p><strong>1. Speed</strong></p>
+<ul>
+<li><strong>Pre-rendered</strong> = instant display</li>
+<li>No processing time</li>
+<li>Cached by browsers/CDN</li>
+</ul>
+<p><strong>2. Simplicity</strong></p>
+<ul>
+<li>Just images (PNG/JPEG)</li>
+<li>Any web server can host</li>
+<li>Works with simple HTTP GET requests</li>
+</ul>
+<p><strong>3. Scalability</strong></p>
+<ul>
+<li><strong>CDN-friendly</strong> (CloudFlare, Akamai)</li>
+<li>Parallel tile fetching (load many at once)</li>
+<li>Handles millions of users</li>
+</ul>
+<p><strong>4. Universal Support</strong></p>
+<ul>
+<li>Every web mapping library (<a href="../GLOSSARY.html#leaflet" class="glossary-term" title="Leaflet is an open-source JavaScript library that helps developers build webmaps on mobile as well as desktop platforms. https://leafletjs.com/">Leaflet</a>, Mapbox, OpenLayers)</li>
+<li>Mobile mapping apps</li>
+<li>QGIS, ArcGIS Online</li>
+</ul>
+<h3 id="xyz-tile-limitations">XYZ Tile Limitations</h3>
+<p><strong>1. Static Content</strong></p>
+<ul>
+<li><strong>Can't change</strong> what's displayed (pre-rendered)</li>
+<li><strong>Can't query</strong> attributes (just images)</li>
+<li><strong>Can't style</strong> dynamically</li>
+</ul>
+<p><strong>2. Storage Requirements</strong></p>
+<ul>
+<li>Full global tileset at zoom 18 = petabytes</li>
+<li>Typical country-scale tileset = gigabytes to terabytes</li>
+</ul>
+<p><strong>3. Update Overhead</strong></p>
+<ul>
+<li>Modify one feature = <strong>regenerate all affected tiles</strong></li>
+<li>Time-consuming for large areas</li>
+</ul>
+<p><strong>4. Fixed Zoom Levels</strong></p>
+<ul>
+<li><strong>Only specific zoom levels</strong> (discrete, not continuous)</li>
+<li>"Jumpy" zoom experience</li>
+</ul>
+<h3 id="when-to-use-xyz-tiles">When to Use XYZ Tiles</h3>
+<p><strong>Best for:</strong></p>
+<ul>
+<li><strong>Basemaps</strong> (OpenStreetMap, satellite imagery, terrain)</li>
+<li><strong>High-traffic web maps</strong> (millions of users)</li>
+<li><strong>Static data</strong> (doesn't change frequently)</li>
+<li><strong>Fast display</strong> (pre-rendered performance)</li>
+</ul>
+<p><strong>Avoid when:</strong></p>
+<ul>
+<li><strong>Dynamic data</strong> (real-time, frequently updated)</li>
+<li><strong>User-styled layers</strong> (custom symbology per user)</li>
+<li><strong><a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">Vector</a> analysis</strong> needed (tiles are images, not features)</li>
+<li><strong>Attribute queries</strong> required</li>
+</ul>
+<hr></hr>
+<h2 id="part-2-wms-web-map-service">Part 2: WMS (Web Map Service)</h2>
+<p><strong>What it is</strong>: OGC standard protocol for serving <strong>georeferenced map images</strong> dynamically rendered from spatial databases.</p>
+<h3 id="how-wms-works">How WMS Works</h3>
+<p><strong>Client request:</strong></p>
+<pre><code class="lang-http">https://example.com/geoserver/wms?
+  service=WMS&amp;
+  version=1.3.0&amp;
+  request=GetMap&amp;
+  layers=counties&amp;
+  bbox=-124,32,-114,42&amp;
+  width=800&amp;
+  height=600&amp;
+  crs=EPSG:4326&amp;
+  format=image/png
+</code></pre>
+<p><strong>Server response</strong>: Rendered PNG image of counties within <a href="../GLOSSARY.html#bounding-box" class="glossary-term" title="A bounding box delineates the geographic extent of a given spatial dataset and is typically conceived as the smallest hypothetical rectangle that would fully enclose the features of a spatial dataset. It is defined by four coordinates: the hypothetical rectangle's minimum longitude, minimum latitude, maximum longitude, and maximum latitude. These coordinates correspond, respectively, with the hypothetical rectangle's leftmost line, its bottom, its rightmost line, and its top. A dataset's bounding box is an important component of geospatial metadata. Note that it is often also referred to as an envelope. https://wiki.openstreetmap.org/Bounding_Box">bounding box</a>.</p>
+<h3 id="wms-vs-xyz-tiles">WMS vs. XYZ Tiles</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Aspect</strong></th>
+<th><strong><a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a></strong></th>
+<th><strong>XYZ Tiles</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rendering</strong></td>
+<td>On-demand (dynamic)</td>
+<td>Pre-rendered (static)</td>
+</tr>
+<tr>
+<td><strong>Speed</strong></td>
+<td>Slower (render time)</td>
+<td>Faster (cached)</td>
+</tr>
+<tr>
+<td><strong>Flexibility</strong></td>
+<td>Any extent, projection, style</td>
+<td>Fixed zoom levels, style</td>
+</tr>
+<tr>
+<td><strong>Data updates</strong></td>
+<td>Instant (reflects database changes)</td>
+<td>Requires tile regeneration</td>
+</tr>
+<tr>
+<td><strong>Storage</strong></td>
+<td>Minimal (source data only)</td>
+<td>Large (millions of tiles)</td>
+</tr>
+<tr>
+<td><strong>Query support</strong></td>
+<td>Yes (GetFeatureInfo)</td>
+<td>No (just images)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="using-wms-in-qgis">Using WMS in QGIS</h3>
+<p><strong>Add <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a> Layer:</strong></p>
+<ol>
+<li><strong>Layer → Add Layer → Add <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a>/WMTS Layer</strong></li>
+<li>Click <strong>New</strong> connection</li>
+<li><strong>Name</strong>: Service name</li>
+<li><strong>URL</strong>: Base <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a> endpoint (without parameters)</li>
+<li>Click <strong>OK</strong> → <strong>Connect</strong></li>
+<li>Select layers → <strong>Add</strong></li>
+</ol>
+<p><strong>Example <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a> Services:</strong></p>
+<p><strong>USGS National Map:</strong></p>
+<pre><code>https://basemap.nationalmap.gov/arcgis/services/USGSTopo/MapServer/WMSServer
+</code></pre><p><strong>OpenStreetMap <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a> (terrestris):</strong></p>
+<pre><code>https://ows.terrestris.de/osm/service?
+</code></pre><p><strong>California Data Geoportal:</strong></p>
+<pre><code>https://gis.data.ca.gov/arcgis/services/...
+</code></pre><h3 id="wms-capabilities">WMS Capabilities</h3>
+<p><strong>GetCapabilities</strong>: Query available layers</p>
+<pre><code class="lang-http">https://example.com/wms?service=WMS&amp;request=GetCapabilities
+</code></pre>
+<p><strong>GetMap</strong>: Fetch map image (see example above)</p>
+<p><strong>GetFeatureInfo</strong>: Query attributes at clicked point</p>
+<pre><code class="lang-http">https://example.com/wms?
+  service=WMS&amp;
+  request=GetFeatureInfo&amp;
+  query_layers=counties&amp;
+  x=250&amp;
+  y=150&amp;
+  ...
+</code></pre>
+<h3 id="when-to-use-wms">When to Use WMS</h3>
+<p><strong>Best for:</strong></p>
+<ul>
+<li><strong>Dynamic data</strong> (real-time, frequently updated)</li>
+<li><strong>Custom rendering</strong> (user-defined styles, filters)</li>
+<li><strong>Analysis/query</strong> (GetFeatureInfo)</li>
+<li><strong>Multiple <a href="../GLOSSARY.html#projections" class="glossary-term" title="In order to make a map, one has to represent the three-dimensional surface of the earth on a two-dimensional plane. There are different ways in which one might flatten the earth to represent it on a two-dimensional map, and these different flattening algorithms (all of which involve distortions of one kind or another) are referred to as map projections. Most maps published on the web are in the Web Mercator projection. Related terms: CRS (coordinate reference system) or the older term SRS (spatial reference system) https://www.gislounge.com/map-projection/">projections</a></strong> (server-side reprojection)</li>
+</ul>
+<p><strong>Avoid when:</strong></p>
+<ul>
+<li><strong>High traffic</strong> (slow rendering under load)</li>
+<li><strong>Static basemaps</strong> (tiles are faster)</li>
+<li><strong>Offline access</strong> needed (requires server connection)</li>
+</ul>
+<hr></hr>
+<h2 id="part-3-wfs-web-feature-service">Part 3: WFS (Web Feature Service)</h2>
+<p><strong>What it is</strong>: OGC standard for serving <strong><a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> features</strong> (geometry + attributes) over the web, unlike <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a> which serves images.</p>
+<h3 id="wfs-vs-wms">WFS vs. WMS</h3>
+<ul>
+<li><strong><a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a></strong>: Serves <strong>images</strong> of maps (<a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a>)</li>
+<li><strong><a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a></strong>: Serves <strong>features</strong> (<a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> data—points, lines, polygons with attributes)</li>
+</ul>
+<p><strong>Key difference</strong>: <a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a> returns <strong>actual geometry and attributes</strong>, enabling client-side styling and analysis.</p>
+<h3 id="how-wfs-works">How WFS Works</h3>
+<p><strong>Request features:</strong></p>
+<pre><code class="lang-http">https://example.com/geoserver/wfs?
+  service=WFS&amp;
+  version=2.0.0&amp;
+  request=GetFeature&amp;
+  typeNames=counties&amp;
+  count=100&amp;
+  outputFormat=application/json
+</code></pre>
+<p><strong>Response</strong>: <a href="../GLOSSARY.html#geojson" class="glossary-term" title="GeoJSON is a specific type of JSON for encoding spatial data. As an open standard, it is endorsed by preservation organizations, such as the Library of Congress. However, it can be unwieldy for large datasets, as it is a flat file format, not a database. NOTE: a common misconception is that the GeoBlacklight metadata schema uses GeoJSON. This is incorrect - it uses JSON with a few geospatial-related elements. There is also a TopoJSON that extends geoJSON to include topology. However, TopoJSON is not yet an endorsed standard. https://geojson.org/ https://github.com/topojson">GeoJSON</a> with features:</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">"type"</span>: <span class="hljs-string">"FeatureCollection"</span>,
+  <span class="hljs-string">"features"</span>: [
+    {
+      <span class="hljs-string">"type"</span>: <span class="hljs-string">"Feature"</span>,
+      <span class="hljs-string">"geometry"</span>: {...},
+      <span class="hljs-string">"properties"</span>: {
+        <span class="hljs-string">"name"</span>: <span class="hljs-string">"Santa Clara County"</span>,
+        <span class="hljs-string">"population"</span>: <span class="hljs-number">1936259</span>
+      }
+    }
+  ]
+}
+</code></pre>
+<h3 id="using-wfs-in-qgis">Using WFS in QGIS</h3>
+<p><strong>Add <a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a> Layer:</strong></p>
+<ol>
+<li><strong>Layer → Add Layer → Add <a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a> Layer</strong></li>
+<li>Click <strong>New</strong> connection</li>
+<li><strong>URL</strong>: Base <a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a> endpoint</li>
+<li>Click <strong>OK</strong> → <strong>Connect</strong></li>
+<li>Select layer → <strong>Add</strong></li>
+</ol>
+<p><strong>Result</strong>: <strong>Editable <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> layer</strong> (not image) loaded into QGIS.</p>
+<h3 id="wfs-capabilities">WFS Capabilities</h3>
+<p><strong>GetCapabilities</strong>: List available feature types</p>
+<pre><code class="lang-http">https://example.com/wfs?service=WFS&amp;request=GetCapabilities
+</code></pre>
+<p><strong>GetFeature</strong>: Fetch features (with filters, bbox, attribute queries)</p>
+<p><strong>Transaction</strong> (<a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a>-T): <strong>Insert, Update, Delete</strong> features remotely</p>
+<ul>
+<li>Collaborative editing</li>
+<li>Mobile data collection apps</li>
+<li>Real-time feature updates</li>
+</ul>
+<h3 id="common-wfs-sources">Common WFS Sources</h3>
+<p><strong>National GI Portal (many countries)</strong>
+<strong>USGS <a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a> Services</strong> (hydrography, boundaries)
+<strong>City/County GIS Portals</strong> (parcels, zoning, infrastructure)</p>
+<h3 id="when-to-use-wfs">When to Use WFS</h3>
+<p><strong>Best for:</strong></p>
+<ul>
+<li><strong><a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">Vector</a> analysis</strong> (need geometry, not images)</li>
+<li><strong>Attribute queries</strong> (filter by properties)</li>
+<li><strong>Editable data</strong> (collaborative mapping)</li>
+<li><strong>Client-side styling</strong> (<a href="../GLOSSARY.html#leaflet" class="glossary-term" title="Leaflet is an open-source JavaScript library that helps developers build webmaps on mobile as well as desktop platforms. https://leafletjs.com/">Leaflet</a>, Mapbox custom styles)</li>
+<li><strong>Data integration</strong> (merge remote vectors with local data)</li>
+</ul>
+<p><strong>Avoid when:</strong></p>
+<ul>
+<li><strong>Large datasets</strong> (&gt;100,000 features—too slow)</li>
+<li><strong><a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">Raster</a> data</strong> (use <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a> or COG)</li>
+<li><strong>Display-only</strong> (<a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a>/tiles are faster)</li>
+</ul>
+<hr></hr>
+<p>Part 4: <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> (International Image Interoperability Framework)</p>
+<p><strong>What it is</strong>: A set of open standards for <strong>delivering high-resolution images</strong> over the web, increasingly used for <strong>georeferenced historic maps</strong> from libraries and archives.</p>
+<h3 id="iiif--allmapsorg-historic-cartography-pipeline">IIIF + Allmaps.org: Historic Cartography Pipeline</h3>
+<p><strong><a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a></strong> enables libraries to serve historic maps at web scale.<br></br><strong>Allmaps.org</strong> provides georeferencing tools that create XYZ tile layers from <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> images.</p>
+<h3 id="how-iiif-works">How IIIF Works</h3>
+<p><strong><a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> Image <a href="../GLOSSARY.html#api" class="glossary-term" title="Application Programming Interface. Broadly defined, an API is how different software applications can talk to each other and share information. In library practice, this usually takes the format of a JSON file URL that can be accessed by a script for harvesting data, metadata, or schema information.">API</a></strong> delivers image tiles similar to XYZ tiles, but with flexible parameters:</p>
+<p><strong>Standard <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> URL structure:</strong></p>
+<pre><code>https://example.org/iiif/2/{identifier}/{region}/{size}/{rotation}/{quality}.{format}
+</code></pre><p><strong>Example:</strong></p>
+<pre><code>https://dlcs.io/iiif-img/3/2/abc123/full/800,/0/default.jpg
+</code></pre><p><strong>Where</strong>:</p>
+<ul>
+<li><code>{identifier}</code>: Unique image ID</li>
+<li><a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> + Allmaps<strong> is the </strong>library archives**—historic treasures made accessible, georeferenced for modern analysis.</li>
+</ul>
+<p><strong>Key takeaway</strong>: Choose tiles for speed, <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a> for flexibility, <a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a> for analysis, <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> for historic cartography. Often you'll use all four in one project—tiles as basemap, <a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a> for analysis layers, <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a> for dynamic overlays, <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> for historical context.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li>Week 00: Georeferencing (georeferencing workflow using QGIS Georeferencer and Allmaps.org)</li>
+<li>Week 01: <a href="../GLOSSARY.html#geojson" class="glossary-term" title="GeoJSON is a specific type of JSON for encoding spatial data. As an open standard, it is endorsed by preservation organizations, such as the Library of Congress. However, it can be unwieldy for large datasets, as it is a flat file format, not a database. NOTE: a common misconception is that the GeoBlacklight metadata schema uses GeoJSON. This is incorrect - it uses JSON with a few geospatial-related elements. There is also a TopoJSON that extends geoJSON to include topology. However, TopoJSON is not yet an endorsed standard. https://geojson.org/ https://github.com/topojson">GeoJSON</a> (client-side <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> format)</li>
+<li>Week 05: <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> (<a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> data)</li>
+<li>Week 06: Cloud Optimized <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> (remote <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> access)</li>
+<li><a href="https://allmaps.org/" target="_blank">Allmaps.org</a> — Georeference <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> maps, create tile layers</li>
+<li><a href="https://iiif.io/" target="_blank">IIIF Consortium</a> — Standards documentation</li>
+<li><a href="https://www.loc.gov/maps/" target="_blank">Library of Congress Maps</a> — <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a>-enabled historic map collection</li>
+<li><a href="https://www.davidrumsey.com/" target="_blank">David Rumsey Map Collection</a> — Massive georeferenced historic map archive</li>
+</ul>
+<p><strong>Major map collections with <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> support:</strong></p>
+<p><strong>Library of Congress:</strong></p>
+<pre><code>https://www.loc.gov/collections/panoramic-maps/
+</code></pre><p><strong>David Rumsey Map Collection:</strong></p>
+<pre><code>https://www.davidrumsey.com/
+</code></pre><p><strong>British Library:</strong></p>
+<pre><code>https://www.bl.uk/maps
+</code></pre><p><strong>Stanford Libraries:</strong></p>
+<pre><code>https://searchworks.stanford.edu/view/...
+</code></pre><h3 id="allmapsorg-georeferencing-iiif-images">Allmaps.org: Georeferencing IIIF Images</h3>
+<p><strong>Allmaps</strong> turns <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> historic maps into <strong>georeferenced XYZ tile layers</strong> you can use in QGIS, <a href="../GLOSSARY.html#leaflet" class="glossary-term" title="Leaflet is an open-source JavaScript library that helps developers build webmaps on mobile as well as desktop platforms. https://leafletjs.com/">Leaflet</a>, or any web map.</p>
+<p><strong>Workflow:</strong></p>
+<ol>
+<li>Find historic map with <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> manifest (Library of Congress, David Rumsey, etc.)</li>
+<li>Open in <strong>Allmaps Editor</strong>: <a href="https://editor.allmaps.org/" target="_blank">https://editor.allmaps.org/</a></li>
+<li>Add control points (match historic map features to modern coordinates)</li>
+<li>Allmaps generates <strong>XYZ tile URL</strong></li>
+<li>Use tile URL in QGIS or web maps</li>
+</ol>
+<h3 id="using-allmaps-tiles-in-qgis">Using Allmaps Tiles in QGIS</h3>
+<p><strong>After georeferencing in Allmaps Editor</strong>, you get a tile URL like:</p>
+<pre><code>https://allmaps.xyz/maps/{map-id}/{z}/{x}/{y}.png
+</code></pre><p><strong>Add to QGIS:</strong></p>
+<ol>
+<li><strong>Browser Panel</strong> → <strong>XYZ Tiles</strong> → (right-click) <strong>New Connection</strong></li>
+<li><strong>Name</strong>: Historic Map Name (e.g., "Sanborn 1895 SF")</li>
+<li><strong>URL</strong>: Paste Allmaps tile URL</li>
+<li>Click <strong>OK</strong></li>
+<li><strong>Double-click</strong> to add to map</li>
+</ol>
+<p><strong>Result</strong>: Historic map overlays modern basemap, georeferenced and tiled.</p>
+<h3 id="allmaps-features">Allmaps Features</h3>
+<p><strong>1. Cloud-based georeferencing</strong></p>
+<ul>
+<li>No software installation</li>
+<li>Works directly with <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> URLs</li>
+<li>Results stored in W3C Web Annotation format</li>
+</ul>
+<p><strong>2. Mask tool</strong></p>
+<ul>
+<li>Remove borders, legends, decorative elements</li>
+<li>Clean overlay on modern maps</li>
+</ul>
+<p><strong>3. Multiple transformation algorithms</strong></p>
+<ul>
+<li><strong>Polynomial</strong>: Best for most historic maps</li>
+<li><strong>Thin Plate Spline</strong>: Handles warped/distorted maps</li>
+<li><strong>Projective</strong>: For maps with perspective distortion</li>
+</ul>
+<p><strong>4. Shareable URLs</strong></p>
+<ul>
+<li>Each georeferenced map gets permanent URL</li>
+<li>Embed in web pages or load in QGIS</li>
+<li>Collaborative georeferencing</li>
+</ul>
+<h3 id="example-using-library-of-congress-maps">Example: Using Library of Congress Maps</h3>
+<p><strong>1. Find map at LOC:</strong></p>
+<ul>
+<li>Browse: <a href="https://www.loc.gov/maps/" target="_blank">https://www.loc.gov/maps/</a></li>
+<li>Look for <strong><a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> Manifest</strong> link or icon</li>
+</ul>
+<p><strong>2. Copy <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> Manifest URL</strong>, e.g.:</p>
+<pre><code>https://www.loc.gov/item/2013593069/manifest.json
+</code></pre><p><strong>3. Open Allmaps Editor:</strong></p>
+<ul>
+<li>Go to: <a href="https://editor.allmaps.org/" target="_blank">https://editor.allmaps.org/</a></li>
+<li>Paste manifest URL</li>
+<li>Click <strong>Load</strong></li>
+</ul>
+<p><strong>4. Georeference:</strong></p>
+<ul>
+<li>Click historic map location</li>
+<li>Click corresponding modern map location</li>
+<li>Repeat 3-6 times (minimum 3 control points)</li>
+<li>Click <strong>Results</strong> tab</li>
+</ul>
+<p><strong>5. Copy tile URL:</strong></p>
+<pre><code>https://allmaps.xyz/maps/abc123def456/{z}/{x}/{y}.png
+</code></pre><p><strong>6. Add to QGIS</strong> (see workflow above)</p>
+<h3 id="iiif--allmaps-advantages">IIIF + Allmaps Advantages</h3>
+<p>✅ <strong>No downloads</strong>: Stream historic maps from library servers<br></br>✅ <strong>High resolution</strong>: <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> delivers full detail at all zoom levels<br></br>✅ <strong>Permanent URLs</strong>: Libraries maintain collections long-term<br></br>✅ <strong>Free access</strong>: Most institutions provide open <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> endpoints<br></br>✅ <strong>Collaborative</strong>: Share georeferenced maps via URL<br></br>✅ <strong>Standards-based</strong>: <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> + W3C Web Annotations  </p>
+<h3 id="iiif--allmaps-limitations">IIIF + Allmaps Limitations</h3>
+<p>❌ <strong>Requires <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> support</strong>: Not all archives have <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a><br></br>❌ <strong>Manual georeferencing</strong>: Must add control points yourself<br></br>❌ <strong>Internet required</strong>: Cannot work offline<br></br>❌ <strong>Variable quality</strong>: Some historic maps poorly scanned  </p>
+<h3 id="when-to-use-iiif--allmaps">When to Use IIIF + Allmaps</h3>
+<p><strong>Best for:</strong></p>
+<ul>
+<li><strong>Historic map overlays</strong> (Sanborn fire insurance, USGS historical topos)</li>
+<li><strong>Change detection</strong> (urban growth, coastline change)</li>
+<li><strong>Historic spatial analysis</strong> (past land use, transportation networks)</li>
+<li><strong>Teaching/research</strong> (visualizing historical geography)</li>
+</ul>
+<p><strong>Example use cases:</strong></p>
+<ul>
+<li>Overlay 1906 San Francisco Sanborn map over modern streets</li>
+<li>Compare 1850 London map with current building footprints</li>
+<li>Trace historical rail networks from USGS topos</li>
+<li>Study urban expansion with sequential historic maps</li>
+</ul>
+<h3 id="beyond-allmaps-other-iiif-tools">Beyond Allmaps: Other IIIF Tools</h3>
+<p><strong><a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> Georeferencer</strong> (Klokan Technologies):</p>
+<ul>
+<li><a href="https://georeferencer.com/" target="_blank">https://georeferencer.com/</a></li>
+<li>More advanced georeferencing features</li>
+<li>Export to <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a>, tiles, <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a></li>
+</ul>
+<p><strong>Georeferencer QGIS Plugin</strong>:</p>
+<ul>
+<li>Connects to Georeferencer.com</li>
+<li>Load georeferenced maps directly in QGIS</li>
+</ul>
+<p><strong>OpenSeadragon</strong>:</p>
+<ul>
+<li>JavaScript viewer for <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> images</li>
+<li>Embed zoomable historic maps in web pages</li>
+</ul>
+<hr></hr>
+<h2 id="comparing-web-formats">Comparing Web Formats</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Format</strong></th>
+<th><strong>Data Type</strong></th>
+<th><strong>Use Case</strong></th>
+<th><strong>Speed</strong></th>
+<th><strong>Flexibility</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>XYZ Tiles</strong></td>
+<td>Image</td>
+<td>Basemaps, static display</td>
+<td>Fast</td>
+<td>Low</td>
+</tr>
+<tr>
+<td><strong><a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a></strong></td>
+<td>Image</td>
+<td>Dynamic maps, custom styles</td>
+<td>Medium</td>
+<td>High</td>
+</tr>
+<tr>
+<td><strong><a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a></strong></td>
+<td><a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">Vector</a></td>
+<td>Analysis, editing, queries</td>
+<td>Slow</td>
+<td>Highest</td>
+</tr>
+<tr>
+<td><strong><a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a></strong></td>
+<td>Image</td>
+<td>Historic maps, high-res manuscripts</td>
+<td>Medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><strong>COG</strong></td>
+<td><a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">Raster</a></td>
+<td>Remote <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> analysis</td>
+<td>Medium</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Decision matrix:</strong></p>
+<ul>
+<li><strong>Need basemap?</strong> → XYZ Tiles</li>
+<li><strong>Need dynamic map rendering?</strong> → <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a></li>
+<li><strong>Need <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> features for analysis?</strong> → <a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a></li>
+<li><strong>Need historic maps?</strong> → <a href="../GLOSSARY.html#iiif" class="glossary-term" title="Spoken as &quot;Triple eye eff&quot; or International Image Interoperability Framework. A standardized technique for sharing images on the web. IIIF specifies APIs in the form of JSON files that can be displayed via several different image viewers. https://iiif.io/">IIIF</a> + Allmaps</li>
+<li><strong>Need <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> features for analysis?</strong> → <a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a></li>
+<li><strong>Need remote <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> processing?</strong> → COG</li>
+</ul>
+<hr></hr>
+<h2 id="the-bottom-line">The Bottom Line</h2>
+<p><strong>XYZ Tiles</strong> are the <strong>fast food of web mapping</strong>—quick, cheap, ubiquitous, but not nutritious for analysis.</p>
+<p><strong><a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a></strong> is the <strong>restaurant menu</strong>—custom orders, made to order, but takes longer.</p>
+<p><strong><a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a></strong> is the <strong>farmer's market</strong>—raw ingredients (features) for you to cook (analyze) yourself.</p>
+<p><strong>Key takeaway</strong>: Choose tiles for speed, <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a> for flexibility, <a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a> for analysis. Often you'll use all three in one project—tiles as basemap, <a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a> for analysis layers, <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a> for dynamic overlays.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li>Week 01: <a href="../GLOSSARY.html#geojson" class="glossary-term" title="GeoJSON is a specific type of JSON for encoding spatial data. As an open standard, it is endorsed by preservation organizations, such as the Library of Congress. However, it can be unwieldy for large datasets, as it is a flat file format, not a database. NOTE: a common misconception is that the GeoBlacklight metadata schema uses GeoJSON. This is incorrect - it uses JSON with a few geospatial-related elements. There is also a TopoJSON that extends geoJSON to include topology. However, TopoJSON is not yet an endorsed standard. https://geojson.org/ https://github.com/topojson">GeoJSON</a> (client-side <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> format)</li>
+<li>Week 05: <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> (<a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> data)</li>
+<li>Week 06: Cloud Optimized <a href="../GLOSSARY.html#geotiff" class="glossary-term" title="a TIFF image file with geospatial information embedded with it.">GeoTIFF</a> (remote <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> access)</li>
+<li><a href="https://leafletjs.com" target="_blank">Leaflet</a> — Popular web mapping library</li>
+<li><a href="https://plugins.qgis.org/plugins/quick_map_services/" target="_blank">QGIS QuickMapServices Plugin</a> — Easy basemap access</li>
+<li><a href="http://geoserver.org/" target="_blank">GeoServer</a> — Open-source <a href="../GLOSSARY.html#wms" class="glossary-term" title="The Web Map Service (WMS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geospatial images over HTTP connections. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wms">WMS</a>/<a href="../GLOSSARY.html#wfs" class="glossary-term" title="The Web Feature Service (WFS) standard is a Web protocol from the Open Geospatial Consortium (OGC) that serves geographical feature queries over HTTP connections that can be spatially analyzed. It is used by major open-source and proprietary mapping software https://www.ogc.org/standards/wfs">WFS</a> server</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03_introducing_openrefine_for_data_carpentry.html" class="navigation navigation-prev " aria-label="Previous page: 03 - Introducing OpenRefine for data carpentry">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../week08/" class="navigation navigation-next " aria-label="Next page: Week 08 - Analytic Models">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SDFotW - XYZ Tiles, WMS/WFS Web Services & IIIF for Historic Maps","level":"1.9.5","depth":2,"next":{"title":"Week 08 - Analytic Models","level":"1.10","depth":1,"path":"week08/README.md","ref":"week08/README.md","articles":[{"title":"00 - Wildfire Detection & Severity Measurement in Google Earth Engine","level":"1.10.1","depth":2,"path":"week08/00_wildfire_detection_and_severity_measurement_in_google_earth_engine.md","ref":"week08/00_wildfire_detection_and_severity_measurement_in_google_earth_engine.md","articles":[]},{"title":"01 - Suitability Modeling in QGIS","level":"1.10.2","depth":2,"path":"week08/01_suitability_modeling_in_qgis.md","ref":"week08/01_suitability_modeling_in_qgis.md","articles":[]},{"title":"02 - Landcover Classification & Change Detection in Google Earth Engine","level":"1.10.3","depth":2,"path":"week08/02_landcover_classification_and_change_detection_in_google_earth_engine.md","ref":"week08/02_landcover_classification_and_change_detection_in_google_earth_engine.md","articles":[]},{"title":"03 - Introducing Model Builder in QGIS","level":"1.10.4","depth":2,"path":"week08/03_introducing_model_builder_in_qgis.md","ref":"week08/03_introducing_model_builder_in_qgis.md","articles":[]},{"title":"SDFotW - NetCDF & Multi-Dimensional Arrays","level":"1.10.5","depth":2,"path":"week08/spatial_data_format_of_the_week.md","ref":"week08/spatial_data_format_of_the_week.md","articles":[]}]},"previous":{"title":"03 - Introducing OpenRefine for data carpentry","level":"1.9.4","depth":2,"path":"week07/03_introducing_openrefine_for_data_carpentry.md","ref":"week07/03_introducing_openrefine_for_data_carpentry.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pubdate":"2025","author":"Stace Maples","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The People's Guide to Spatial Data","gitbook":"*"},"file":{"path":"week07/spatial_data_format_of_the_week.md","mtime":"2026-01-28T01:59:32.932Z","type":"markdown"},"gitbook":{"version":"6.1.5","time":"2026-01-28T17:26:38.938Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
