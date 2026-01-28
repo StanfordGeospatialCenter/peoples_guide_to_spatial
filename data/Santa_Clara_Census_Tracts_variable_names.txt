@@ -1,0 +1,10 @@
+VALUE0	# Total Population, 2025
+VALUE1	% Age | 65 years and over, 2025
+VALUE2	% Educational Attainment | Bachelor's degree or higher, 2025
+VALUE3	Median Household Income, 2025
+VALUE4	% Household Income | $100,000 or more, 2025
+VALUE5	Average Per Capita Income, 2025
+VALUE6	# Housing Units, 2025
+VALUE7	% Housing Tenure | Owner occupied, 2025
+VALUE8	% Housing Tenure | Renter occupied, 2025
+VALUE9	Average Household Income, 2025
