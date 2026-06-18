@@ -14,7 +14,7 @@
     * [00 - Introduction to Data Formats & Finding Data](week01/00_introduction_to_formats_and_finding_data.md)
     * [01 - Coordinates & Pixels with Google Earth Engine](week01/01_introducing_google_earth_engine_with_coordinates_and_pixels.md)
     * [02 - Projection Error Measurement with QGIS](week01/02_projection_error_measurement_with_qgis.md)
-    * [03 - Great Circles and More Cartographic Tips & Tricks in QGIS](week01/03_great_circles_and_more_cartographic_tips_and_tricks_in_qgis.md)
+    * [03 - Cartographic Design with QGIS: Creating Maps for Academic Journals](week01/03_cartographic_design_with_qgis.md)
     * [Census Data Download with SimplyAnalytics](week01/Census_Data_Download_with_SimplyAnalytics.md)
     * [SDFotW - GeoJSON Format](week01/spatial_data_format_of_the_week.md)
 * [Week 02 - Making & Collecting Data](week02/README.md)
