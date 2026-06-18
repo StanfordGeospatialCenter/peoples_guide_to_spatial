@@ -1,0 +1,1770 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>03 - Cartographic Design with QGIS: Creating Maps for Academic Journals · The People's Guide to Spatial Data</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        <meta name="author" content="Stace Maples">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Census_Data_Download_with_SimplyAnalytics.html" />
+    
+    
+    <link rel="prev" href="02_projection_error_measurement_with_qgis.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../week00/">
+            
+                <a href="../week00/">
+            
+                    
+                    Week 00 - Getting Ready for the Course
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../week00/00_things_you_need_to_know_about_your_computer.html">
+            
+                <a href="../week00/00_things_you_need_to_know_about_your_computer.html">
+            
+                    
+                    00 - Things you need to know about your computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../week00/01_things_you_need_to_know_about_gis_data_on_your_computer.html">
+            
+                <a href="../week00/01_things_you_need_to_know_about_gis_data_on_your_computer.html">
+            
+                    
+                    01 - Things you need to know about GIS data on your computer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../week00/02_logging_in_to_google_earth_engine.html">
+            
+                <a href="../week00/02_logging_in_to_google_earth_engine.html">
+            
+                    
+                    02 - Logging in to Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../week00/03_installing_qgis_and_plugins.html">
+            
+                <a href="../week00/03_installing_qgis_and_plugins.html">
+            
+                    
+                    03 - Installing QGIS and Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../week00/04_submitting_homework_and_getting_help.html">
+            
+                <a href="../week00/04_submitting_homework_and_getting_help.html">
+            
+                    
+                    04 - Submitting Homework and Getting Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../week00/05_help_fix_the_labs.html">
+            
+                <a href="../week00/05_help_fix_the_labs.html">
+            
+                    
+                    05 - Help Fix the Labs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../week00/06_introducing_qgis_with_basic_cartographic_design.html">
+            
+                <a href="../week00/06_introducing_qgis_with_basic_cartographic_design.html">
+            
+                    
+                    06 - Introducing QGIS with Basic Cartographic Design
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../week00/spatial_data_format_of_the_week.html">
+            
+                <a href="../week00/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Shapefile Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Week 01 - Lining it Up & Cartographic Presentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="00_introduction_to_formats_and_finding_data.html">
+            
+                <a href="00_introduction_to_formats_and_finding_data.html">
+            
+                    
+                    00 - Introduction to Data Formats & Finding Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="01_introducing_google_earth_engine_with_coordinates_and_pixels.html">
+            
+                <a href="01_introducing_google_earth_engine_with_coordinates_and_pixels.html">
+            
+                    
+                    01 - Coordinates & Pixels with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="02_projection_error_measurement_with_qgis.html">
+            
+                <a href="02_projection_error_measurement_with_qgis.html">
+            
+                    
+                    02 - Projection Error Measurement with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="03_cartographic_design_with_qgis.html">
+            
+                <a href="03_cartographic_design_with_qgis.html">
+            
+                    
+                    03 - Cartographic Design with QGIS: Creating Maps for Academic Journals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Census_Data_Download_with_SimplyAnalytics.html">
+            
+                <a href="Census_Data_Download_with_SimplyAnalytics.html">
+            
+                    
+                    Census Data Download with SimplyAnalytics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="spatial_data_format_of_the_week.html">
+            
+                <a href="spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - GeoJSON Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../week02/">
+            
+                <a href="../week02/">
+            
+                    
+                    Week 02 - Making & Collecting Data
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../week02/00_georeferencing_with_qgis_and_allmaps_org.html">
+            
+                <a href="../week02/00_georeferencing_with_qgis_and_allmaps_org.html">
+            
+                    
+                    00 - Georeferencing with QGIS and AllMaps.org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../week02/01_basic_data_creation_with_geojsonio_and_qgis.html">
+            
+                <a href="../week02/01_basic_data_creation_with_geojsonio_and_qgis.html">
+            
+                    
+                    01 - Basic Data Creation with GeoJSON.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../week02/02_advanced_data_creation_with_qgis.html">
+            
+                <a href="../week02/02_advanced_data_creation_with_qgis.html">
+            
+                    
+                    02 - Advanced Data Creation with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../week02/03_introducing_arcgis_fieldmaps_and_arcgis_online_for_data_collection.html">
+            
+                <a href="../week02/03_introducing_arcgis_fieldmaps_and_arcgis_online_for_data_collection.html">
+            
+                    
+                    03 - Introducing ArcGIS FieldMaps & ArcGIS Online for Data Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../week02/spatial_data_format_of_the_week.html">
+            
+                <a href="../week02/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - GPX & GPS Exchange Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../week03/">
+            
+                <a href="../week03/">
+            
+                    
+                    Week 03 - Tables & Queries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../week03/00_basic_table_structures_and_operations_in_qgis.html">
+            
+                <a href="../week03/00_basic_table_structures_and_operations_in_qgis.html">
+            
+                    
+                    00 - Basic Table Structures & Operations in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../week03/01_sql_operations_in_qgis.html">
+            
+                <a href="../week03/01_sql_operations_in_qgis.html">
+            
+                    
+                    01 - SQL Operations in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../week03/02_tablular_vector_data_in_google_earth_engine.html">
+            
+                <a href="../week03/02_tablular_vector_data_in_google_earth_engine.html">
+            
+                    
+                    02 - Tabular/Vector Data in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../week03/03_using_sql_to_subset_big_data_in_the_stanford_data_farm.html">
+            
+                <a href="../week03/03_using_sql_to_subset_big_data_in_the_stanford_data_farm.html">
+            
+                    
+                    03 - Using SQL to subset BIG DATA in the Stanford Data Farm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../week03/spatial_data_format_of_the_week.html">
+            
+                <a href="../week03/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Database Formats (GeoPackage, Spatialite, PostGIS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../week04/">
+            
+                <a href="../week04/">
+            
+                    
+                    Week 04 - Basic Vector Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../week04/00_buffering_and_overlay_analysis_in_qgis.html">
+            
+                <a href="../week04/00_buffering_and_overlay_analysis_in_qgis.html">
+            
+                    
+                    00 - Buffering & Overlay Analysis in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../week04/01_areal_interpolation_of_attributes_with_qgis.html">
+            
+                <a href="../week04/01_areal_interpolation_of_attributes_with_qgis.html">
+            
+                    
+                    01 - Areal Interpolation of Attributes with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../week04/02_network_analysis_with_qgis.html">
+            
+                <a href="../week04/02_network_analysis_with_qgis.html">
+            
+                    
+                    02 - Network Analysis with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../week04/03_introducing_simplyanalytics_com.html">
+            
+                <a href="../week04/03_introducing_simplyanalytics_com.html">
+            
+                    
+                    03 - Introducing SimplyAnalytics.com
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../week04/spatial_data_format_of_the_week.html">
+            
+                <a href="../week04/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Network Datasets & Topology (DIME Format)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../week05/">
+            
+                <a href="../week05/">
+            
+                    
+                    Week 05 - Basic Raster Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../week05/00_basic_raster_analysis_with_google_earth_engine.html">
+            
+                <a href="../week05/00_basic_raster_analysis_with_google_earth_engine.html">
+            
+                    
+                    00 - Basic Raster Analysis with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../week05/01_terrain_and_visibility_with_qgis.html">
+            
+                <a href="../week05/01_terrain_and_visibility_with_qgis.html">
+            
+                    
+                    01 - Terrain & Visibility with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../week05/02_watershed_with_qgis_and_whitebox_tools.html">
+            
+                <a href="../week05/02_watershed_with_qgis_and_whitebox_tools.html">
+            
+                    
+                    02 - Watershed with QGIS & WhiteBox Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../week05/03_introducing_storymaps_on_arcgis_online.html">
+            
+                <a href="../week05/03_introducing_storymaps_on_arcgis_online.html">
+            
+                    
+                    03 - Introducing StoryMaps on ArcGIS Online
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../week05/spatial_data_format_of_the_week.html">
+            
+                <a href="../week05/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Raster Image Formats (GeoTIFF, JPEG+World, PNG+World)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../week06/">
+            
+                <a href="../week06/">
+            
+                    
+                    Week 06 - More Raster & Remote Sensing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../week06/00_basic_remote_sensing_with_google_earth_engine.html">
+            
+                <a href="../week06/00_basic_remote_sensing_with_google_earth_engine.html">
+            
+                    
+                    00 - Basic Remote Sensing with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../week06/01_modeling_movement_with_google_earth_engine.html">
+            
+                <a href="../week06/01_modeling_movement_with_google_earth_engine.html">
+            
+                    
+                    01 - Modeling Movement with Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../week06/02_sampling_and_interpolation_with_qgis.html">
+            
+                <a href="../week06/02_sampling_and_interpolation_with_qgis.html">
+            
+                    
+                    02 - Sampling & Interpolation with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../week06/03_introducing_planet_com_satellite_imagery.html">
+            
+                <a href="../week06/03_introducing_planet_com_satellite_imagery.html">
+            
+                    
+                    03 - Introducing Planet.com Satellite Imagery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../week06/spatial_data_format_of_the_week.html">
+            
+                <a href="../week06/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Cloud Optimized GeoTIFF & JPEG2000
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../week07/">
+            
+                <a href="../week07/">
+            
+                    
+                    Week 07 - Web Mapping & APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../week07/00_making_and_serving_map_tiles_with_qgis.html">
+            
+                <a href="../week07/00_making_and_serving_map_tiles_with_qgis.html">
+            
+                    
+                    00 - Making & Serving Map Tiles with QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../week07/01_geocoding_addresses_with_locator_stanford_edu_and_openrefine.html">
+            
+                <a href="../week07/01_geocoding_addresses_with_locator_stanford_edu_and_openrefine.html">
+            
+                    
+                    01 - Geocoding Addresses with locator.stanford.edu & OpenRefine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../week07/02_creating_and_hosting_a_webmap_using_maplibre_and_turf_js_and_github_pages.html">
+            
+                <a href="../week07/02_creating_and_hosting_a_webmap_using_maplibre_and_turf_js_and_github_pages.html">
+            
+                    
+                    02 - Creating & Hosting a WebMap, using MapLibre & Turf.js and Github Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../week07/03_introducing_openrefine_for_data_carpentry.html">
+            
+                <a href="../week07/03_introducing_openrefine_for_data_carpentry.html">
+            
+                    
+                    03 - Introducing OpenRefine for data carpentry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../week07/spatial_data_format_of_the_week.html">
+            
+                <a href="../week07/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - XYZ Tiles, WMS/WFS Web Services & IIIF for Historic Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../week08/">
+            
+                <a href="../week08/">
+            
+                    
+                    Week 08 - Analytic Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../week08/00_wildfire_detection_and_severity_measurement_in_google_earth_engine.html">
+            
+                <a href="../week08/00_wildfire_detection_and_severity_measurement_in_google_earth_engine.html">
+            
+                    
+                    00 - Wildfire Detection & Severity Measurement in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../week08/01_suitability_modeling_in_qgis.html">
+            
+                <a href="../week08/01_suitability_modeling_in_qgis.html">
+            
+                    
+                    01 - Suitability Modeling in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../week08/02_landcover_classification_and_change_detection_in_google_earth_engine.html">
+            
+                <a href="../week08/02_landcover_classification_and_change_detection_in_google_earth_engine.html">
+            
+                    
+                    02 - Landcover Classification & Change Detection in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../week08/03_introducing_model_builder_in_qgis.html">
+            
+                <a href="../week08/03_introducing_model_builder_in_qgis.html">
+            
+                    
+                    03 - Introducing Model Builder in QGIS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../week08/spatial_data_format_of_the_week.html">
+            
+                <a href="../week08/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - NetCDF & Multi-Dimensional Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../week09/">
+            
+                <a href="../week09/">
+            
+                    
+                    Week 09 - Scaling, Code, Odds&Ends
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../week09/00_the_alphaearth_embedding_database_in_google_earth_engine.html">
+            
+                <a href="../week09/00_the_alphaearth_embedding_database_in_google_earth_engine.html">
+            
+                    
+                    00 - The AlphaEarth Embedding Database in Google Earth Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../week09/01_being_john_snow_in_a_python_notebook.html">
+            
+                <a href="../week09/01_being_john_snow_in_a_python_notebook.html">
+            
+                    
+                    01 - Being John Snow,... in a Python Notebook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../week09/02_photogrammetric_processing_of_drone_imagery.html">
+            
+                <a href="../week09/02_photogrammetric_processing_of_drone_imagery.html">
+            
+                    
+                    02 - Photogrammetric Processing of Drone Imagery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../week09/03_introducing_gdal_and_command_line_tools_on_stanford_farmshare.html">
+            
+                <a href="../week09/03_introducing_gdal_and_command_line_tools_on_stanford_farmshare.html">
+            
+                    
+                    03 - Introducing GDAL & Command Line Tools on Stanford Farmshare
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../week09/spatial_data_format_of_the_week.html">
+            
+                <a href="../week09/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - HDF5 & Hierarchical Scientific Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../week10/">
+            
+                <a href="../week10/">
+            
+                    
+                    Week 10 - Wrapping it all up
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../week10/00_final_project_guidelines.html">
+            
+                <a href="../week10/00_final_project_guidelines.html">
+            
+                    
+                    00 - Final Project Guidelines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../week10/01_storymaps_support_materials.html">
+            
+                <a href="../week10/01_storymaps_support_materials.html">
+            
+                    
+                    01 - StoryMaps Support Materials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../week10/02_guide_to_citation_of_spatial_data_and_software.html">
+            
+                <a href="../week10/02_guide_to_citation_of_spatial_data_and_software.html">
+            
+                    
+                    02 - Guide to Citation of Spatial Data & Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../week10/03_staces_crazy_list.html">
+            
+                <a href="../week10/03_staces_crazy_list.html">
+            
+                    
+                    03 - Stace's Crazy List of Additional GISci Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../week10/spatial_data_format_of_the_week.html">
+            
+                <a href="../week10/spatial_data_format_of_the_week.html">
+            
+                    
+                    SDFotW - Legacy & Esoteric Formats
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >03 - Cartographic Design with QGIS: Creating Maps for Academic Journals</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cartographic-design-with-qgis-creating-maps-for-academic-journals">Cartographic Design with QGIS: Creating Maps for Academic Journals</h1>
+<p><strong>📖 For the full workshop with images and interactive examples, see the <a href="https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals" target="_blank">original Stanford GIS Cartography workshop</a>.</strong></p>
+<h2 id="overview">Overview</h2>
+<p>Maps, graphs, and other figures are essential elements of academic publication. While the narrative text carries content, maps and illustrations are often where readers' eyes stop as they scan through articles. They represent opportunities for dense visual communication in limited space.</p>
+<p>Academic publication presents unique challenges to creating effective maps. Journals impose strict constraints on figure size, resolution, color options (often grayscale only), and format specifications. Learning to work within these constraints requires a different approach than creating larger presentation or web maps.</p>
+<p><strong>Developed in cooperation with Dr. Michelle Tobias</strong> (GIS Data Specialist at the UC Davis DataLab). You can view <a href="https://github.com/MicheleTobias/Workshop-Cartography-Journal-Figures" target="_blank">Michelle's version of this workshop on GitHub</a>.</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this lesson, you will:</p>
+<ul>
+<li>Understand the unique design challenges of journal publication maps</li>
+<li>Learn best practices for visual hierarchy, typography, color, and <a href="../GLOSSARY.html#projections" class="glossary-term" title="In order to make a map, one has to represent the three-dimensional surface of the earth on a two-dimensional plane. There are different ways in which one might flatten the earth to represent it on a two-dimensional map, and these different flattening algorithms (all of which involve distortions of one kind or another) are referred to as map projections. Most maps published on the web are in the Web Mercator projection. Related terms: CRS (coordinate reference system) or the older term SRS (spatial reference system) https://www.gislounge.com/map-projection/">projections</a></li>
+<li>Create a publication-ready map within journal specifications</li>
+<li>Apply QGIS styling and layout tools for print media</li>
+<li>Export maps in formats acceptable to academic publishers</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This lesson assumes you already have:</p>
+<ul>
+<li>Basic understanding of common spatial data formats (<a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> and <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a>)</li>
+<li>Familiarity with desktop GIS software and QGIS specifically</li>
+<li>(See our <a href="../week00/06_introducing_qgis_with_basic_cartographic_design.html">Intro to QGIS workshop</a> if you need a refresher)</li>
+</ul>
+<h2 id="common-design-issues-for-journal-publication">Common Design Issues for Journal Publication</h2>
+<p>The most common design problems encountered when publishing maps in journals are:</p>
+<ul>
+<li><strong>Small map sizes</strong> – Limited to 1 or 2 column widths on a page</li>
+<li><strong>Limited color</strong> – Often restricted to grayscale, or charged per color figure</li>
+<li><strong>Low resolution</strong> – Print constraints and file size limits</li>
+<li><strong>Data citation and licensing</strong> – Required in captions, impacts map design</li>
+</ul>
+<hr></hr>
+<h1 id="steps-for-creating-journal-map-figures">Steps for Creating Journal Map Figures</h1>
+<h2 id="1-what-map-are-you-making">1. What Map Are You Making?</h2>
+<p>The first step in making any map is understanding the <strong>message</strong> you are trying to convey and identifying <strong>your audience</strong>. Your map should be designed specifically for the topic and the people who will see it.</p>
+<h3 id="real-world-examples">Real-World Examples</h3>
+<p><strong>Swift Boat Route Map</strong> (full color, book publication): Detailed color and context draw attention to the path while maintaining geographic context for readers unfamiliar with the Vietnam War region.</p>
+<p><strong>Giant Panda Habitat Map</strong> (grayscale, journal publication): Print limitations meant no color and minimal design space. However, knowing the audience was familiar with the subject, designers chose to focus on core provinces and panda habitat while removing background details.</p>
+<p><em>[See the <a href="https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals" target="_blank">original workshop</a> for visual examples of both maps.]</em></p>
+<h3 id="key-questions-to-ask">Key Questions to Ask:</h3>
+<ul>
+<li>What is the primary story or data I'm visualizing?</li>
+<li>Who is my audience and what geographic knowledge do they have?</li>
+<li>What level of detail is necessary to communicate my message?</li>
+</ul>
+<hr></hr>
+<h2 id="2-data-selection">2. Data Selection</h2>
+<p>You will need geospatial data to build your map, but be careful not to use raw analysis data for publication figures. <strong>Raw GIS data is often too dense or detailed for small figures.</strong> What looks acceptable on a desktop becomes an illegible mess when printed at 3 inches wide.</p>
+<h3 id="data-scale-matching">Data Scale Matching</h3>
+<p>Match your data scale to your map scale—don't use overly detailed or overly simplified data for the final output size. A good resource for general-purpose data at multiple scales is <a href="https://www.naturalearthdata.com/downloads/" target="_blank">Natural Earth Data</a>, which provides data at three levels of detail:</p>
+<ul>
+<li>10m scale (global, less detail)</li>
+<li>50m scale (regional)</li>
+<li>110m scale (continental overview)</li>
+</ul>
+<hr></hr>
+<h2 id="3-journal-art-specifications">3. Journal Art Specifications</h2>
+<p><strong>Before you start creating the map, understand the journal's art specifications.</strong> Every journal, book, and magazine has specific requirements for image submissions. Failure to meet these guidelines risks your map being excluded or modified by the publisher.</p>
+<h3 id="example-nature-journals">Example: Nature Journals</h3>
+<p>Nature's formatting guide specifies:</p>
+<p><strong>Size:</strong></p>
+<ul>
+<li>89 mm (1 column) or 183 mm (2 column) wide, max 247 mm high</li>
+<li>Figures should match one of these width dimensions exactly</li>
+</ul>
+<p><strong>Color:</strong></p>
+<ul>
+<li>Four-color reproduction (CMYK: cyan, magenta, yellow, black)</li>
+<li>Color figures incur publication charges—consider grayscale</li>
+</ul>
+<p><strong>Font:</strong></p>
+<ul>
+<li>No specific requirements for maps; use common, readable fonts</li>
+<li>Some journals require open-source fonts</li>
+</ul>
+<p><strong>Format &amp; Quality:</strong></p>
+<ul>
+<li>Electronic format (.jpg for review; .eps, .tiff, or .pdf for publication)</li>
+<li>Typically 300 dpi for small print; 600 dpi for large or detailed maps</li>
+<li>Specify color space (CMYK preferred for print, RGB acceptable)</li>
+</ul>
+<p><strong>Other Limitations:</strong></p>
+<ul>
+<li>No separate panels unless they relate to the main figure</li>
+<li>One map per figure unless components are directly related</li>
+</ul>
+<h3 id="finding-your-journals-specs">Finding Your Journal's Specs</h3>
+<p>Publisher specs are often scattered across the author instructions. Look in:</p>
+<ul>
+<li>Figure specification sections</li>
+<li>Photography or graphics guidelines</li>
+<li>General submission guidelines</li>
+</ul>
+<p>Be persistent—there's no point starting a map without these details.</p>
+<hr></hr>
+<h2 id="4-page-setup-in-qgis">4. Page Setup in QGIS</h2>
+<p>Once you know your journal specifications, set up your QGIS page dimensions <strong>before</strong> styling data.</p>
+<ol>
+<li>Open QGIS with your data layers</li>
+<li>Go to <strong>Project → New Print Layout</strong></li>
+<li>Right-click the page → <strong>Page Properties</strong></li>
+<li>Set <strong>Size</strong> to Custom</li>
+<li>Enter <strong>Width</strong> and <strong>Height</strong> from your journal specs (e.g., 183 mm × 183 mm)</li>
+<li>Save the project</li>
+</ol>
+<p><strong>Don't leave this step for the end</strong>—building a map at default letter size (8.5" × 11") and shrinking it later will force compromises on readability and design.</p>
+<hr></hr>
+<h2 id="5-design-principles-for-journal-maps">5. Design Principles for Journal Maps</h2>
+<h3 id="visual-hierarchy">Visual Hierarchy</h3>
+<p>Visual hierarchy separates images into <strong>background (ground)</strong> and <strong>foreground (figure)</strong> elements. The order of map features in the visual hierarchy indicates their relative importance.</p>
+<ul>
+<li><strong>Ground elements</strong> are contextual (like coastlines or country boundaries)</li>
+<li><strong>Figure elements</strong> represent your data (what you're analyzing)</li>
+<li>Anything that stands out visually will move higher in the hierarchy</li>
+</ul>
+<p><strong>How to create hierarchy:</strong></p>
+<ul>
+<li>Use size, color, and contrast to emphasize important features</li>
+<li>Push less important elements to the background with lighter colors or thinner lines</li>
+<li>Group similar features; separate dissimilar ones</li>
+</ul>
+<h3 id="color-and-grayscale">Color and Grayscale</h3>
+<p><strong>For grayscale publication:</strong></p>
+<p>Even without color, you can create strong visual hierarchy using different shades of gray:</p>
+<ul>
+<li><strong>10%–90% black</strong> reads as "ground" (background)</li>
+<li><strong>Full black (100%)</strong> reads as "figure" (data)</li>
+<li><strong>Full white (0%)</strong> often reads as "no data" or empty space</li>
+</ul>
+<p>The greater the percent-black difference between features, the greater the visual contrast.</p>
+<p><strong>Example: Giant Panda Habitat Map</strong></p>
+<ul>
+<li>Light gray background = China's general geography</li>
+<li>Medium gray = historic panda range</li>
+<li>Full black = current panda range (most important)</li>
+</ul>
+<p><em>[See the <a href="https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals" target="_blank">original workshop</a> for this grayscale hierarchy example.]</em></p>
+<p><strong>For color publication:</strong></p>
+<p>When color is available, use it strategically:</p>
+<ul>
+<li>Keep the basemap subdued (light grays)</li>
+<li>Use saturated color only for your data</li>
+<li>Use natural color associations (blue for water, greens for vegetation)</li>
+<li><strong>Avoid rainbow color ramps</strong> for sequential or divergent data—they can misrepresent values and are problematic for colorblind readers</li>
+</ul>
+<p><strong>Better alternatives:</strong></p>
+<ul>
+<li>Single color going light → dark (sequential data)</li>
+<li>Two-color divergent scheme (data diverging from a center value)</li>
+</ul>
+<p><em>[See the <a href="https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals" target="_blank">original workshop</a> for visual examples of color ramp alternatives and the "rainbows are for unicorns" example.]</em></p>
+<h3 id="fonts">Fonts</h3>
+<p>Keep fonts simple and readable:</p>
+<ul>
+<li>Follow journal specifications</li>
+<li>Stick with common fonts (Helvetica, Arial, Times New Roman) unless the journal specifies otherwise</li>
+<li>Avoid decorative fonts or using more than 2 fonts per map</li>
+<li>Use font style variations (bold, italic, size, color) to link features to the visual hierarchy</li>
+</ul>
+<h3 id="projections">Projections</h3>
+<p>All maps are distorted to some degree. Your choice of coordinate system affects distortion type and map appearance:</p>
+<ul>
+<li><strong>Never use geographic (unprojected) coordinates</strong>—always project your data</li>
+<li><strong>Avoid Mercator <a href="../GLOSSARY.html#projections" class="glossary-term" title="In order to make a map, one has to represent the three-dimensional surface of the earth on a two-dimensional plane. There are different ways in which one might flatten the earth to represent it on a two-dimensional map, and these different flattening algorithms (all of which involve distortions of one kind or another) are referred to as map projections. Most maps published on the web are in the Web Mercator projection. Related terms: CRS (coordinate reference system) or the older term SRS (spatial reference system) https://www.gislounge.com/map-projection/">projections</a></strong>—they severely distort area and shape in mid-to-upper latitudes. Knowledgeable readers may perceive this as unfamiliarity with best practices</li>
+<li><strong>For density maps</strong> (people per square mile), use equal-area <a href="../GLOSSARY.html#projections" class="glossary-term" title="In order to make a map, one has to represent the three-dimensional surface of the earth on a two-dimensional plane. There are different ways in which one might flatten the earth to represent it on a two-dimensional map, and these different flattening algorithms (all of which involve distortions of one kind or another) are referred to as map projections. Most maps published on the web are in the Web Mercator projection. Related terms: CRS (coordinate reference system) or the older term SRS (spatial reference system) https://www.gislounge.com/map-projection/">projections</a> so regions are comparable</li>
+<li><strong>For general-purpose or study-area maps</strong>, conformal <a href="../GLOSSARY.html#projections" class="glossary-term" title="In order to make a map, one has to represent the three-dimensional surface of the earth on a two-dimensional plane. There are different ways in which one might flatten the earth to represent it on a two-dimensional map, and these different flattening algorithms (all of which involve distortions of one kind or another) are referred to as map projections. Most maps published on the web are in the Web Mercator projection. Related terms: CRS (coordinate reference system) or the older term SRS (spatial reference system) https://www.gislounge.com/map-projection/">projections</a> (which preserve shape) are more familiar and best</li>
+</ul>
+<h3 id="basemaps">Basemaps</h3>
+<p>Built-in basemap services (in QGIS or ArcGIS) are usually a poor choice for journal figures because they:</p>
+<ul>
+<li>Are typically full color and fairly detailed</li>
+<li>Compete for visual attention with your data</li>
+<li>Flatten the visual hierarchy</li>
+<li>Make it harder for readers to focus on your message</li>
+</ul>
+<p><strong>Better approach:</strong> Create a custom, minimal basemap using light gray lines and labels. <a href="https://youtu.be/lMfL9VsHcWA" target="_blank">Learn how on YouTube</a>.</p>
+<p><em>[See the <a href="https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals" target="_blank">original workshop</a> for visual comparisons of default basemaps vs. custom minimal basemaps.]</em></p>
+<hr></hr>
+<h2 id="6-layout-marginalia-and-arrangement">6. Layout: Marginalia and Arrangement</h2>
+<h3 id="titles">Titles</h3>
+<p>Map figures rarely have proper titles. Instead, use the <strong>figure caption</strong> to title and briefly describe the map.</p>
+<h3 id="north-arrows-and-scale-bars">North Arrows and Scale Bars</h3>
+<ul>
+<li>Maps of recognizable regions don't need north arrows (north assumed at page top)</li>
+<li><strong>Include a north arrow only if the map is rotated</strong></li>
+<li>Scale bars are useful for unfamiliar regions or to clarify actual distances</li>
+</ul>
+<h3 id="legends">Legends</h3>
+<p>Legends are only needed when symbols aren't self-evident. Whenever possible:</p>
+<ul>
+<li><strong>Use direct labeling instead of legends</strong></li>
+<li>Don't create a legend entry for something you can label directly on the map</li>
+<li>Remove unnecessary legend entries</li>
+</ul>
+<h3 id="figure-captions">Figure Captions</h3>
+<p>Captions explain why the figure is in the article and what readers need to know. A well-written caption should include:</p>
+<ul>
+<li><strong>Figure number and title:</strong> What the map shows</li>
+<li><strong>Description:</strong> The story or data being visualized</li>
+<li><strong>Data citation:</strong> In the journal's preferred style, including source and cartographer</li>
+<li><strong>Contextual information:</strong> Anything needed to interpret the map</li>
+</ul>
+<p><strong>Example:</strong></p>
+<blockquote>
+<p>Figure 1: Study site locations. Black squares indicate sites treated with experimental weed killer and open circles indicate control sites. Data from Smith et al. (2021).</p>
+</blockquote>
+<h3 id="alignment-and-frames">Alignment and Frames</h3>
+<p>Carefully place all layout elements (legends, scale bars, labels, etc.):</p>
+<ul>
+<li>Don't obscure the main map or data</li>
+<li>Use uniform spacing between items and map edges</li>
+<li><strong>Avoid adding extra frames</strong>—each new frame creates an obstacle to visual flow</li>
+</ul>
+<p>The visual phenomenon "1+1=3" shows that gaps between frames create the illusion of an additional line. Removing unnecessary frames declutters and improves the figure.</p>
+<hr></hr>
+<h2 id="7-exports">7. Exports</h2>
+<p>Refer to the publisher's art specifications and follow their recommendations. Most will ask for <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> exports (.jpg, .tiff, or .png); occasionally you'll need <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> formats (.ai, .eps).</p>
+<p><strong>If you don't have Adobe Illustrator:</strong></p>
+<ul>
+<li>Substitute .svg or .pdf (both editable in Illustrator)</li>
+</ul>
+<p><strong>Important consideration:</strong></p>
+<ul>
+<li><strong><a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">Vector</a> maps</strong> can be edited by the publisher (lack of control)</li>
+<li><strong><a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">Raster</a> maps</strong> cannot be easily modified (more control)</li>
+</ul>
+<hr></hr>
+<h1 id="hands-on-exercise-kīlauea-2018-eruption-map">Hands-On Exercise: Kīlauea 2018 Eruption Map</h1>
+<h2 id="premise">Premise</h2>
+<p>On May 3, 2018, a new eruption began along the East Rift zone of Kīlauea volcano in Hawaii. The eruption:</p>
+<ul>
+<li>Forced evacuation of 2,000 residents</li>
+<li>Covered 13.7 square miles with fresh lava</li>
+<li>Added 875 acres of new land to the island</li>
+<li>Became the most destructive U.S. volcanic event since Mount St. Helens (1980)</li>
+</ul>
+<p><strong>Your task:</strong> Create a map overlaying the 2018 main lava flow with historic eruptions (1790, 1840, 1955) for a fictional Nature journal article.</p>
+<p>Learn more: <a href="https://en.wikipedia.org/wiki/2018_lower_Puna_eruption" target="_blank">2018 Lower Puna Eruption (Wikipedia)</a></p>
+<h2 id="download-data">Download Data</h2>
+<p><a href="https://drive.google.com/file/d/1O59PW_6YVcrNjhbQ-7Jr9u-w3rMpOKU6/view?usp=sharing" target="_blank">Download the data folder</a> and extract to your Desktop.</p>
+<h3 id="data-contents">Data Contents:</h3>
+<p><strong>HI_base_data/</strong></p>
+<ul>
+<li>Hawaii state outlines (2 scales)</li>
+<li>Water effect buffer layer</li>
+</ul>
+<p><strong>contact_polygons/</strong></p>
+<ul>
+<li>Lava flow contact polygons for 1790, 1840, 1955 eruptions</li>
+<li>Fissure line layer for East Rift area</li>
+</ul>
+<p><strong>KIL_2018_raster/</strong></p>
+<ul>
+<li>Composite thermal IR (Band 10) from Landsat 8</li>
+<li>Combines images from 5/16/2018–6/17/2018</li>
+</ul>
+<p><strong>KIL_2018_poly/</strong></p>
+<ul>
+<li>Single <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> polygon of 2018 East Rift eruption</li>
+</ul>
+<h2 id="art-specifications-to-follow">Art Specifications to Follow</h2>
+<p>Use the Nature journal specifications from earlier in this lesson:</p>
+<ul>
+<li>183 mm width (2 column), 247 mm max height</li>
+<li>.jpg export</li>
+<li>CMYK color space (RGB acceptable for conversion)</li>
+<li>300 dpi</li>
+</ul>
+<hr></hr>
+<h2 id="step-1-set-up-the-map-project">Step 1: Set Up the Map Project</h2>
+<ol>
+<li>Open QGIS and create a new project</li>
+<li>In the <strong>Browser</strong> panel, create a new connection to your data folder on Desktop</li>
+<li>Add these layers to your project:<ul>
+<li>coast_UTM5</li>
+<li>1790_contacts</li>
+<li>1840_contacts</li>
+<li>1955_contacts</li>
+<li>Kilauea_fissures</li>
+</ul>
+</li>
+<li>Save the project with a descriptive name (e.g., "Kilauea_2018_Journal")</li>
+</ol>
+<p><em>[See the <a href="https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals" target="_blank">original workshop</a> for detailed screenshots of each step.]</em></p>
+<hr></hr>
+<h2 id="step-2-set-up-the-print-layout">Step 2: Set Up the Print Layout</h2>
+<ol>
+<li><strong>Project → New Print Layout</strong> and name it "Nature Specs"</li>
+<li>Right-click the white page → <strong>Page Properties</strong></li>
+<li>Set <strong>Size</strong> to Custom<ul>
+<li>Width: 183 mm</li>
+<li>Height: 183 mm</li>
+</ul>
+</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<p>Close this window; we'll return after styling data.</p>
+<hr></hr>
+<h2 id="step-3-style-the-data-layers">Step 3: Style the Data Layers</h2>
+<p>Open the <strong>Layer Styling Panel</strong> for live updates:</p>
+<ol>
+<li><strong>View → Panels → Layer Styling</strong></li>
+<li>Check <strong>Live update</strong> to see changes in real time</li>
+<li>Right-click a contact layer → <strong>Zoom to Layer</strong> (adjust your view)</li>
+</ol>
+<h3 id="base-layer-coastutm5">Base Layer (coast_UTM5)</h3>
+<ol>
+<li>Select coast_UTM5 in the Layers panel</li>
+<li>In Layer Styling, select <strong>Simple Fill</strong></li>
+<li><strong>Fill color:</strong> Set H=0, S=0, V=85% (light gray)</li>
+<li><strong>Stroke color:</strong> Set H=0, S=0, V=50% (medium gray)</li>
+<li><strong>Stroke width:</strong> Leave at 0.26 mm</li>
+</ol>
+<p><em>[See the <a href="https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals" target="_blank">original workshop</a> for screenshots of the color picker interface.]</em></p>
+<h3 id="lava-flow-contacts-create-visual-hierarchy">Lava Flow Contacts (Create Visual Hierarchy)</h3>
+<p>Set fill colors for each contact layer (strokes transparent):</p>
+<p><strong>1790_contacts:</strong></p>
+<ul>
+<li>Fill: H=0, S=0, V=75%</li>
+<li>Stroke: 0% Opacity (transparent)</li>
+</ul>
+<p><strong>1840_contacts:</strong></p>
+<ul>
+<li>Fill: H=0, S=0, V=65%</li>
+<li>Stroke: 0% Opacity (transparent)</li>
+</ul>
+<p><strong>1955_contacts:</strong></p>
+<ul>
+<li>Fill: H=0, S=0, V=50%</li>
+<li>Stroke: 0% Opacity (transparent)</li>
+</ul>
+<p>This creates a grayscale hierarchy—older eruptions appear lighter, newer darker.</p>
+<p><em>[See the <a href="https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals" target="_blank">original workshop</a> for screenshots showing the styled contact layers.]</em></p>
+<h3 id="fissures-kilaueafissures">Fissures (Kilauea_fissures)</h3>
+<p>Use full black to emphasize these small features:</p>
+<ol>
+<li>Select Kilauea_fissures → <strong>Simple Line</strong> in styling panel</li>
+<li><strong>Color:</strong> H=0, S=0, V=0 (full black)</li>
+<li><strong>Stroke width:</strong> 1.5 mm</li>
+<li><strong>Stroke style:</strong> Solid Line</li>
+<li><strong>Cap style:</strong> Flat (to make spacing more noticeable)</li>
+</ol>
+<h3 id="2018-lava-composite-raster">2018 Lava Composite (Raster)</h3>
+<ol>
+<li>Turn on lava_composite_b10 <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> layer</li>
+<li>In Layer Styling, change <strong>Symbology</strong> from "Singleband gray" to "Singleband pseudocolor"</li>
+<li><strong>Color ramp:</strong> Select All color ramps → Yellow-Orange-Red (YlOrRd)</li>
+<li><strong>Invert Color Ramp</strong> (so intense red = high values)</li>
+<li>Adjust <strong>Min/Max values</strong> to narrow the displayed range:<ul>
+<li>Min: 130,000</li>
+<li>Max: 205,092</li>
+</ul>
+</li>
+<li>Check <strong>Clip out of range values</strong> to hide pixels outside this range</li>
+<li>Click <strong>Apply</strong></li>
+</ol>
+<p><em>[See the <a href="https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals" target="_blank">original workshop</a> for step-by-step screenshots of <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> styling.]</em></p>
+<h3 id="place-names-and-labels">Place Names and Labels</h3>
+<ol>
+<li>Turn on Pop_Places layer</li>
+<li>In Layer Styling, select <strong>Simple Marker</strong> → dot black symbol</li>
+<li>Select the <strong>Labels</strong> option → change to "Single Labels"</li>
+<li><strong>Value:</strong> name field</li>
+<li><strong>Text size:</strong> 14 points, <strong>Bold</strong></li>
+<li><strong>Placement:</strong> Cartographic → 4 mm offset</li>
+</ol>
+<hr></hr>
+<h2 id="step-4-open-print-composer">Step 4: Open Print Composer</h2>
+<ol>
+<li><strong>Project → Layouts → Nature Specs</strong></li>
+<li>Use the <strong>Select/Move</strong> tool (top of toolbar)</li>
+<li>From the toolbar, select <strong>Add new map</strong> tool</li>
+<li>Click and drag on the page to create a map frame</li>
+</ol>
+<p><em>[See the <a href="https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals" target="_blank">original workshop</a> for detailed screenshots of the Print Composer interface and toolbar.]</em></p>
+<h3 id="positioning-and-scale">Positioning and Scale</h3>
+<ol>
+<li>Use Select/Move to adjust the map frame</li>
+<li>Or use <strong>Position and Size</strong> in the Item Properties panel</li>
+<li>To set a specific scale, find <strong>Main Properties</strong> → enter scale (e.g., 70000 for 1:70,000)</li>
+<li>Use the <strong>Move Item Content</strong> tool to pan/zoom data inside the frame</li>
+<li>Adjust until your map data is centered and fills the layout</li>
+</ol>
+<h3 id="set-map-reference-scale-optional">Set Map Reference Scale (Optional)</h3>
+<p>If symbols appear too small/large in the print composer compared to the main view:</p>
+<ol>
+<li>Return to main QGIS window</li>
+<li>Right-click Pop_Places → <strong>Properties → Rendering</strong></li>
+<li>Check <strong>Fixed Reference Scale</strong> → select scale from Print Composer</li>
+<li>In Print Composer, click <strong>Update Map Preview</strong></li>
+</ol>
+<hr></hr>
+<h2 id="step-5-add-map-elements">Step 5: Add Map Elements</h2>
+<h3 id="add-title-text">Add Title Text</h3>
+<ol>
+<li>Select <strong>Add Label</strong> tool</li>
+<li>Click above the lava region to place a text box</li>
+<li>In Item Properties, replace text with "East Rift Zone"</li>
+<li><strong>Font:</strong> Bold, 16 points</li>
+<li>Use Select/Move to position it</li>
+</ol>
+<p><em>[See the <a href="https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals" target="_blank">original workshop</a> for screenshots showing proper text placement and sizing.]</em></p>
+<h3 id="add-legend">Add Legend</h3>
+<ol>
+<li>Select <strong>Add Legend</strong> tool</li>
+<li>Click in the upper right corner of your layout</li>
+<li>In Legend Items, <strong>uncheck Auto Update</strong></li>
+<li>Remove unwanted layers using the red minus (−) button</li>
+<li>Keep only: lava composite <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a>, 1790/1840/1955 contacts</li>
+<li><strong>Edit layer names:</strong><ul>
+<li>"lava_composite_b10" → "New Flow"</li>
+<li>"1955_contacts" → "1955 Contacts" (repeat for others)</li>
+</ul>
+</li>
+<li><strong>Symbol properties:</strong> Uncheck "Draw stroke for <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a> symbols"</li>
+<li><strong>Remove frame</strong> if desired or leave and modify</li>
+<li>Position in the far right corner, using arrow keys to nudge it 5 steps down and left</li>
+</ol>
+<p><em>[See the <a href="https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals" target="_blank">original workshop</a> for screenshots of the completed legend in context.]</em></p>
+<h3 id="add-scale-bar">Add Scale Bar</h3>
+<ol>
+<li>Select <strong>Add Scale Bar</strong> tool</li>
+<li>Click in the lower right corner</li>
+<li>In Item Properties:<ul>
+<li><strong>Style:</strong> Line Ticks Up</li>
+<li><strong>Units:</strong> Kilometers</li>
+<li><strong>Segments:</strong> Fixed width 1 unit with 2 right segments</li>
+</ul>
+</li>
+<li>Adjust position to match legend spacing</li>
+</ol>
+<h3 id="add-locator-map-with-extent-indicator-optional">Add Locator Map with Extent Indicator (Optional)</h3>
+<ol>
+<li>Select <strong>Map 1</strong> (your main map) in the layout</li>
+<li>In Layer Properties, check <strong>Lock Layers</strong> and <strong>Lock styles for layers</strong></li>
+<li>In main QGIS, duplicate coast_UTM5 layer</li>
+<li>Keep only the new "coast_UTM5 copy" visible</li>
+<li>Style it: full black fill, no outline</li>
+<li>In Print Composer, use <strong>Add Map</strong> to create a new map in the upper left</li>
+<li>In Item Properties:<ul>
+<li><strong>Background:</strong> Set opacity to 50%</li>
+<li><strong>Overviews:</strong> + Add new → Set Map frame to "Map 1" → Frame style = red fill</li>
+</ul>
+</li>
+</ol>
+<h3 id="add-image-background-optional">Add Image Background (Optional)</h3>
+<p>For added polish, add a paper texture:</p>
+<ol>
+<li>Select <strong>Add Picture</strong> tool</li>
+<li>Drag a box around the entire layout</li>
+<li>In Item Properties, set file type to "<a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">Raster</a> Image"</li>
+<li>Browse to grunge_paper.jpg (from data folder images)</li>
+<li><strong>Rendering:</strong> Blending mode = Multiply, Opacity = 80%</li>
+</ol>
+<hr></hr>
+<h2 id="step-6-alignment-and-spacing">Step 6: Alignment and Spacing</h2>
+<ol>
+<li><strong>View</strong> menu → Check <strong>Show Grid</strong> and <strong>Snap to Grid</strong></li>
+<li>Use <strong>Smart Guides</strong> to help align items</li>
+<li>Ensure:<ul>
+<li>Even spacing between legend/scale bar and map edges</li>
+<li>All elements aligned with each other</li>
+<li>No visual clutter or overlapping text</li>
+</ul>
+</li>
+</ol>
+<p><em>[See the <a href="https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals" target="_blank">original workshop</a> for visual examples of well-aligned vs. poorly-aligned layouts.]</em></p>
+<hr></hr>
+<h2 id="step-7-export-the-final-map">Step 7: Export the Final Map</h2>
+<ol>
+<li>In Print Layout, click <strong>Export as Image</strong> icon</li>
+<li>Choose export folder and filename</li>
+<li><strong>Image Export Options:</strong><ul>
+<li><strong>DPI:</strong> 300 (or 600 for detailed maps)</li>
+<li><strong>Color space:</strong> RGB (publisher can convert to CMYK)</li>
+<li><strong>Format:</strong> .jpg (or per journal specs)</li>
+</ul>
+</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<hr></hr>
+<h2 id="extra-create-a-small-multiple">Extra: Create a Small Multiple</h2>
+<p>A <strong>small multiple</strong> shows the same map background with changing overlay data—useful for showing temporal changes or comparing data layers.</p>
+<ol>
+<li>Create a new layout (4" × 16" for stacked maps)</li>
+<li>Add a 3.5" × 3.5" map frame on the left</li>
+<li>Style with only island background + 1790 contacts</li>
+<li>Lock layers and lock styles</li>
+<li>Copy/paste the map frame 3 more times, stacking vertically</li>
+<li>For each subsequent map, unlock layers, add the next contact layer (1840, 1955), then add the 2018 <a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">raster</a></li>
+<li>Use <strong>Align and Distribute</strong> tools to space evenly</li>
+<li>Use arrow keys to fine-tune spacing</li>
+</ol>
+<p><em>[See the <a href="https://sites.google.com/stanford.edu/gis-cartography/workshops/maps-for-academic-journals" target="_blank">original workshop</a> for a visual example of the completed small multiples layout.]</em></p>
+<hr></hr>
+<h1 id="additional-resources">Additional Resources</h1>
+<p>For more on map design and GIS cartography:</p>
+<ul>
+<li><a href="https://www.press.uchicago.edu/ucp/books/book/chicago/M/bo3637652.html" target="_blank">Making Maps: A Visual Guide to Map Design for GIS (Krygier &amp; Wood)</a></li>
+<li><a href="https://www.edwardtufte.com/tufte/et_books" target="_blank">Tufte, Edward. Envisioning Information</a></li>
+<li><a href="https://earthobservatory.nasa.gov/blogs/elegantfigures/2013/08/05/subtleties-of-color-part-1-of-6/" target="_blank">NASA Earth Observatory: Subtleties of Color</a></li>
+<li><a href="https://eagereyes.org/basics/rainbow-color-map" target="_blank">Eager Eyes: Why Rainbow Colormaps are Problematic</a></li>
+<li><a href="https://www.naturalearthdata.com/" target="_blank">Natural Earth Data</a> – Free geographic data</li>
+<li><a href="https://docs.qgis.org/" target="_blank">QGIS Documentation</a> – Official QGIS tutorials and guides</li>
+</ul>
+<h2 id="whats-next">What's Next?</h2>
+<p>With foundational cartographic design skills in place, you're ready to explore:</p>
+<ul>
+<li>Advanced <a href="../GLOSSARY.html#vector" class="glossary-term" title="A type of spatial data that uses geocoded points, lines (connected points), and polygons (an enclosed shape defined by connected lines) to represent real-world phenomena.">vector</a> analysis (<a href="../week03">Week 03: Vector Data Analysis</a>)</li>
+<li><a href="../GLOSSARY.html#raster" class="glossary-term" title="A type of spatial data that uses geographically referenced grid cells/pixels, which are associated with data on attributes of interest (i.e. temperature, elevation, population etc.), to represent real-world phenomena.">Raster</a> data and remote sensing (<a href="../week05">Week 05: Introduction to Raster Data</a>)</li>
+<li>Web mapping and interactive visualization (<a href="../week07">Week 07: Publishing Web Maps</a>)</li>
+</ul>
+<hr></hr>
+<p><em>Developed in cooperation with Dr. Michelle Tobias, GIS Data Specialist at UC Davis DataLab.</em></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02_projection_error_measurement_with_qgis.html" class="navigation navigation-prev " aria-label="Previous page: 02 - Projection Error Measurement with QGIS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Census_Data_Download_with_SimplyAnalytics.html" class="navigation navigation-next " aria-label="Next page: Census Data Download with SimplyAnalytics">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"03 - Cartographic Design with QGIS: Creating Maps for Academic Journals","level":"1.3.4","depth":2,"next":{"title":"Census Data Download with SimplyAnalytics","level":"1.3.5","depth":2,"path":"week01/Census_Data_Download_with_SimplyAnalytics.md","ref":"week01/Census_Data_Download_with_SimplyAnalytics.md","articles":[]},"previous":{"title":"02 - Projection Error Measurement with QGIS","level":"1.3.3","depth":2,"path":"week01/02_projection_error_measurement_with_qgis.md","ref":"week01/02_projection_error_measurement_with_qgis.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pubdate":"2025","author":"Stace Maples","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The People's Guide to Spatial Data","gitbook":"*"},"file":{"path":"week01/03_cartographic_design_with_qgis.md","mtime":"2026-06-18T15:27:06.954Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-06-18T15:27:18.637Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
